@@ -1,0 +1,6 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  DEFORMATION
+#STOP
+

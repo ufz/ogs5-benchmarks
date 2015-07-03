@@ -1,0 +1,11 @@
+GeoSys-ST: Source Terms ------------------------------------------------
+#SOURCE_TERM
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $PRIMARY_VARIABLE
+  TEMPERATURE1
+ $GEO_TYPE
+  POINT POINT0
+ $DIS_TYPE
+  CONSTANT 3.000000000000e+001
+#STOP

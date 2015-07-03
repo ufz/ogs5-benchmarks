@@ -1,0 +1,1 @@
+ogs.exe trans_bd_homo > trans_bd_homo.txt

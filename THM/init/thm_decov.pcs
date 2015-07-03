@@ -1,0 +1,19 @@
+GeoSys-PCS: Processes
+///
+// Calculate Inital stress. By WW 
+///
+#PROCESS
+ $PCS_TYPE
+   DEFORMATION
+   
+ $NUM_TYPE
+  EXCAVATION    
+ $RELOAD     
+   1 1    
+#STOP
+
+#PROCESS
+ $PCS_TYPE
+   DEFORMATION    
+  $RELOAD          
+   1 

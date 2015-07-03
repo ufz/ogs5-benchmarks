@@ -1,0 +1,40 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+
+
+#SOLID_PROPERTIES
+  $DENSITY
+   1    0.0 
+  $THERMAL
+   EXPANSION 4.0e-5
+   CAPACITY: 
+      1  1.0
+   CONDUCTIVITY: 
+      1  100.0
+  $ELASTICITY
+   POISSION  0.27     
+    YOUNGS_MODULUS
+      1 25000.0
+  $STRESS_UNIT
+    MegaPascal            
+  $CREEP_BGRA
+     0.18 5.0  54000.0    
+#STOP
+
+  $CREEP_NORTON 
+    10e-10 5.0     
+
+
+Young's modulus: 25000 MPa
+Poisson's ratio: 0.27
+thermal expansion coefficient: 4E-5 (1/K)
+BGRa: A = 0.18 (1/d)
+      Q = 54.0 kJ/mol
+      n = 5.0
+
+    
+ 
+  
+     $CREEP_BGRA
+       34.37424 5.0  54200.0      
+
+ 

@@ -1,0 +1,21 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $TIM_TYPE
+  STEADY
+
+#PROCESS
+ $PCS_TYPE
+  FLUID_MOMENTUM
+ $NUM_TYPE
+  STEADY
+
+#PROCESS
+ $PCS_TYPE
+  RANDOM_WALK
+#STOP
+
+ $DEACTIVATED_SUBDOMAIN
+   1
+   1

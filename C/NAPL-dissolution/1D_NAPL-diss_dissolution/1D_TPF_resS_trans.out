@@ -1,0 +1,21 @@
+GeoSys-OUT: Output ------------------------------------------------
+
+
+#OUTPUT // single files
+ $NOD_VALUES
+  NAPL_PCE
+  NAPL_TCE
+  NAPL_TCM
+  PCE
+  TCE
+  TCM
+ $GEO_TYPE
+  POINT POINT17
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+   STEPS 1
+
+
+#STOP
+

@@ -1,0 +1,13 @@
+GINA4 - RFD-Datei
+#PROJECT
+  Strecke, 1000 m Teufe, Viertel
+#CURVES	;1 for Excavation
+0.0	0.0
+3600	1.5
+7200	3
+10800   4.5
+14400   6
+18000	6
+#STOP
+
+

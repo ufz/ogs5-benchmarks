@@ -1,0 +1,12 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+
+#COMPONENT_PROPERTIES  ; comp0
+ $NAME
+  SorbDecay ;
+ $MOBILE 
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DECAY
+  1  2.0e-7   1.0  ;
+ $ISOTHERM
+  1  6.8e-5 
+#STOP

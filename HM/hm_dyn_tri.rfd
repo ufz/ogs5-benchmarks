@@ -1,0 +1,17 @@
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+BENCHMARK: ELASTIC DEFORMATION ITER. COUPLED WITH SAT. FLUID FLOW, PLANE STRAIN
+;, K = 1.0e-010, S = 1.0e-003, E = 3.0e+004, nu = 0.2, dt=0.5          
+ 
+#RENUMBER
+ 0 
+
+#REFERENCE_CONDITIONS
+9.810000  0.000000  0.0.000000 
+
+#CURVES
+0.000000e+000 1.0
+1296000. 1.0
+2592000. 1.0
+
+#STOP

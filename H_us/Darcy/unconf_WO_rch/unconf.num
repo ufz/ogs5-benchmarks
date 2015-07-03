@@ -1,0 +1,10 @@
+#NUMERICS
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2 1 1e-12 5000 1 100 4
+ $NON_LINEAR_ITERATION
+;type -- error_method -- max_iterations -- relaxation -- tolerance(s)
+  PICARD ERNORM 15 0 1e-8   
+#STOP

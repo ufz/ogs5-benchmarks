@@ -1,0 +1,43 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  A
+  B
+ $GEO_TYPE
+  POLYLINE  OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 200
+  
+#OUTPUT // profile
+ $NOD_VALUES
+  A
+  B
+ $GEO_TYPE
+  POINT POINT2
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 10
+  
+#OUTPUT // profile
+ $ELE_VALUES
+  POROSITY
+  PERMEABILITY
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  100
+  500
+  1000
+  2000
+  3000
+  4000
+  5000
+  7000
+  10000   
+#STOP
+

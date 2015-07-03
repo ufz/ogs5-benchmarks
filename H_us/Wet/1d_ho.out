@@ -1,0 +1,43 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $NOD_VALUES
+  PRESSURE1
+  SATURATION1
+ $GEO_TYPE
+  DOMAIN 
+ $TIM_TYPE
+ 0.01
+ 0.1
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+
+#STOP
+
+
+  STEPS 1
+
+
+
+
+
+#OUTPUT
+ $PCS_TYPE
+  RICHARDS_FLOW  
+ $NOD_VALUES
+  PRESSURE1
+  SATURATION1
+ $ELE_VALUES
+ $GEO_TYPE
+  POLYLINE OUT
+ $TIM_TYPE
+  STEPS 1

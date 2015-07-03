@@ -1,0 +1,16 @@
+GeoSys-MAT-FP: Fluid Properties ------------------------------------
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+ $PCS_TYPE
+  HEAD
+ $DENSITY
+  1 999.7      ; 1=Dichtemodell: const. Dichte; Wert in kg/m³
+ $VISCOSITY
+  1 1.3e-3       ; 1=Visk.-modell: const. Visk; Wert  m²/s
+ $THERMAL
+  CAPACITY
+   1 4.192e-3
+  CONDUCTIVITY
+   1 0.587
+#STOP

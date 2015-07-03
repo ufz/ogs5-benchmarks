@@ -1,0 +1,14 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+#NUMERICS
+ $PCS_TYPE
+  DEFORMATION
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2      0 1.e-010       1000          1.0   100       4
+ $ELE_GAUSS_POINTS
+  3
+#STOP
+
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  NEWTON 1e-4 1e-10      100            0.0

@@ -1,0 +1,34 @@
+GeoSys-PCS: Processes ------------------------------------------------
+
+#PROCESS
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $NUM_TYPE
+   NEW 
+ $DEACTIVATED_SUBDOMAIN
+  1
+  2      
+  
+
+
+#PROCESS
+ $PCS_TYPE
+   DEFORMATION    
+
+#STOP
+
+ $RELOAD
+ -1  
+ 
+ 
+ $ELEMENT_MATRIX_OUTPUT 
+  0
+
+ #PROCESS
+ $PCS_TYPE
+  HEAT_TRANSPORT   
+ $NUM_TYPE
+   NEW   
+ $DEACTIVATED_SUBDOMAIN
+  1
+  2 

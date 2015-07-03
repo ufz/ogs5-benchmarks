@@ -1,0 +1,52 @@
+GeoSys-MAT-FP: Fluid Properties ------------------------------------
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+ $FLUID_NAME
+  WATER
+ $DENSITY
+  1 1000
+$VISCOSITY
+  1 1.0e-3  
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  GAS
+ $FLUID_NAME
+  CARBON_DIOXIDE
+ $DENSITY ; Constant
+; model -- rho
+  1  1000.
+$VISCOSITY
+ 1 4.e-3
+ $GRAVITY
+  0.0
+#STOP
+  
+
+ 1 593.9
+
+ $COMPRESSIBILITY
+; dP model -- drho/dp -- dT model -- drho/dT
+  3          0           3          0
+
+  
+ $DENSITY ; Constant
+ 1 1459.9432090605521
+
+ 
+  
+ $VISCOSITY
+  0.092384478853551569
+
+
+
+
+ $DENSITY ; Constant
+; model -- rho
+  97       34.0
+ $COMPRESSIBILITY
+; dP model -- drho/dp -- dT model -- drho/dT
+  97          0          97          0
+ $VISCOSITY
+  97   34.0
+  

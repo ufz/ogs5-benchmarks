@@ -1,0 +1,12 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  OVERLAND_FLOW
+ $TIME_STEPS:
+  240  1
+ $TIME_END:
+  240
+ $TIME_START:
+  0.0
+ $TIME_CONTROL:
+#STOP

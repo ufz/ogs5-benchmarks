@@ -1,0 +1,24 @@
+GeoSys-BC: Boundary Conditions ------------------------------------------------
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $PRIMARY_VARIABLE
+  PRESSURE1
+ $GEO_TYPE
+  POINT  POINT0
+ $DIS_TYPE
+  CONSTANT    -98100          
+  
+  
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $PRIMARY_VARIABLE
+  PRESSURE2
+ $GEO_TYPE
+  POINT  POINT0
+ $DIS_TYPE
+  CONSTANT   -98100        
+
+#STOP
+

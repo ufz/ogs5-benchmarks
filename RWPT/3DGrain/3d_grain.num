@@ -1,0 +1,20 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+#NUMERICS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2      2 1.e-016       5000           1.0   100       4
+ $NON_LINEAR_SOLVER  
+ ; method error_tolerance max_iterations relaxation
+  PICARD 1e-3            1             0.0
+  
+#NUMERICS
+ $PCS_TYPE
+  FLUID_MOMENTUM
+ $ELE_GAUSS_POINTS
+  2
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2      6 1.e-014       1000           1.0   1       2
+#STOP

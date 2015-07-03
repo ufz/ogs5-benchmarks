@@ -1,0 +1,22 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  PRESSURE1
+  PRESSURE2
+  PRESSURE_CAP
+  SATURATION1  
+  SATURATION2
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+ 1000
+ 4000
+ 7000
+ 10000
+#STOP
+
+$TIM_TYPE
+ STEPS 1
+#STOP

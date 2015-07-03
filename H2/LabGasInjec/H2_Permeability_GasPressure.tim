@@ -1,0 +1,42 @@
+#TIME_STEPPING
+ $PCS_TYPE
+    MULTI_PHASE_FLOW
+ $TIME_STEPS
+  1     1000
+  1     1
+  1     999
+  1     1
+  1     999
+  1     1
+  1     999
+  1     1
+  1     999
+  1     1
+  1     999
+  1     1
+  1     999
+  1     1
+  1     999
+  1     1
+  1     999
+  1     1
+  1     999
+ $TIME_END
+  10000
+ $TIME_START
+   0
+#STOP
+
+
+#TIME_STEPPING
+ $PCS_TYPE
+    DEFORMATION
+ $TIME_STEPS
+40   900
+ $TIME_END
+  36000
+ ;$TIME_UNIT
+  ;HOUR
+ $TIME_START
+  0.0
+#STOP

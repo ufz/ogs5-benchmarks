@@ -1,0 +1,100 @@
+GeoSys-OUT: Output ------------------------------------------------
+
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  TCE-mob
+  TCE-mat
+  trans-DCE-mob
+  trans-DCE-mat
+  cis-DCE-mob 
+  cis-DCE-mat
+  11-DCE-mob
+  11-DCE-mat
+  Acet-mob
+  Acet-mat
+  ClAcet-mob    
+  ClAcet-mat
+  VC-mob
+  VC-mat
+  Ethylen-mob
+  Ethylen-mat
+  C4-mob
+  Ethan-mob
+  mobile
+ $GEO_TYPE
+  POLYLINE OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 50
+  
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  TCE-mob
+  TCE-mat
+  trans-DCE-mob
+  trans-DCE-mat
+  cis-DCE-mob 
+  cis-DCE-mat
+  11-DCE-mob
+  11-DCE-mat
+  Acet-mob
+  Acet-mat
+  ClAcet-mob    
+  ClAcet-mat
+  VC-mob
+  VC-mat
+  Ethylen-mob
+  Ethylen-mat
+  C4-mob
+  Ethan-mob
+  mobile
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 50
+  
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  TCE-mob
+  TCE-mat
+  trans-DCE-mob
+  trans-DCE-mat
+  cis-DCE-mob 
+  cis-DCE-mat
+  11-DCE-mob
+  11-DCE-mat
+  Acet-mob
+  Acet-mat
+  ClAcet-mob    
+  ClAcet-mat
+  VC-mob
+  VC-mat
+  Ethylen-mob
+  Ethylen-mat
+  C4-mob
+  Ethan-mob
+  mobile
+ $GEO_TYPE
+  POINT POINT2
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 10
+
+#OUTPUT // domain nodes
+ $ELE_VALUES 
+  VELOCITY1_X
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 10
+#STOP
+

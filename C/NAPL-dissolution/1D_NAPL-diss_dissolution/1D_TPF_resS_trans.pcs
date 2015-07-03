@@ -1,0 +1,59 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+ PS_GLOBAL
+ $NUM_TYPE
+   NEW 
+
+
+; Transport Process  ; PCE
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; TCE
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; TCM
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; NAPL_PCE
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; NAPL_TCE
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; NAPL_TCM
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; Tracer
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+
+#STOP

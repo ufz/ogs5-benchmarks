@@ -1,0 +1,60 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $ELASTICITY
+    POISSION  3.0000e-001
+    YOUNGS_MODULUS:
+     1 1.90139e+08           
+  $PLASTICITY
+    SINGLE_YIELD_SURFACE
+   0.      //0.       ; alpha0 
+   0.26    // beta0
+   3.5e-7  //1.e-4    ; delta0
+   1.0e-7  //2.56e-4  ; epsilon0
+   0.0     // kappa0
+   0.0     // gamma0
+   0.569   // m0
+   0.        // alpha1 
+   0.29    //0.       ; beta1
+   8.81e-9 // delta1
+   1.5e-8  // epsilon1
+   0.       // kappa1
+   0.0      // gamma1
+   1.0      // m1
+   0.55     // psi1
+    -0.26    //0.       ; psi2
+   0.81e-3     // ch
+   0.60e-3     // cd
+   100.0      // br
+   1.0      // mr
+   0.0   //s_xx
+   0.0   //s_yy
+   0.0   //s_zz
+#STOP
+
+#SOLID_PROPERTIES
+  1 1.90139e+08  3.0000e-001 ; elasticity_modul, Possion ratio
+  $EHLERS_WEIMAR
+   0.      ;0.       ; alpha0 
+   0.26    ; beta0
+   3.5e-7  ;1.e-4    ; delta0
+   1.0e-7  ;2.56e-4  ; epsilon0
+   0.0     ; kappa0
+   0.0    ; gamma0
+   0.569    ; m0
+   0.                ; alpha1 
+   0.29    ;0.       ; beta1
+   8.81e-9 ; delta1
+   1.5e-8  ; epsilon1
+   0.       ; kappa1
+   0.0      ; gamma1
+   1.0      ; m1
+   0.55     ; psi1
+    -0.26    ;0.       ; psi2
+   0.81e-3     ; ch
+   0.60e-3     ; cd
+   100.0      ; br
+   1.0      ; mr
+   0.0   ;s_xx
+   0.0   ;s_yy
+   0.0   ;s_zz
+

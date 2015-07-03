@@ -1,0 +1,6 @@
+Subdomain mesh (Nodes;  Nodes_linear; Elements; Ghost elements; Nodes of Linear elements; Nodes of quadratic elements) Nodes of Linear whole elements; Nodes of whole quadratic elements; Total integer variables of elements;Total integer variables of ghost elements  
+4
+67 67 37 14 51 51 210 210 259 154
+59 59 37 7 51 51 210 210 259 77
+66 66 34 15 54 54 210 210 238 169
+82 82 37 22 54 54 210 210 259 238

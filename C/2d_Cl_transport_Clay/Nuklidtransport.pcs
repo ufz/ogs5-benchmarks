@@ -1,0 +1,25 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NUM_TYPE
+   NEW   
+ $ELEMENT_MATRIX_OUTPUT
+   0
+ $ST_RHS
+   1
+ $BOUNDARY_CONDITION_OUTPUT  
+
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT		; Cl-36
+ $NUM_TYPE
+  NEW      
+ $ELEMENT_MATRIX_OUTPUT
+   0
+ $ST_RHS
+   1
+ $BOUNDARY_CONDITION_OUTPUT  
+
+#STOP
+

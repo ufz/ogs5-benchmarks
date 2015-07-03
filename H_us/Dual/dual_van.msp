@@ -1,0 +1,25 @@
+GeoSys-MSP: Material Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+ $DENSITY
+   1  2.00000e+003
+ $THERMAL
+  EXPANSION: 
+   1.0e-5
+  CAPACITY: 
+   1 1605.064889
+  CONDUCTIVITY: 
+   1 0.00118799939    
+ 
+#SOLID_PROPERTIES
+ $DENSITY
+   1  2.00000e+003
+ $THERMAL
+  EXPANSION: 
+   1.0e-5
+  CAPACITY: 
+   1 1605.064889
+  CONDUCTIVITY: 
+   1 0.00118799939      
+#STOP
+
+

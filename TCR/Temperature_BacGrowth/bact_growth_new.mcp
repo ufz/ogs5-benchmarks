@@ -1,0 +1,59 @@
+#COMPONENT_PROPERTIES ;comp1
+ $NAME
+  ConsTracer
+ $MOBILE
+  1 ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0
+
+#COMPONENT_PROPERTIES ;comp2
+ $NAME
+  Comp_A
+ $MOBILE
+  1 ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0
+
+#COMPONENT_PROPERTIES ;comp3
+ $NAME
+  Comp_B
+ $MOBILE
+  1 ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0
+
+#COMPONENT_PROPERTIES ;comp4
+ $NAME
+  Comp_C
+ $MOBILE
+  1 ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0
+
+#COMPONENT_PROPERTIES ;comp4
+ $NAME
+  Comp_D
+ $MOBILE
+  1 ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0
+
+#COMPONENT_PROPERTIES ;comp4
+ $NAME
+  Comp_E
+ $MOBILE
+  1 ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0
+
+#COMPONENT_PROPERTIES ;comp5
+ $NAME
+  Biomass
+ $MOBILE
+  0 ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0
+ $TRANSPORT_PHASE
+  2   ; 0 wasser, 1 matrix, 2 biofilm, 3 REV
+
+#STOP

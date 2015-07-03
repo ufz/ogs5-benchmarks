@@ -1,0 +1,31 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+ HEAD
+ Na
+ Cl
+ Ca
+ C(4)
+ Calcite
+ $GEO_TYPE
+  POLYLINE  OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 750
+  
+#OUTPUT // profile
+ $ELE_VALUES
+  VELOCITY1_X
+  POROSITY
+  PERMEABILITY
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 750
+  
+  
+#STOP
+

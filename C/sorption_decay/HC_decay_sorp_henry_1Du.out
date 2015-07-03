@@ -1,0 +1,18 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // domain nodes
+ $NOD_VALUES
+  PRESSURE1
+  SorbDecay
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  0
+  86400
+  2160000
+  4320000
+  6480000
+  8640000
+#STOP
+

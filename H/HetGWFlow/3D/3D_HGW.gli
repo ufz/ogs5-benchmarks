@@ -1,0 +1,82 @@
+#POINTS
+0 0 0 0
+1 100 0 0
+2 100 100 0
+3 0 100 0
+4 0 0 50
+5 100 0 50
+6 100 100 50
+7 0 100 50
+#POLYLINE
+ $NAME 
+  L_BC
+ $TYPE
+  2
+ $EPSILON
+  0.01
+ $POINTS
+  7
+  4
+#POLYLINE
+ $NAME 
+  R_BC
+ $TYPE
+  2
+ $EPSILON
+  0.01
+ $POINTS
+  6
+  5
+#POLYLINE
+ $NAME 
+  Closed_L_BC
+ $TYPE
+  2
+ $EPSILON
+  0.01
+ $POINTS
+  7
+  3
+  0
+  4
+  7
+#POLYLINE
+ $NAME 
+  Closed_R_BC
+ $TYPE
+  2
+ $EPSILON
+  0.01
+ $POINTS
+  6
+  2
+  1
+  5
+  6
+#SURFACE
+ $ID
+  0
+ $NAME
+  R_SF
+ $TYPE
+  0
+ $EPSILON
+  0.01
+ $MAT_GROUP
+  0
+ $POLYLINES
+  Closed_R_BC
+#SURFACE
+ $ID
+  1
+ $NAME
+  L_SF
+ $TYPE
+  0
+ $EPSILON
+  0.01
+ $MAT_GROUP
+  0
+ $POLYLINES
+  Closed_L_BC
+#STOP

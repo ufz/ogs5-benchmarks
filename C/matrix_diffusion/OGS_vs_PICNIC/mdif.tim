@@ -1,0 +1,29 @@
+GeoSys-TIM: ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $TIME_START
+  0.0
+ $TIME_END
+  5.0e+04
+ $TIME_STEPS
+ 10  0.2
+ 10  2.0
+ 100  20.0
+ 1000 100.0
+#TIME_STEPPING
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $TIME_START
+  0.0
+ $TIME_END
+  5.0e+04
+ $TIME_STEPS
+ 10  0.2
+ 10  2.0
+ 100  20.0
+ 1000 100.0
+#STOP
+
+ 2000 25.0
+ 10000  1.0

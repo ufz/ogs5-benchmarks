@@ -1,0 +1,53 @@
+#COMPONENT_PROPERTIES  ; comp1
+
+ $NAME
+  Tracer ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  8.49e-10             	; diffusion model type, diffusion constant
+
+
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME
+  Toluene ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  8.49e-10             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME
+  Nitrate ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  9.98519e-10             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp3
+  $NAME
+ Comp_C ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0            	; diffusion model type, diffusion constant
+  
+#COMPONENT_PROPERTIES  ; comp4
+  $NAME
+ Reaction_Mark ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0            	; diffusion model type, diffusion constant
+  
+#COMPONENT_PROPERTIES  ; comp5
+  $NAME
+  Aromaticum ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+ $DECAY
+  1 8.10185E-09 1.0 ; model rate exponent 
+#STOP
+  

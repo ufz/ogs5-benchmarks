@@ -1,0 +1,7 @@
+GeoSys-MSP: Material Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $DENSITY
+    1 2.65000e+003
+#STOP
+
+

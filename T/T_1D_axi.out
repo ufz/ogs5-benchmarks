@@ -1,0 +1,31 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $NOD_VALUES
+  TEMPERATURE1
+ $GEO_TYPE
+  DOMAIN 
+  $DAT_TYPE
+  TECPLOT
+$TIM_TYPE
+  STEPS 1
+#STOP
+
+#OUTPUT // 
+ $NOD_VALUES
+  TEMPERATURE1
+ $GEO_TYPE
+  POINT  POINT4
+ $DAT_TYPE
+  TECPLOT
+#OUTPUT // 
+ $NOD_VALUES
+  TEMPERATURE1
+ $GEO_TYPE
+  POLYLINE R
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  0
+  0.5
+  1.0
+#STOP

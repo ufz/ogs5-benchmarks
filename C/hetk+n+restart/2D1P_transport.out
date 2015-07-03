@@ -1,0 +1,34 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+  Tracer1
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 100 ; every 10th Time step
+#OUTPUT
+ $NOD_VALUES
+  Tracer1
+ $GEO_TYPE
+  POINT POINT10
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 1 ; every 10th Time step
+#OUTPUT
+ $NOD_VALUES
+  Tracer1
+ $GEO_TYPE
+  POINT POINT11
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 1 ; every 10th Time step
+#STOP
+
+; Output ist an allen Geometrischen Objekten (.gli-file) möglich und erfolgt im tecplot format
+; Knotengrößen (C, Pressure, Saturation, etc.) werden in einem Outpufile für die Knoten geschrieben
+; Elementgrößen (Geschwindigkeiten, ...) an einem für Elemente

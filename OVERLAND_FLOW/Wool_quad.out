@@ -1,0 +1,14 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $PCS_TYPE
+  OVERLAND_FLOW
+ $NOD_VALUES
+  FLUX
+ $GEO_TYPE
+  POINT POINT1
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+ STEPS: 1
+#STOP
+

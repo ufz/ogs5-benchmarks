@@ -1,0 +1,52 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NUM_TYPE
+   NEW  
+   
+; Transport Process  ; 0 PCE-l
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 1 PCE-h
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+   
+; Transport Process  ; 2 TCE-l
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 3 TCE-h
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW  
+   
+   
+; Transport Process  ; 4 Micros
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW        
+   
+
+; Transport Process  ; 5 Tracer
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+#STOP

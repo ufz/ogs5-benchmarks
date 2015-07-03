@@ -1,0 +1,253 @@
+#!MC 1000
+$!VarSet |LFDSFN1| = '"hm_swelling_time_POINT8.tec"'
+$!VarSet |LFDSVL1| = '"Time" "PRESSURE1" "SATURATION1" "TEMPERATURE1" "DISPLACEMENT_X1" "DISPLACEMENT_Y1" "STRESS_XX" "STRESS_XY" "STRESS_YY" "STRESS_ZZ" "STRAIN_XX" "STRAIN_XY" "STRAIN_YY" "p_(1st_Invariant)" "q_(2nd_Invariant)" "Effective_Strain"'
+$!VarSet |LFDSFN2| = '"hm_swelling_time_POINT4.tec"'
+$!VarSet |LFDSVL2| = '"Time" "PRESSURE1" "SATURATION1" "TEMPERATURE1" "DISPLACEMENT_X1" "DISPLACEMENT_Y1" "STRESS_XX" "STRESS_XY" "STRESS_YY" "STRESS_ZZ" "STRAIN_XX" "STRAIN_XY" "STRAIN_YY" "p_(1st_Invariant)" "q_(2nd_Invariant)" "Effective_Strain"'
+$!SETSTYLEBASE FACTORY
+$!PAPER 
+  BACKGROUNDCOLOR = WHITE
+  ISTRANSPARENT = YES
+  ORIENTPORTRAIT = NO
+  SHOWGRID = YES
+  SHOWRULER = YES
+  SHOWPAPER = YES
+  PAPERSIZE = LETTER
+  PAPERSIZEINFO
+    {
+    LETTER
+      {
+      WIDTH = 8.5
+      HEIGHT = 11
+      LEFTHARDCLIPOFFSET = 0.125
+      RIGHTHARDCLIPOFFSET = 0.125
+      TOPHARDCLIPOFFSET = 0.125
+      BOTTOMHARDCLIPOFFSET = 0.125
+      }
+    }
+  RULERSPACING = ONEINCH
+  PAPERGRIDSPACING = HALFINCH
+  REGIONINWORKAREA
+    {
+    X1 = -0.05
+    Y1 = -0.05
+    X2 = 11.05
+    Y2 = 8.55
+    }
+$!COLORMAP 
+  CONTOURCOLORMAP = SMRAINBOW
+$!COLORMAPCONTROL RESETTOFACTORY
+### Frame Number 1 ###
+$!READDATASET  '|LFDSFN1|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL1|' 
+$!REMOVEVAR |LFDSVL1|
+$!REMOVEVAR |LFDSFN1|
+$!READDATASET  '|LFDSFN2|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL2|' 
+$!REMOVEVAR |LFDSVL2|
+$!REMOVEVAR |LFDSFN2|
+$!FRAMELAYOUT 
+  SHOWBORDER = NO
+  ISTRANSPARENT = YES
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 1
+    Y = 0.25
+    }
+  WIDTH = 9
+  HEIGHT = 8
+$!PLOTTYPE  = XYLINE
+$!FRAMENAME  = 'Frame 001' 
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1-2]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    TEXTSHAPE
+      {
+      FONT = TIMES
+      HEIGHT = 2
+      }
+    BOX
+      {
+      BOXTYPE = NONE
+      }
+    XYPOS
+      {
+      X = 70.734
+      Y = 90.195
+      }
+    }
+$!LINEMAP  [1]
+  NAME = 'Horizontal swelling stress in the bentonite' 
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 1
+    YAXISVAR = 7
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [2]
+  NAME = 'Water saturation at the canistor surface' 
+  ASSIGN
+    {
+    ZONE = 2
+    XAXISVAR = 1
+    YAXISVAR = 3
+    XAXIS = 2
+    YAXIS = 2
+    }
+  LINES
+    {
+    COLOR = BLUE
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+  VIEWPORTPOSITION
+    {
+    X1 = 16.222
+    Y1 = 11.227
+    X2 = 91.222
+    Y2 = 88.227
+    }
+  VIEWPORTTOPSNAPTARGET = 88.2265542677
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    COORDSCALE = LOG
+    RANGEMIN = 0.0010000000474974513
+    RANGEMAX = 10000
+    GRSPACING = 2000
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONT = TIMES
+        }
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Time [Year]' 
+      TEXTSHAPE
+        {
+        FONT = TIMES
+        HEIGHT = 3.6
+        }
+      }
+    }
+$!XYLINEAXIS 
+  XDETAIL 2
+    {
+    SHOWAXIS = NO
+    COORDSCALE = LOG
+    RANGEMIN = 0.01
+    RANGEMAX = 10000
+    GRSPACING = 2000
+    AXISLINE
+      {
+      AXISALIGNMENT = WITHGRIDMAX
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = -400000
+    RANGEMAX = 50000
+    GRSPACING = 50000
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONT = TIMES
+        }
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Vertical stress [Pa]' 
+      TEXTSHAPE
+        {
+        FONT = TIMES
+        HEIGHT = 3.6
+        }
+      OFFSET = 12
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 2
+    {
+    RANGEMIN = 0.59999999999999998
+    RANGEMAX = 1.0499999999999992
+    GRSPACING = 0.05
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONT = TIMES
+        }
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Liquid saturation' 
+      TEXTSHAPE
+        {
+        FONT = TIMES
+        HEIGHT = 3.6
+        }
+      }
+    AXISLINE
+      {
+      AXISALIGNMENT = WITHGRIDMAX
+      }
+    }
+$!SETSTYLEBASE CONFIG

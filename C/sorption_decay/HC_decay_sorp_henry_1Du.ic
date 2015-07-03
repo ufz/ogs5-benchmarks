@@ -1,0 +1,12 @@
+GeoSys-IC  Initial Conditions ------------------------------------------------
+#INITIAL_CONDITION
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $PRIMARY_VARIABLE 
+  SorbDecay
+ $GEO_TYPE
+  DOMAIN
+ $DIS_TYPE
+  CONSTANT 0.0
+#STOP
+

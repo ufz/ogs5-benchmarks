@@ -1,0 +1,1 @@
+ogs.exe rt1 > out.txt

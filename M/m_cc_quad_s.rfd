@@ -1,0 +1,12 @@
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+  BENCHMARK: PLASTIC DEFORMATION: CAM-CLAY MODEL          
+
+
+#CURVES 
+0.0 -50.0
+110.0    -200.0
+#CURVES 
+0.0 0.0
+110.0    0.6
+#STOP

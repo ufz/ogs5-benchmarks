@@ -1,0 +1,139 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+#COMPONENT_PROPERTIES  ; comp6
+  $NAME
+  pH ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp7
+ $NAME
+  pe ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+#COMPONENT_PROPERTIES  ; 0
+ $NAME
+  Pce_l ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 1
+ $NAME
+  Pce_h ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 2
+ $NAME
+  Tce_l ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 3
+ $NAME
+  Tce_h ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0    
+
+#COMPONENT_PROPERTIES  ; 2
+ $NAME
+  Dce_l ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 3
+ $NAME
+  Dce_h ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0  
+
+#COMPONENT_PROPERTIES  ; 2
+ $NAME
+  Vc_l ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 3
+ $NAME
+  Vc_h ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0    
+
+#COMPONENT_PROPERTIES  ; 2
+ $NAME
+  Eth_l ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 3
+ $NAME
+  Eth_h ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0    
+ 
+#COMPONENT_PROPERTIES  ; 5
+ $NAME
+  Chl ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.0093E-10              ; diffusion model type, diffusion constant
+;$DECAY_AQUEOUS
+;  1 6.365741E-08 1.0  
+$TRANSPORT_PHASE
+  0
+
+#STOP
+
+#COMPONENT_PROPERTIES  ; 4
+ $NAME
+  Micros ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0 

@@ -1,0 +1,26 @@
+GeoSys-ST: Source Terms ------------------------------------------------
+ 
+#STOP
+
+
+#SOURCE_TERM
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $PRIMARY_VARIABLE
+  PRESSURE2
+ $GEO_TYPE
+  POINT POINT1
+ $DIS_TYPE
+  CONSTANT    0.0 
+
+
+  SYSTEM_DEPENDENT
+
+  CONSTANT 0.0
+
+
+
+  SYSTEM_DEPENDENT
+
+
+  CONSTANT 0.0 

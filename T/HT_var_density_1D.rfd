@@ -1,0 +1,6 @@
+GINA - RFD-Datei
+#PROJECT
+  HT variable density and viscosity 
+#REFERENCE_CONDITIONS
+9.81 293 101325
+#STOP

@@ -1,0 +1,122 @@
+GeoSys-CAP  ChemApp Calculating Setting
+#DATABASE_PROPERTIES
+ $DATA_FILE
+  result.1-3.dat
+ $DATA_FORMAT
+  ;DAT / BIN / CST
+  DAT
+ $CAP_MODE
+   2   
+ $MASS_NUM
+  ;define the number of mass transport (first n species) involved into chemical reaction 
+  16 ; 17
+ $MASS_TYPE
+  ;ELEMENT / SPECIES
+  SPECIES
+ $PHASE_LIST
+  0 _s
+  1 _g
+  2 _w
+  2
+  3 _x
+   END
+ $SPECIES_DEFINE
+  ;TRANS / LIST / UNDEF
+  TRANS
+ $SPECIES_LIST
+  ;name_x
+   H2O   
+   H[+]  
+   OH[-] 
+   HCO3[-]
+   CO3[2-]
+   CO2  
+   Ca[2+] 
+   Mg[2+]
+   Cl[-]
+   CaOH[+]
+   MgOH[+]
+   CaCO3
+   CaHCO3[+]
+   MgCO3
+   MgHCO3[+]
+   ; Calcite_CaCO3_s
+   ; Dolomite_CaMg(CO3)2_s
+   END
+ $KINETIC_SPECIES
+   Calcite_CaCO3_s
+   Dolomite_CaMg(CO3)2_s
+   END
+ $KINETIC_REACTIONS
+    REACTION CAL2
+     1 Calcite_CaCO3_s
+    -1 CO3[2-]
+    -1 Ca[2+]
+    REACTION DOL2
+     1 Dolomite_CaMg(CO3)2_s
+    -2 CO3[2-]
+    -1 Ca[2+]
+    -1 Mg[2+]
+   END
+   
+ $NLOG_AC
+ ;pH   H[+]
+ ;pH2  H2_g
+ ;pCal Calcite_CaCO3_s
+ ;pCO2 CO2_g
+   END
+ $REDOX_EH
+ ;Eh    0.0
+ ;e-   -2.0
+ ;H[+] -2.0
+ ;H2_g  1.0
+   END
+#STOP
+
+=============================================================================================================
+Note: 
+The .cap is a flagfile for ChemApp calculation. It must obey essential rules as following.
+(1) DATA_FILE subkeyword
+      indicates relative directory and filename.
+(2) DATA_FORMAT subkeyword
+      DAT -> ACSII code data file; 
+      BIN -> binary data file;
+      CST -> transparent data file from FactSage database.
+(3) MASS_TYPE subkeyword has two alternative option, ELEMENT and SPECIES.
+      SPECIES option to set mass transport as chemical reactive species in ChemApp;
+      ELEMENT option to set mass transport as new components instead of chemical elements in ChemApp. 
+        There are several basic key-laws to define mass transport as new elements. 
+	<1> Only aqueous solution sepcies are defined as new elements to reset ChemApp system. 
+	    Gas species and other stoichiometric phases will still keep themself previous properties.
+	<2> The name of all elements must be consistent with DATAFILE, including aqueous species which 
+	    have been defined as new elements. The name list of DATAFILE can be find in the same folder.
+	<3> Though any aqueous species can be defined as new element, independent and consistent rules 
+	    must be performed. 
+	       Independent rule: every element must independent with all others.
+	       consistent rule: all elements must be able to constitute the whole system for study.
+	       If the studing system is part of DATAFILE, other previous element will be added to form 
+	       integral system automatically.
+(4) SPECIES_DEFINE subkeyword
+      UNDEF -> using all species in database.  
+      TRANS -> using mass transport as species, do not load following species list into ChemApp.
+      LIST  -> using species list for ChemApp calculation. In general, the species list can not be lower 
+               than that of MASS TRANSPORT. Otherwise it is dangerous for simulation, but we still NOT 
+	       exclude this kind of case, which may be referential systems for our future research.
+	       Another permitted case is the list larger than species defined by MASS TRANSPORT.
+	       There is a potential danger on species lost after ChemApp calculating at every node and 
+	       time step.
+(5) SPECIES_LIST subkeyword
+      Postfix of all species name must obey the gws rule as following. 
+      _g gas phase species, _w aqueous solution species and _s solid phase species.
+      Aqueous species is set as default option, so the postfix of _w can be omitted.
+
+Considering verious unexpected happening in simulating process, ChemApp maybe failing to obtain equilibrium 
+result at all nodes and time steps. We have to set additional correctional condition as following:
+(1) Negative value of amount of stoichiometric phase will be modified as zero.
+(2) The value of species concentration in mixture phases, if which is lower than precision (1.0e-16), will
+    be modified as zero.
+(3) If ChemApp can not solve out equlibrium result, then it has to consider no chemical reaction at the node,
+    return input value as result and print out WARNING infomation.
+(4) At some extreme case, if ChemApp occupy the whole CPU process and do not return, then simulation can not 
+    pass over this step to continue to next step... So we must try to avoid or reduce this kind of danger.
+=============================================================================================================

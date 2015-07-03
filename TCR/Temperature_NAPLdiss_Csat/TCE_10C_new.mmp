@@ -1,0 +1,29 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  1
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1 0.2500						;1 means constant porosity
+ $VOL_BIO
+  1 0.0
+ $VOL_MAT
+  1 0.75
+ $TORTUOSITY
+  1 1.000000e+000
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 1.54249E-11 		; 0.000115741 m/s = 0.1 m/d
+ $PERMEABILITY_SATURATION
+  61 0.20 1.0 3.86 				; Brooks-Courey model  S(resw)  S(totw) empirical paramter lambda
+  66 0.20 1.0 3.86 0e-9			; residual sättgung ist doch von stoff zu stoff verschieden?! auf grund von GRENZflächenspannung temp. abhängig???
+ $CAPILLARY_PRESSURE
+  6 0.0
+ $MASS_DISPERSION
+  1 0.15
+ $DENSITY
+  1 2650.0						
+$HEAT_DISPERSION
+    1 0.15 0.15
+    
+#STOP

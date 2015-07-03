@@ -1,0 +1,435 @@
+#!MC 1000
+$!VarSet |LFDSFN1| = '"H_sat_flow_K_ortho_domain_tri.tec"'
+$!VarSet |LFDSVL1| = '"X" "Y" "Z" "PRESSURE1" "Tracer"'
+$!SETSTYLEBASE FACTORY
+$!PAPER 
+  BACKGROUNDCOLOR = WHITE
+  ISTRANSPARENT = YES
+  ORIENTPORTRAIT = NO
+  SHOWGRID = YES
+  SHOWRULER = YES
+  SHOWPAPER = YES
+  PAPERSIZE = LETTER
+  PAPERSIZEINFO
+    {
+    LETTER
+      {
+      WIDTH = 8.5
+      HEIGHT = 11
+      LEFTHARDCLIPOFFSET = 0.125
+      RIGHTHARDCLIPOFFSET = 0.125
+      TOPHARDCLIPOFFSET = 0.125
+      BOTTOMHARDCLIPOFFSET = 0.125
+      }
+    }
+  RULERSPACING = ONEINCH
+  PAPERGRIDSPACING = HALFINCH
+  REGIONINWORKAREA
+    {
+    X1 = -0.05
+    Y1 = -0.05
+    X2 = 11.05
+    Y2 = 8.55
+    }
+$!COLORMAP 
+  CONTOURCOLORMAP = SMRAINBOW
+$!COLORMAPCONTROL RESETTOFACTORY
+### Frame Number 1 ###
+$!READDATASET  '|LFDSFN1|' 
+  INITIALPLOTTYPE = CARTESIAN3D
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL1|' 
+$!REMOVEVAR |LFDSVL1|
+$!REMOVEVAR |LFDSFN1|
+$!DELETEZONES  [1-300]
+$!FRAMELAYOUT 
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 1
+    Y = 0.25
+    }
+  WIDTH = 9
+  HEIGHT = 8
+$!PLOTTYPE  = CARTESIAN3D
+$!FRAMENAME  = 'Frame 001' 
+$!ACTIVEFIELDZONES  =  [1]
+$!GLOBALRGB 
+  RANGEMIN = 0
+  RANGEMAX = 1
+$!GLOBALCONTOUR  1
+  VAR = 4
+  DEFNUMLEVELS = 19
+  LEGEND
+    {
+    XYPOS
+      {
+      X = 95
+      }
+    LABELINCREMENT = 100
+    }
+  COLORCUTOFF
+    {
+    RANGEMIN = 250
+    RANGEMAX = 750
+    }
+  COLORMAPFILTER
+    {
+    CONTINUOUSCOLOR
+      {
+      CMIN = 0
+      CMAX = 1000
+      }
+    }
+$!CONTOURLEVELS NEW
+  CONTOURGROUP = 1
+  RAWDATA
+19
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+600
+650
+700
+750
+800
+850
+900
+950
+$!GLOBALCONTOUR  2
+  VAR = 5
+  DEFNUMLEVELS = 19
+  LEGEND
+    {
+    XYPOS
+      {
+      X = 95
+      }
+    }
+  COLORCUTOFF
+    {
+    RANGEMIN = 0.249926580689
+    RANGEMAX = 0.749975526896
+    }
+  COLORMAPFILTER
+    {
+    CONTINUOUSCOLOR
+      {
+      CMIN = -9.78924144874E-005
+      CMAX = 1
+      }
+    }
+$!CONTOURLEVELS NEW
+  CONTOURGROUP = 2
+  RAWDATA
+19
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+0.5
+0.55
+0.6
+0.65
+0.7
+0.75
+0.8
+0.85
+0.9
+0.95
+$!GLOBALCONTOUR  3
+  VAR = 4
+  DEFNUMLEVELS = 19
+  LABELS
+    {
+    SHOW = YES
+    }
+  LEGEND
+    {
+    SHOW = YES
+    XYPOS
+      {
+      X = 95
+      }
+    LABELINCREMENT = 100
+    }
+  COLORCUTOFF
+    {
+    RANGEMIN = 250
+    RANGEMAX = 750
+    }
+  COLORMAPFILTER
+    {
+    CONTINUOUSCOLOR
+      {
+      CMIN = 0
+      CMAX = 1000
+      }
+    }
+$!CONTOURLEVELS NEW
+  CONTOURGROUP = 3
+  RAWDATA
+19
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+600
+650
+700
+750
+800
+850
+900
+950
+$!GLOBALCONTOUR  4
+  VAR = 4
+  DEFNUMLEVELS = 19
+  LEGEND
+    {
+    XYPOS
+      {
+      X = 95
+      }
+    LABELINCREMENT = 100
+    }
+  COLORCUTOFF
+    {
+    RANGEMIN = 250
+    RANGEMAX = 750
+    }
+  COLORMAPFILTER
+    {
+    CONTINUOUSCOLOR
+      {
+      CMIN = 0
+      CMAX = 1000
+      }
+    }
+$!CONTOURLEVELS NEW
+  CONTOURGROUP = 4
+  RAWDATA
+19
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+600
+650
+700
+750
+800
+850
+900
+950
+$!GLOBALSCATTER 
+  LEGEND
+    {
+    XYPOS
+      {
+      X = 95
+      }
+    }
+  REFSCATSYMBOL
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+$!FIELD  [1]
+  MESH
+    {
+    COLOR = RED
+    }
+  CONTOUR
+    {
+    CONTOURTYPE = FLOOD
+    COLOR = RED
+    USELIGHTINGEFFECT = YES
+    }
+  VECTOR
+    {
+    COLOR = RED
+    }
+  SCATTER
+    {
+    COLOR = RED
+    }
+  SHADE
+    {
+    COLOR = WHITE
+    }
+  BOUNDARY
+    {
+    SHOW = YES
+    COLOR = RED
+    }
+  POINTS
+    {
+    POINTSTOPLOT = SURFACENODES
+    }
+  SURFACES
+    {
+    SURFACESTOPLOT = KPLANES
+    }
+  VOLUMEMODE
+    {
+    VOLUMEOBJECTSTOPLOT
+      {
+      SHOWISOSURFACES = NO
+      SHOWSLICES = NO
+      SHOWSTREAMTRACES = NO
+      }
+    }
+$!THREEDAXIS 
+  XDETAIL
+    {
+    VARNUM = 1
+    }
+  YDETAIL
+    {
+    VARNUM = 2
+    }
+  ZDETAIL
+    {
+    VARNUM = 4
+    }
+$!VIEW FIT
+$!THREEDAXIS 
+  AXISMODE = INDEPENDENT
+  XYDEPXTOYRATIO = 1
+  DEPXTOYRATIO = 1
+  DEPXTOZRATIO = 500
+$!THREEDAXIS 
+  XDETAIL
+    {
+    RANGEMIN = -0.050000000000000003
+    RANGEMAX = 1.05
+    GRSPACING = 0.2
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'X direction distance (m)' 
+      OFFSET = 12
+      }
+    AXISLINE
+      {
+      EDGE = 2
+      }
+    }
+$!THREEDAXIS 
+  YDETAIL
+    {
+    RANGEMIN = -0.050000000000000003
+    RANGEMAX = 1.05
+    GRSPACING = 0.2
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Y direction distance (m)' 
+      OFFSET = 12
+      }
+    AXISLINE
+      {
+      EDGE = 3
+      }
+    }
+$!THREEDAXIS 
+  ZDETAIL
+    {
+    RANGEMIN = -50
+    RANGEMAX = 1050
+    GRSPACING = 200
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Pressure(Pa)' 
+      OFFSET = 15
+      }
+    AXISLINE
+      {
+      EDGE = 3
+      }
+    }
+$!GLOBALISOSURFACE 
+  ISOVALUE1 = 250
+  ISOVALUE2 = 500
+  ISOVALUE3 = 750
+  MARCHINGCUBEALGORITHM = CLASSICPLUS
+$!GLOBALSLICE 
+  BOUNDARY
+    {
+    SHOW = NO
+    }
+$!GLOBALTHREED 
+  AXISSCALEFACT
+    {
+    X = 1
+    Y = 1
+    Z = 0.0008
+    }
+  ROTATEORIGIN
+    {
+    X = 0.5
+    Y = 0.5
+    Z = 500
+    }
+  LIGHTSOURCE
+    {
+    INTENSITY = 75
+    BACKGROUNDLIGHT = 30
+    }
+  LINELIFTFRACTION = 0.2
+  SYMBOLLIFTFRACTION = 0.6
+  VECTORLIFTFRACTION = 0.7
+$!THREEDVIEW 
+  VIEWERPOSITION
+    {
+    X = 10.2749322513
+    Y = 10.3983276579
+    Z = 10760.7141941
+    }
+  VIEWWIDTH = 2.37165
+$!FIELDLAYERS 
+  SHOWMESH = NO
+  SHOWCONTOUR = YES
+  USETRANSLUCENCY = YES
+  USELIGHTINGEFFECT = NO
+$!ATTACHGEOM 
+  GEOMTYPE = CIRCLE
+  ANCHORPOS
+    {
+    X = -0.0365522377141
+    Y = -0.715716396528
+    }
+  RAWDATA
+4.4408920985E-016 
+$!SETSTYLEBASE CONFIG

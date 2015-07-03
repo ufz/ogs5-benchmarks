@@ -1,0 +1,52 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  Decay
+  SorbLin
+  DecaySorbnonlin
+  ConsTracer  
+ $GEO_TYPE
+  POLYLINE OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  0
+  86400
+  2160000
+  4320000
+  6480000
+  8640000
+#OUTPUT // domain nodes
+ $NOD_VALUES
+  HEAD
+  Decay
+  SorbLin
+  DecaySorbnonlin
+  ConsTracer      
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  0
+  86400
+  2160000
+  4320000
+  6480000
+  8640000
+#OUTPUT // BTC at 50 m
+ $NOD_VALUES
+  HEAD
+  Decay
+  SorbLin
+  DecaySorbnonlin
+  ConsTracer      
+ $GEO_TYPE
+  POINT POINT8
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 1
+#STOP
+

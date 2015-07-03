@@ -1,0 +1,13 @@
+GeoSys-MSP: Material Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $DENSITY
+    1 0.
+  $ELASTICITY
+    POISSION  0.3       
+    YOUNGS_MODULUS:
+     1 3.5e+10
+$BIOT_CONSTANT
+1.
+#STOP
+
+

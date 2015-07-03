@@ -1,0 +1,22 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $COUNT
+  1       ; count the number of particles
+  
+#PROCESS
+ $PCS_TYPE
+  RANDOM_WALK
+ $COUNT
+  1
+#STOP
+
+$NUM_TYPE
+HOMO_DISPERSION
+
+$NUM_TYPE
+HOMO_ADVECTION
+
+$NUM_TYPE
+HETERO_DISPERSION

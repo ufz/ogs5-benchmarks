@@ -1,0 +1,14 @@
+GeoSys-MAT-FP: Fluid Properties ------------------------------------
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+  $DENSITY
+  1 999.7026
+  $VISCOSITY
+  1 1.308E-03
+#STOP
+  $GRAVITY
+  0
+  
+    $GRAVITY
+  0

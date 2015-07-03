@@ -1,0 +1,10 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  AIR_FLOW
+ $NUM_TYPE
+  NEW
+#STOP
+
+ $ELEMENT_MATRIX_OUTPUT
+  1

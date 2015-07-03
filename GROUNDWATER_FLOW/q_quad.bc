@@ -1,0 +1,11 @@
+GeoSys-BC: Boundary Conditions ------------------------------------------------
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $PRIMARY_VARIABLE
+  HEAD
+ $GEO_TYPE
+  POLYLINE BC
+ $DIS_TYPE
+  CONSTANT 0
+#STOP

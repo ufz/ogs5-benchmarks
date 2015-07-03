@@ -1,0 +1,23 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $NUM_TYPE
+  NEW
+ $MEDIUM_TYPE 
+  CONTINUUM  0.95 
+ $ELEMENT_MATRIX_OUTPUT 
+0
+
+ 
+#STOP
+
+
+ #PROCESS
+ $PCS_TYPE
+  HEAT_TRANSPORT   
+ $NUM_TYPE
+   NEW
+ $MEDIUM_TYPE 
+  CONTINUUM  0.9917 
+  CONTINUUM  0.0083  

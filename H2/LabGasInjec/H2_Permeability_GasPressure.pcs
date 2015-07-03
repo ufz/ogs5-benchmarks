@@ -1,0 +1,7 @@
+GINA - Process
+#PROCESS
+  $PCS_TYPE
+    MULTI_PHASE_FLOW
+  $NUM_TYPE
+    NEW
+#STOP

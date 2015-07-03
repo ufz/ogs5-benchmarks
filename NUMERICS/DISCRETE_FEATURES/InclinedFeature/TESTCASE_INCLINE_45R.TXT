@@ -1,0 +1,21 @@
+######################################################################
+# Test case: Liquid flow in 2D elements with geometry area
+# 
+# Date: June 2009
+# Purpose: 
+# - Check incline, geometry area
+######################################################################
+
+Geometry: 10m*10m rectangle with rotation 45° along X axis(dZ=about 7m)
+Aaperture: 0.1m
+Hydraulic conductivity: K = rho*g/mu*k = 1E-3 (isotropic)
+Fluid velocity: 0.002m/s
+
+B.C.: 2MPa at the top
+S.T.: 
+i) aperture 0.1m: Q=A*v=1m*0.1m*0.002m/s=0.0002m^3/s at the bottom
+ii) aperture 1m: Q=A*v=1m*1m*0.002m/s=0.002m^3/s at the bottom
+
+Solution:
+dP = (dL/K*Q/A - dZ)*rho*g = (10.0/1E-3*2E-4/0.1 - 7)*1E+4 = 0.13E+6
+P_bottom = P_top + dP = 2.13 MPa

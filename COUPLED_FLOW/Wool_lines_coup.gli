@@ -1,0 +1,36 @@
+#POINTS
+ 0    0.00          0.0   10     $MD 100 $NAME POINT0
+ 1   12.20          0.0   9.878  $MD 100 $NAME POINT1
+ 2      5.49        0.0   9.9451 $MD 100 $NAME POINT2
+ 3      5.49        0.0   9.6451 $MD 100 $NAME POINT3
+#POLYLINE                                    
+ $ID
+  0
+ $NAME
+  UP
+ $TYPE
+  -1
+ $EPSILON
+  0.0001
+ $MAT_GROUP
+  -1
+ $POINTS
+ 0
+ 1                              
+#POLYLINE                              
+ $ID
+  0
+ $NAME
+  SATURATION
+ $TYPE
+  0
+ $EPSILON
+  0.0001
+ $MAT_GROUP
+  -1
+ $POINTS
+ 2
+ 3
+#STOP
+
+

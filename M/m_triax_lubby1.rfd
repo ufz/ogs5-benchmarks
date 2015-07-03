@@ -1,0 +1,13 @@
+GINA - RFD-Datei
+#PROJECT
+  svv
+#CURVE
+   0 0.0
+  20 1.0
+5000 1.0
+#CURVE
+   0 0.0
+  20 0.0
+1460 1.0
+5000 1.0
+#STOP

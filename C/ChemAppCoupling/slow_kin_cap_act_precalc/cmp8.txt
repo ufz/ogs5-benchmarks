@@ -1,0 +1,280 @@
+
+          ###################################################
+          ##                                               ##
+          ##               OpenGeoSys-Project              ##
+          ##                                               ##
+          ##  Helmholtz Center for Environmental Research  ##
+          ##    UFZ Leipzig - Environmental Informatics    ##
+          ##                  TU Dresden                   ##
+          ##              University of Kiel               ##
+          ##            University of Edinburgh            ##
+          ##         University of Tuebingen (ZAG)         ##
+          ##       Federal Institute for Geosciences       ##
+          ##          and Natural Resources (BGR)          ##
+          ##                                               ##
+          ##      Version 5.1.01(BG)  Date 17.03.2011      ##
+          ##                                               ##
+          ###################################################
+
+          File name (without extension): cmp8
+            
+---------------------------------------------
+Data input:
+GEOLIB::readGLIFile open stream from file cmp8.gli ... done
+read points from stream ...  ok, 3 points read
+read polylines from stream ...  ok, 1 polylines read
+PCSRead ... done, read 18 processes
+CPRead
+BCRead ... done, read 18 boundary conditions
+STRead
+ICRead
+OUTRead
+TIMRead
+MFPRead
+MSPRead
+MMPRead ... done, read 1 medium properties
+REIRead
+ChemApp_Read
+KinReact Read
+ Checking reaction data consistency for 2 specified reactions 
+NUMRead
+MSHRead: ASCII file
+CURRead
+DOMRead: no DDC file
+---------------------------------------------
+Create PCS processes
+.............................................
+Create: GROUNDWATER_FLOW
+ for HEAD  pcs_component_number -1
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+.............................................
+Create: MASS_TRANSPORT
+
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+
+Checking defined blob classes
+
+---------------------------------------------------------------
+   This program has been compiled with ChemApp version 614
+   ChemApp Module for Chemical Reaction Calculation...Start... 
+---------------------------------------------------------------
+THERMOCHEM DATA FILE --> E:\Programmierung\_GS\Benchmarks_CB_new_inputfiles\Engesgaard\2Kin\cmex.Engesgaard.all-species_volume_slow_kin_act_cap\result.1-3.dat
+ Error number: 107
+ The file                                                                     
+ "E:\Programmierung\_GS\Benchmarks_CB_new_inputfiles\Engesgaard\2Kin\cmex.Enge
+ The error appeared after a call of "TQOPNA"                                  
+  
+ Error number: 102
+ The input/output file has not been opened                                    
+ The error appeared after a call of "TQRFIL"                                  
+  
+ READ DATA FILE ERROR !!! STOP.
+

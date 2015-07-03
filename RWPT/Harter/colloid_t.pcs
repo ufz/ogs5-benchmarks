@@ -1,0 +1,34 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+ $APP_TYPE
+  2       ; for sorption-desorption and decay processes
+ $COUNT
+  1       ; count the number of particles
+ 
+#PROCESS
+ $PCS_TYPE
+  FLUID_MOMENTUM
+ $APP_TYPE
+  2
+ $COUNT
+  1
+
+#PROCESS
+ $PCS_TYPE
+  RANDOM_WALK
+ $APP_TYPE
+  2
+ $COUNT
+  1
+#STOP
+
+$NUM_TYPE
+HOMO_DISPERSION
+
+$NUM_TYPE
+HOMO_ADVECTION
+
+$NUM_TYPE
+HETERO_DISPERSION

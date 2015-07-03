@@ -1,0 +1,39 @@
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+  BENCHMARK: PLASTIC DEFORMATION: CAM-CLAY MODEL          
+
+
+#CURVES 
+0.0 -50.0
+110.0    -200.0
+#CURVES 
+0.0 0.0
+400.0    400
+500	 500
+600      600
+2000	2000
+
+#CURVES  ;3 FRICTION
+-100  20
+0 20
+100 20
+
+#CURVES ;4 UNIAXI COMP
+0.5	1.42E7
+0.55	1.22E7
+0.6	1.01E7
+0.65	8.08E6
+0.7	6.51E6
+0.75	5.56E6
+0.8	5.36E6
+0.85	6.00E6
+0.9	7.51E6
+0.95	9.86E6
+1	1.30E7
+
+
+#CURVES  ;5 TENSION
+-100  6.67e6
+100 6.67e6
+
+#STOP

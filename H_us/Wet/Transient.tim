@@ -1,0 +1,14 @@
+GeoSys-TIM: TimeStepping ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $TIME_UNIT
+  HOUR
+ $TIME_START
+  0.0
+ $TIME_END
+  2880           				
+ $TIME_STEPS
+  2880 0.5
+  3000  1
+#STOP

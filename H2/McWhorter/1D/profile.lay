@@ -1,0 +1,430 @@
+#!MC 1000
+$!VarSet |LFDSFN1| = '"mcwt_ply_Profile_t0.tec"'
+$!VarSet |LFDSVL1| = '"DIST" "PRESSURE1" "PRESSURE2" "PRESSURE_W" "SATURATION1" "SATURATION2" "VELOCITY_X1" "VELOCITY_Y1" "VELOCITY_X2" "VELOCITY_Y2"'
+$!VarSet |LFDSFN2| = '"ana_1000s.txt"'
+$!VarSet |LFDSVL2| = '"DIST" "PRESSURE1" "PRESSURE2" "PRESSURE_W" "SATURATION1" "SATURATION2" "VELOCITY_X1" "VELOCITY_Y1" "VELOCITY_X2" "VELOCITY_Y2" "V1" "V2"'
+$!VarSet |LFDSFN3| = '"ana_4000s.txt"'
+$!VarSet |LFDSVL3| = '"DIST" "PRESSURE1" "PRESSURE2" "PRESSURE_W" "SATURATION1" "SATURATION2" "VELOCITY_X1" "VELOCITY_Y1" "VELOCITY_X2" "VELOCITY_Y2" "V1" "V2"'
+$!VarSet |LFDSFN4| = '"ana_7000s.txt"'
+$!VarSet |LFDSVL4| = '"DIST" "PRESSURE1" "PRESSURE2" "PRESSURE_W" "SATURATION1" "SATURATION2" "VELOCITY_X1" "VELOCITY_Y1" "VELOCITY_X2" "VELOCITY_Y2" "V1" "V2"'
+$!VarSet |LFDSFN5| = '"ana_10000s.txt"'
+$!VarSet |LFDSVL5| = '"DIST" "PRESSURE1" "PRESSURE2" "PRESSURE_W" "SATURATION1" "SATURATION2" "VELOCITY_X1" "VELOCITY_Y1" "VELOCITY_X2" "VELOCITY_Y2" "V1" "V2"'
+$!SETSTYLEBASE FACTORY
+$!PAPER 
+  BACKGROUNDCOLOR = WHITE
+  ISTRANSPARENT = YES
+  ORIENTPORTRAIT = NO
+  SHOWGRID = YES
+  SHOWRULER = YES
+  SHOWPAPER = YES
+  PAPERSIZE = LETTER
+  PAPERSIZEINFO
+    {
+    LETTER
+      {
+      WIDTH = 8.5
+      HEIGHT = 11
+      LEFTHARDCLIPOFFSET = 0.125
+      RIGHTHARDCLIPOFFSET = 0.125
+      TOPHARDCLIPOFFSET = 0.125
+      BOTTOMHARDCLIPOFFSET = 0.125
+      }
+    }
+  RULERSPACING = ONEINCH
+  PAPERGRIDSPACING = HALFINCH
+  REGIONINWORKAREA
+    {
+    X1 = -0.05
+    Y1 = -0.05
+    X2 = 11.05
+    Y2 = 8.55
+    }
+$!COLORMAP 
+  CONTOURCOLORMAP = SMRAINBOW
+$!COLORMAPCONTROL RESETTOFACTORY
+### Frame Number 1 ###
+$!READDATASET  '|LFDSFN1|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  RESETSTYLE = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL1|' 
+$!REMOVEVAR |LFDSVL1|
+$!REMOVEVAR |LFDSFN1|
+$!READDATASET  '|LFDSFN2|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL2|' 
+$!REMOVEVAR |LFDSVL2|
+$!REMOVEVAR |LFDSFN2|
+$!READDATASET  '|LFDSFN3|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL3|' 
+$!REMOVEVAR |LFDSVL3|
+$!REMOVEVAR |LFDSFN3|
+$!READDATASET  '|LFDSFN4|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL4|' 
+$!REMOVEVAR |LFDSVL4|
+$!REMOVEVAR |LFDSFN4|
+$!READDATASET  '|LFDSFN5|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL5|' 
+$!REMOVEVAR |LFDSVL5|
+$!REMOVEVAR |LFDSFN5|
+$!FRAMELAYOUT 
+  SHOWBORDER = NO
+  ISTRANSPARENT = YES
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 1
+    Y = 0.25
+    }
+  WIDTH = 9
+  HEIGHT = 8
+$!PLOTTYPE  = XYLINE
+$!FRAMENAME  = 'Frame 001' 
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1-8]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    TEXTSHAPE
+      {
+      FONT = TIMES
+      }
+    BOX
+      {
+      BOXTYPE = NONE
+      }
+    XYPOS
+      {
+      X = 79.192
+      Y = 80.793
+      }
+    }
+$!LINEMAP  [1]
+  NAME = '1000s' 
+  ASSIGN
+    {
+    ZONE = 3
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [2]
+  NAME = '4000s' 
+  ASSIGN
+    {
+    ZONE = 5
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM11
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [3]
+  NAME = '7000s' 
+  ASSIGN
+    {
+    ZONE = 6
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM27
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [4]
+  NAME = '10000s' 
+  ASSIGN
+    {
+    ZONE = 7
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM29
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [5]
+  NAME = '1000s' 
+  ASSIGN
+    {
+    ZONE = 8
+    XAXISVAR = 11
+    YAXISVAR = 12
+    }
+  LINES
+    {
+    COLOR = RED
+    LINEPATTERN = DOTTED
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [6]
+  NAME = '4000s' 
+  ASSIGN
+    {
+    ZONE = 9
+    XAXISVAR = 11
+    YAXISVAR = 12
+    }
+  LINES
+    {
+    COLOR = CUSTOM11
+    LINEPATTERN = DOTTED
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [7]
+  NAME = '7000s' 
+  ASSIGN
+    {
+    ZONE = 10
+    XAXISVAR = 11
+    YAXISVAR = 12
+    }
+  LINES
+    {
+    COLOR = CUSTOM27
+    LINEPATTERN = DOTTED
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [8]
+  NAME = '10000s' 
+  ASSIGN
+    {
+    ZONE = 11
+    XAXISVAR = 11
+    YAXISVAR = 12
+    }
+  LINES
+    {
+    COLOR = CUSTOM29
+    LINEPATTERN = DOTTED
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    RANGEMIN = 0
+    RANGEMAX = 3
+    GRSPACING = 0.5
+    TICKS
+      {
+      LINETHICKNESS = 0.1
+      }
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONT = COURIER
+        }
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'X (m)' 
+      TEXTSHAPE
+        {
+        FONT = COURIER
+        HEIGHT = 3.6
+        }
+      }
+    AXISLINE
+      {
+      LINETHICKNESS = 0.1
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = 0
+    RANGEMAX = 1
+    GRSPACING = 0.2
+    TICKS
+      {
+      LINETHICKNESS = 0.1
+      }
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONT = COURIER
+        }
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Water Saturation' 
+      TEXTSHAPE
+        {
+        FONT = COURIER
+        HEIGHT = 3.6
+        }
+      OFFSET = 10
+      }
+    AXISLINE
+      {
+      LINETHICKNESS = 0.1
+      }
+    }
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 52.0641611053
+    Y = 79.0038490809
+    }
+  TEXTSHAPE
+    {
+    FONT = TIMES
+    }
+  TEXT = 'Solid line: Present results\nDotted line: Analytical solution' 
+$!SETSTYLEBASE CONFIG

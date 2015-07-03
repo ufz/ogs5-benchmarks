@@ -1,0 +1,30 @@
+Gina - TIM-Datei
+#TIME_STEPPING
+  $PCS_TYPE
+    LIQUID_FLOW
+  $TIME_STEPS
+    100 0.001
+    90 0.01
+    100 0.1
+    300 1
+  $TIME_UNIT
+    DAY
+  $TIME_END
+    300
+  $TIME_START
+    0.0
+#TIME_STEPPING
+  $PCS_TYPE
+    MASS_TRANSPORT
+  $TIME_STEPS
+    100 0.001
+    90 0.01
+    100 0.1
+    300 1
+  $TIME_UNIT
+    DAY
+  $TIME_END
+    300
+  $TIME_START
+    0.0
+#STOP

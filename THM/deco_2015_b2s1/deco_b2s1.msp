@@ -1,0 +1,171 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+    
+; MG 0 - buffer ===================================================================================
+#SOLID_PROPERTIES
+  $NAME 
+  BUFFER
+
+ $DENSITY
+  1 2.68E3
+ 
+$THERMAL
+  EXPANSION 1.0E-6
+  CAPACITY:
+  1 341.
+  CONDUCTIVITY:
+  5 273.15 ; type: read from S-T-Conductivity table, T_0: reference temperature
+           ; T_0 will be added to the calculated Temperature before the look up table is used
+
+$ELASTICITY
+POISSION 0.3
+YOUNGS_MODULUS
+1 3.7e7
+
+$SWELLING_PRESSURE_TYPE
+   2 5e5 ; type2; max swelling pressure
+; type 1: dstress[i] -= 2.0 * S_Water * dS * smat->Max_SwellingPressure;
+; type 2: dstress[i] -= dS * smat->Max_SwellingPressure; // LBNL's model
+
+
+; BISHOP-BIOT Model:
+; Sigma_tot = Sigma_eff - Biot*bishop(S)*p_w
+; model_1: bishop=S_eff*coeff
+; model_2: bishop=S_eff^coeff, coeff
+; model_3: bishop=0.0, if p<coeff
+;                =1.0  else
+$BIOT_CONSTANT
+    1.0
+BISHOP_COEFFICIENT
+;1 0.0 ; model_1: bishop=S_eff*coeff, coeff
+;2 10  ; model_2: bishop=S_eff^coeff, coeff 
+3  0.0  ; model_3: bishop=0.0 or 1.0
+
+ $GRAVITY_CONSTANT
+  0
+  
+$SOLID_BULK_MODULUS
+1.e-9
+  
+; MG 1 - rock ===================================================================================
+#SOLID_PROPERTIES
+  $NAME 
+  ROCK
+
+ $DENSITY
+  1 2.454e3
+ 
+$THERMAL
+  EXPANSION 1.33E-5
+  CAPACITY:
+  1 626.
+  CONDUCTIVITY:
+  1 0.579
+;  5 273.15 ; type: read from S-T-Conductivity table, T_0: reference temperature
+
+$ELASTICITY
+POISSION 0.21
+YOUNGS_MODULUS
+1 1.82e9
+
+; BISHOP-BIOT Model:
+; Sigma_tot = Sigma_eff - Biot*bishop(S)*p_w
+
+ $BIOT_CONSTANT
+    1.0
+BISHOP_COEFFICIENT
+;1 0.0 ; model_1: bishop=S*coeff, coeff
+;2 10  ; model_2: bishop=S^coeff, coeff 
+3 0.0
+ $GRAVITY_CONSTANT
+  0
+
+$SOLID_BULK_MODULUS
+1.e-9
+
+#STOP
+
+
+
+   $PLASTICITY
+   MOHR-COULOMB  
+   0.01          //cohesion
+   16.6           //friction angle
+   0           //dilation angle          
+   0.05e6       //tensile strength
+   0            //curve number for strain hardening of cohesion
+   0            //curve number for strain hardening of friction angle
+   
+  $PLASTICITY
+    CAM-CLAY
+    0.63     //M slope of the critical line
+    0.27   // Lamda, the virgin compression index  
+    0.16   //Kappa, swelling index
+    0.0   //p0, preconsolidation pressure 
+    0.6750   // e0, initial void ratio 
+    1.0     //OCR 
+     0.0 //Initial stress_xx
+     0.0 //Initial stress_yy
+     0.0 //Initial stress_zz      
+      0.0 // Minimum haydrostatic pressure   
+
+			else if(sub_line.find("CAM-CLAY") != string::npos)
+			{
+				Plasticity_type = 3;
+				Size = 10;
+				/*
+				   Material parameters for Cam-Clay model
+				   i: parameter
+				   0 : M: slope of the critical line
+				   1 : Lamda, the virgin compression index
+				   2 : Kappa, swelling index
+				   3 : p0, preconsolidation pressure
+				   4 : e0, initial void ratio
+				   5 : OCR
+				   6 : Initial stress_xx
+				   7 : Initial stress_yy
+				   8 : Initial stress_zz
+				   9 : Mimimum p: ( stress_xx + stress_yy + stress_zz )/3
+				 */
+			}
+				if(Plasticity_type == 11)
+					Size = 6;
+				/*
+				   Material parameters for Cam-Clay model
+				   i : parameter
+				   0 : The initial yield stress
+				   1 : Plastic hardening parameter
+				   2 : Internal frection angle
+				   3 : Dilatancy angle
+				   4 : Localized softening modulus
+				   5 : Tensile strength //WX
+				 */
+
+
+
+
+
+
+
+; MG 0 - overpack ===================================================================================
+#SOLID_PROPERTIES
+  $NAME 
+  OVERPACK
+ 
+ $DENSITY
+ 1 0.0
+$THERMAL
+  EXPANSION 1.64e-6
+  CAPACITY:
+  1 460.0.
+  CONDUCTIVITY:
+  1 53.0
+ 
+$ELASTICITY
+POISSION 0.3
+YOUNGS_MODULUS
+1 2.0e5
+
+ $BIOT_CONSTANT
+    1.0
+ $GRAVITY_CONSTANT
+  0    

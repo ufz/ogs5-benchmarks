@@ -1,0 +1,58 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+
+
+#SOLID_PROPERTIES
+  $DENSITY
+  1 0.0
+ 
+  $ELASTICITY
+    POISSION   0.27       
+    YOUNGS_MODULUS
+   10  10.5e9 5e9 0.27 2.47992e9 0.70710678118654 0 0.70710678118654
+  $PLASTICITY
+   MOHR-COULOMB  
+   2E6
+   20
+   0
+   6.67e6
+   -1
+   -1
+
+  $MICRO_STRUCTURE_PLAS
+  MICRO_STRUCTURE_TENSOR 1 1 0.5
+  BEDDING_NORM 0.70710678118654 0 0.70710678118654
+  UNIAXI_COMP_CURVE 2 70820400 -171383200 113588800
+  TENSION_CURVE 1 0 2e6    
+ #STOP
+    
+ 0.70710678118654 0 0.70710678118654
+   
+    
+ $ELASTICITY
+    POISSION   0.4        
+    YOUNGS_MODULUS
+      1 2.0e+2  
+  $PLASTICITY
+    DRUCKER-PRAGER
+     2.96925e14    // Initial yield stress
+      0.8165e+5   // Platstic hardening modulus  
+      -0.233345   // Internal frictional angle 
+      -0.141421   // Dilantacy angle
+     -1.0e6   //-1.0e+6   // Localized hardening modulus        
+   
+ $ELASTICITY
+    POISSION  0.3     
+  $PLASTICITY
+    CAM-CLAY
+    1.2     //M
+    0.2   // Vergin compression index  
+    0.02   //Internal frictional angle 
+    60.0   //Initial preconsolidation pressure 
+    1.5   // Initial void ratio  
+    1.0     //OCR 
+     -50.0 //Initial stress_xx
+     -50.0 //Initial stress_yy
+     -50.0 //Initial stress_zz      
+      0.0 // Minimum haydrostatic pressure    
+  
+ 

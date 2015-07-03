@@ -1,0 +1,47 @@
+GeoSys-MAT-FP: Fluid Properties ------------------------------------
+
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+ $PCS_TYPE
+  PRESSURE1
+ $DENSITY
+  1 1E+03
+ $VISCOSITY
+  1 1.307E-3 
+ $PHASE_DIFFUSION
+  1 7.66E-10         ; m2/s P. Grathwohl ->ACHTUNG, abhängig von Größe des transportierten Moleküls
+  
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  GAS
+ $PCS_TYPE
+  SATURATION2
+ $DENSITY
+  1 1E+03
+ $VISCOSITY
+  1 1.307E-3 
+ $PHASE_DIFFUSION
+  1 7.66E-10         ; m2/s P. Grathwohl ->ACHTUNG, abhängig von Größe des transportierten Moleküls
+
+#STOP
+
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+ $PCS_TYPE
+  HEAD
+ $DENSITY
+  1 0.99970E+03    ; kg/m3 Tabellenwert 10°
+ $VISCOSITY
+  1 1.307E-3       ; kg/m/s Tabellenwert 10° (dyn. Viskosity)
+ $HEAT_CAPACITY
+  1 0.0
+ $HEAT_CONDUCTIVITY
+  1 0.0
+ $PHASE_DIFFUSION
+  1 7.66E-10         ; m2/s P. Grathwohl ->ACHTUNG, abhängig von Größe des transportierten Moleküls
+
+
+
+

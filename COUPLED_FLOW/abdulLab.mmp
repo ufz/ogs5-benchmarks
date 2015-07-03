@@ -1,0 +1,666 @@
+GeoSys-MMP: Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.34
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 5.100E-12
+ $PERMEABILITY_SATURATION
+  4  0.0  1.    0.8
+ $CAPILLARY_PRESSURE
+  4  2.4
+ $MASS_DISPERSION
+  1 0.0 0.0
+ $TORTUOSITY
+  1 0.001
+
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.0
+ $STORAGE
+  1 0
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 5.e-5
+ $MASS_DISPERSION
+  1 0.0 0.0
+ $TORTUOSITY
+  1 0.001
+
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  1
+ $SURFACE_FRICTION
+  5.39 0.5 0.66667
+ $RILL
+  5.e-4 2.5e-4
+ $WIDTH
+  1.
+ $POROSITY
+  1  1.
+ $MASS_DISPERSION
+  1 0.0 0.0
+ $TORTUOSITY
+  1 0.001
+#STOP
+
+$PERMEABILITY_SATURATION
+  3  0.  1.    0.8
+ $CAPILLARY_PRESSURE
+  4  2.4
+
+
+ ISOTROPIC 3.56779E-12
+ 
+
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2                             
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.34
+ $TORTUOSITY
+  1 1.
+ $MASS_DISPERSION
+  1 0.0 0.0
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  1.0
+ $TORTUOSITY
+  1 1.
+ $MASS_DISPERSION
+  1 0.0 0.0
+ $RILL
+  0.0 0.0 0.0
+#STOP
+
+
+
+
+
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.34
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 3.56779E-12
+ $PERMEABILITY_SATURATION
+  3  0.  1.    0.8
+ $CAPILLARY_PRESSURE
+  4  2.4
+ $TORTUOSITY
+  1 1.
+ $MASS_DISPERSION
+  1 0.0 0.0
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.34
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 3.56779E-12
+ $PERMEABILITY_SATURATION
+  3  0.  1.    0.8
+ $CAPILLARY_PRESSURE
+  4  2.4
+ $TORTUOSITY
+  1 1.
+ $MASS_DISPERSION
+  1 0.0 0.0
+#STOP
+
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.34
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 3.56779E-12
+ $PERMEABILITY_SATURATION
+  3  0.  1.    0.875
+ $CAPILLARY_PRESSURE
+  4  1.5
+#MEDIUM_PROPERTIES
+ $SURFACE_FRICTION
+  5.39 0.5 0.66667
+ $RILL
+  1.e-3 5.e-4 1.e-3
+ $WIDTH
+  1.
+#STOP
+
+
+
+
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.34
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 3.56779E-9
+ $PERMEABILITY_SATURATION
+  0   3
+ $CAPILLARY_PRESSURE
+  0   2
+#MEDIUM_PROPERTIES
+ $SURFACE_FRICTION
+  5.39 0.5 0.66667
+ $RILL
+  1.e-3 5.e-4
+ $WIDTH
+  1.
+#STOP
+
+
+
+ 
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.34
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 3.56779E-12
+ $PERMEABILITY_SATURATION
+  4  0.  1.    0.8
+ $CAPILLARY_PRESSURE
+  4  2.4
+#MEDIUM_PROPERTIES
+ $SURFACE_FRICTION
+  5.39 0.5 0.66667
+ $RILL
+  1.e-3 5.e-4
+ $WIDTH
+  1.
+#STOP
+
+
+
+
+
+
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  3
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.42
+ $TORTUOSITY
+  1  1.000000e+000
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 5.606E-12
+ $PERMEABILITY_SATURATION
+  4  0.053  1.    0.75
+ $CAPILLARY_PRESSURE
+  4  6.
+#MEDIUM_PROPERTIES
+ $SURFACE_FRICTION
+  1333333 1. 2.
+ $RILL
+  1.e-3 5.e-4
+ $WIDTH
+  1.
+#STOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

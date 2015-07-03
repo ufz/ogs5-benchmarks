@@ -1,0 +1,51 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  PS_GLOBAL
+ $TIME_END
+  0.4
+ $TIME_START
+  0.0
+ $TIME_STEPS
+  80  0.005
+#STOP  
+
+
+#TIME_STEPPING
+ $PCS_TYPE
+  PS_GLOBAL
+ $TIME_END
+  0.242
+ $TIME_START
+  0.0
+ $TIME_CONTROL
+PI_AUTO_STEP_SIZE     
+ 1 1.0e-3 1.0e-9 0.0001 
+#STOP  
+ $TIME_STEPS
+  80  0.005
+#STOP   
+
+
+
+ $TIME_CONTROL
+PI_AUTO_STEP_SIZE     
+ 1 1.0e-3 1.0e-9 0.0001 
+#STOP  
+  
+  
+  
+  
+ 
+  
+  
+$TIME_CONTROL
+PI_AUTO_STEP_SIZE     
+ 1 1.0e-3 1.0e-9 0.0001 
+#STOP  
+  
+
+
+
+
+

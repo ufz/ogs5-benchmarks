@@ -1,0 +1,12 @@
+GeoSys-MMP: Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+$SURFACE_FRICTION
+  66.67 0.5 0.67
+ $RILL_HEIGHT
+  0.0 0.0
+#MEDIUM_PROPERTIES
+ $SURFACE_FRICTION
+   6.67 0.5 0.67
+ $RILL_HEIGHT
+   0.0 0.0 
+#STOP  

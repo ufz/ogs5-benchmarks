@@ -1,0 +1,17 @@
+GeoSys-OUT: Output ------------------------------------------------
+
+#OUTPUT // single files
+ $NOD_VALUES
+  PRESSURE1
+  SATURATION1
+  SATURATION2
+ $GEO_TYPE
+  POLYLINE OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 1
+
+
+#STOP
+

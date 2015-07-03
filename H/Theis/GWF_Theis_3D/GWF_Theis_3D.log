@@ -1,0 +1,1218 @@
+
+          ###################################################
+          ##                                               ##
+          ##               OpenGeoSys-Project              ##
+          ##                                               ##
+          ##  Helmholtz Center for Environmental Research  ##
+          ##    UFZ Leipzig - Environmental Informatics    ##
+          ##                  TU Dresden                   ##
+          ##              University of Kiel               ##
+          ##            University of Edinburgh            ##
+          ##         University of Tuebingen (ZAG)         ##
+          ##       Federal Institute for Geosciences       ##
+          ##          and Natural Resources (BGR)          ##
+          ##                                               ##
+          ##      Version 5.3.7(JOD)  Date 18.12.2012      ##
+          ##                                               ##
+          ###################################################
+
+          File name (without extension): GWF_Theis_3D
+            
+---------------------------------------------
+Data input:
+GEOLIB::readGLIFile open stream from file GWF_Theis_3D.gli ... done
+read points from stream ...  ok, 7 points read
+read polylines from stream ...  ok, 10 polylines read
+read surfaces from stream ... triangulation of surface: ... done - 2 triangles 
+triangulation of surface: ... done - 1 triangles 
+triangulation of surface: ... done - 1 triangles 
+triangulation of surface: ... done - 2 triangles 
+triangulation of surface: ... done - 2 triangles 
+ ok, 5 surfaces read
+PCSRead ... done, read 1 processes
+MFPRead
+BCRead ... done, read 1 boundary conditions
+STRead ... done, read 1 source terms
+ICRead
+OUTRead
+TIMRead
+MMPRead ... done, read 1 medium properties
+NUMRead
+MSHRead:  ASCII file
+Executing ConstructGrid() ...  done.
+DOMRead: no DDC file
+---------------------------------------------
+Create PCS processes
+.............................................
+Create: GROUNDWATER_FLOW
+ for HEAD  pcs_component_number -1
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+	[BC] set BC took 0
+	[BC] set transient BC took 0
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+RFR: no restart data
+Checking output data 
+
+
+***Start time steps
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+
+#############################################################
+Time step: 1|  Time: 1e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 10/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 5.94519
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 2|  Time: 2e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 10/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 1.3051
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 3|  Time: 3e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 10/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.635238
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 4|  Time: 4e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 9/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.416822
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 5|  Time: 5e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 9/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.31012
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 6|  Time: 6e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 9/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.24691
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 7|  Time: 7e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 9/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.205103
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 8|  Time: 8e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 9/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.175402
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 9|  Time: 9e-005|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 9/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.153214
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 10|  Time: 0.0001|  Time step size: 1e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 9/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.136008
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 11|  Time: 0.00019|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 21/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.71296
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 12|  Time: 0.00028|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 20/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.479605
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 13|  Time: 0.00037|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 20/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.354193
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 14|  Time: 0.00046|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 18/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.278303
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 15|  Time: 0.00055|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 18/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.228234
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 16|  Time: 0.00064|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 18/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.193016
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 17|  Time: 0.00073|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 18/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.167015
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 18|  Time: 0.00082|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 17/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.147084
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 19|  Time: 0.00091|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 17/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.131347
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 20|  Time: 0.001|  Time step size: 9e-005
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 17/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.118618
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 21|  Time: 0.0019|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 37/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.700967
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 22|  Time: 0.0028|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 35/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.474766
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 23|  Time: 0.0037|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 35/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.351825
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 24|  Time: 0.0046|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 35/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.276963
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 25|  Time: 0.0055|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 35/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.227389
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 26|  Time: 0.0064|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 35/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.19244
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 27|  Time: 0.0073|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 34/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.166598
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 28|  Time: 0.0082|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 33/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.14677
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 29|  Time: 0.0091|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 33/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.131101
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 30|  Time: 0.01|  Time step size: 0.0009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 35/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.118421
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 31|  Time: 0.019|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 55/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.700213
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 32|  Time: 0.028|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 55/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.474411
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 33|  Time: 0.037|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 55/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.35163
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 34|  Time: 0.046|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 55/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.276842
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 35|  Time: 0.055|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 54/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.227308
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 36|  Time: 0.064|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 55/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.192382
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 37|  Time: 0.073|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 55/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.166555
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 38|  Time: 0.082|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 55/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.146736
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 39|  Time: 0.091|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 56/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.131074
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 40|  Time: 0.1|  Time step size: 0.009
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 57/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.118398
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 41|  Time: 0.19|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 80/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.700126
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 42|  Time: 0.28|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 90/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.474369
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 43|  Time: 0.37|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 83/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.351606
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 44|  Time: 0.46|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 88/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.276827
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 45|  Time: 0.55|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 82/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.227297
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 46|  Time: 0.64|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 87/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.192372
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 47|  Time: 0.73|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 88/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.166544
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 48|  Time: 0.82|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 88/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.14672
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 49|  Time: 0.91|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 86/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.131049
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 50|  Time: 1|  Time step size: 0.09
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 86/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.118358
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 51|  Time: 1.9|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 100/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.686899
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 52|  Time: 2.8|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 98/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.441592
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 53|  Time: 3.7|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 104/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.298562
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 54|  Time: 4.6|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 99/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.206628
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 55|  Time: 5.5|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 98/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.144516
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 56|  Time: 6.4|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 97/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.10155
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 57|  Time: 7.3|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 96/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.0715075
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 58|  Time: 8.2|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 97/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.050399
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 59|  Time: 9.1|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 94/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.0355362
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+
+#############################################################
+Time step: 60|  Time: 10|  Time step size: 0.9
+
+      ================================================
+    ->Process 0: GROUNDWATER_FLOW
+      ================================================
+      Assembling equation system...
+      Calling linear solver...
+	  SpBICGSTAB iteration: 105/1000 
+      -->LINEAR solution complete. 
+         PCS error DOF[0]: 0.0250609
+
+This step is accepted.
+Data output: Domain
+Data output: Breakthrough curves - OBS
+
+#############################################################
+
+----------------------------------------------------
+
+For process: GROUNDWATER_FLOW
+Accepted time steps:                60
+Rejected time steps:                0
+
+----------------------------------------------------
+GetRFProcessProcessingAndActivation - to be removed
+
+^O^: Your simulation is terminated normally ^O^ 
+Simulation time: 8s

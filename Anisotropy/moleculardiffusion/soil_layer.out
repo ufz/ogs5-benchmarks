@@ -1,0 +1,12 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $NOD_VALUES
+  PRESSURE1
+  Tracer
+ $GEO_TYPE
+  DOMAIN 
+ $TIM_TYPE
+  STEPS 1
+ $DAT_TYPE
+  PVD
+#STOP

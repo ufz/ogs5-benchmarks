@@ -1,0 +1,17 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT 
+$NOD_VALUES
+  PRESSURE1
+  TEMPERATURE1
+  TEMPERATURE2
+  CONCENTRATION1
+$MFP_VALUES
+	DENSITY
+$GEO_TYPE
+  DOMAIN
+$DAT_TYPE
+  PVD
+$TIM_TYPE
+  STEPS 50
+#STOP
+

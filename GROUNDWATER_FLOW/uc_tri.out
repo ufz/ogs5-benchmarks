@@ -1,0 +1,13 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NOD_VALUES
+  HEAD
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS: 1
+#STOP

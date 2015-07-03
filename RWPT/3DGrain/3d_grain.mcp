@@ -1,0 +1,13 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+#COMPONENT_PROPERTIES
+ $NAME
+  vapor
+ $MOBILE 
+  1         ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1e-15
+ $DECAY
+  1  0.0  1.0
+ $ISOTHERM
+  5  0.01  0.1  0.001
+#STOP

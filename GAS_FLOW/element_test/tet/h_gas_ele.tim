@@ -1,0 +1,11 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  AIR_FLOW
+ $TIME_STEPS
+  100 3.000000e+002
+ $TIME_END
+  3e+4
+ $TIME_START
+  0.0
+#STOP

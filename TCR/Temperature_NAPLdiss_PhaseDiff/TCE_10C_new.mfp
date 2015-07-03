@@ -1,0 +1,39 @@
+GeoSys-MAT-FP: Fluid Properties
+
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+ $PCS_TYPE
+  PRESSURE1
+ $DENSITY
+  1 999.7					; temp. Abhängigkeit		!!!!!!!!
+ $VISCOSITY
+  1 1.307E-3				; temp. Abhängigkeit		!!!!!!!!!!
+ $PHASE_DIFFUSION
+ ;case  A       B           after Yaws et al., 1976
+  2   -1.4642  -1055.1		;m2/s		temp. dependent
+ $THERMAL
+  CAPACITY
+   1 4.192e+003
+  CONDUCTIVITY
+   1 0.587   
+  
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  GAS
+ $PCS_TYPE
+  SATURATION2
+ $DENSITY
+  1 1464.0					; temp. Abhängigkeit
+ $VISCOSITY
+  1 5.5E-04					; temp. Abhängigkeit
+ $PHASE_DIFFUSION
+  1 6.45E-10		;m2/s		; temp. Abhängigkeit
+ $THERMAL
+  CAPACITY
+   1 4.192e+003
+  CONDUCTIVITY
+   1 0.587  
+
+#STOP
+  

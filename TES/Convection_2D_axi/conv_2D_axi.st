@@ -1,0 +1,15 @@
+GeoSys-ST: Source Terms ------------------------------------------------
+
+#SOURCE_TERM
+$PCS_TYPE
+TES
+$PRIMARY_VARIABLE
+TEMPERATURE1
+$GEO_TYPE
+POLYLINE WALL
+$DIS_TYPE
+TRANSFER_SURROUNDING 1.0 293.0
+
+#STOP
+
+

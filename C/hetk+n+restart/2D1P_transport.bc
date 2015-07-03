@@ -1,0 +1,68 @@
+GeoSys-BC: Boundary Conditions ------------------------------------------------
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $PRIMARY_VARIABLE
+  HEAD
+ $GEO_TYPE
+  POLYLINE L_BC
+ $DIS_TYPE
+  CONSTANT 10
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $PRIMARY_VARIABLE
+  Tracer1
+ $GEO_TYPE
+  POLYLINE BCTracer1
+ $DIS_TYPE
+  CONSTANT 1
+  
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $PRIMARY_VARIABLE
+  Tracer1
+ $GEO_TYPE
+  POLYLINE BCTracer2
+ $DIS_TYPE
+  CONSTANT 1
+  
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $PRIMARY_VARIABLE
+  Tracer1
+ $GEO_TYPE
+  POLYLINE BCWater3
+ $DIS_TYPE
+  CONSTANT 0.0  
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $PRIMARY_VARIABLE
+  Tracer1
+ $GEO_TYPE
+  POLYLINE BCWater2
+ $DIS_TYPE
+  CONSTANT 0.0  
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $PRIMARY_VARIABLE
+  Tracer1
+ $GEO_TYPE
+  POLYLINE BCWater1
+ $DIS_TYPE
+  CONSTANT 0.0  
+#STOP
+
+
+;benötigt werden BC für die einzelnen Prozesse Strömung, Transport; 
+;Anzahl der Transportprozesse = Anzahl der Komponentn
+;Primärvariable für Strömungsprozess = Phasnedruck: PRESSURE1 (Pa)
+;Primärvariable für Transportprozess = Name (d.h. eigentlich Konzentration) der Species
+;BC können an geometrischen Objekten definiert werden: Point, Polyline, Surface, ... diese sind im .gli file definiert
+;$DIS_TYPE bestimmt die Art der RB, siehe Handbuch
+;Neumann-BC bzw. Flüsse über den Rand werden als Source term definiert, .st -file
+

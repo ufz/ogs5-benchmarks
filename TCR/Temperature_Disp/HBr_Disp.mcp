@@ -1,0 +1,8 @@
+#COMPONENT_PROPERTIES ; comp1
+ $NAME
+  TRACER 
+ $MOBILE
+  1						; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  10 -0.88166 -1079.3 ; diffusion model type, diffusion constant m²/s
+#STOP

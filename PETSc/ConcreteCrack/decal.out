@@ -1,0 +1,31 @@
+#OUTPUT
+ $NOD_VALUES
+  1-Al 
+  2-C 
+  3-Ca 
+  4-Cl 
+  5-H 
+  6-Mg 
+  7-N 
+  8-Na 
+  9-O 
+  10-S 
+  11-Si 
+  12-Sn 
+  13-Zz 
+  HEAD
+ $ELE_VALUES
+  POROSITY
+  PERMEABILITY
+  VELOCITY1_X
+  VELOCITY1_Y
+  VELOCITY1_Z
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  VTK
+ $TIM_TYPE
+  STEPS 1
+#STOP
+
+

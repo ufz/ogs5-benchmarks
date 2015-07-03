@@ -1,0 +1,11 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+ PS_GLOBAL
+ $NUM_TYPE
+   dPcdSwGradSnw
+#STOP
+ $NUM_TYPE
+   dPcdSwGradSnw
+#STOP
+   DirectPc

@@ -1,0 +1,25 @@
+GeoSys-MMP: Material Medium Properties
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  1
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1 0.25
+ $VOL_BIO
+  1 0.01
+ $VOL_MAT
+  1 0.74 
+ $TORTUOSITY
+  1 1.0
+ $STORAGE
+  1	0.000
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 2.8935e-3
+ $MASS_DISPERSION
+  1 0.5	2.5e-4 ;longitudiale dispersivität, transversale dispersivität
+ $DENSITY
+  1	2650.0
+ $HEAT_DISPERSION
+  1 0.15 0.15
+#STOP

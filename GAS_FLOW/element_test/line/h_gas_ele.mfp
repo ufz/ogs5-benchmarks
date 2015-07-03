@@ -1,0 +1,14 @@
+GeoSys-MAT-FP: Fluid Properties ------------------------------------
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+$FLUID_NAME
+CARBON DIOXIDE
+ $DENSITY
+  7
+$COMPRESSIBILITY
+7 0 7 0 0
+ $VISCOSITY
+  1 1.780000e-005
+#STOP
+

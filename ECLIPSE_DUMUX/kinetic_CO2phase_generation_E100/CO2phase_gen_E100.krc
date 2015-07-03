@@ -1,0 +1,32 @@
+#KINREACTIONDATA
+$SOLVER_TYPE
+ 1
+$REALATIVE_ERROR
+ 1.0e-6
+$MIN_TIMESTEP
+ 1.0e-14
+$MAX_TIMESTEP 
+ 1.0e3
+$INITIAL_TIMESTEP
+ 1.0e-3
+$ALLOW_REACTIONS
+ POINT POINT26 
+ POINT POINT27
+ 
+#REACTION
+$NAME
+ SimpleFirstOrder
+$TYPE
+ monod
+$BACTERIANAME
+ Bac
+$RATECONSTANT
+ 0.1  1.0  ; Rate, Exponent, µ_max = 0.1: [1/s]
+$GROWTH
+ 0
+$MONODTERMS
+ C(4)  1.0e-10  0.0  ; speciesname, Monod-parameter Mc, alpha-exponent
+$INHIBITIONTERMS
+$PRODUCTIONSTOCH
+ C(4)   +1000.0         ; -1 is the inverse rln of species and Bac; 1000 mol/m³ = 1 mol/L
+#STOP

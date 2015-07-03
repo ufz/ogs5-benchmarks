@@ -1,0 +1,84 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NUM_TYPE
+   NEW  
+#PROCESS ; Cons_Tracer
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW
+#PROCESS ; Xylene
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW 
+#PROCESS ; Oxygen
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW  
+#PROCESS ; Metab_O
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW          
+#PROCESS ; CO2
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW 
+#PROCESS ; Biomass_Aerobic
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW  
+  
+#PROCESS ; Goethite
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW 
+#PROCESS ; bioFe3
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW   
+#PROCESS ; Fe2
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW   
+#PROCESS ; Metab_Fe3
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW                         
+#PROCESS ; Biomass_Ironreducer
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW      
+  
+#PROCESS ; Sulfate
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW  
+#PROCESS ; Meta_ProductS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW     
+#PROCESS ; S
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW     
+#PROCESS ; Biomass_Sulfatereducer
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW    
+#STOP

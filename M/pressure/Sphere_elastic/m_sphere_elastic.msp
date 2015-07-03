@@ -1,0 +1,9 @@
+GINA4 - Solid Properties
+#SOLID_PROPERTIES
+  $DENSITY
+    1 0.0
+  $ELASTICITY
+    POISSION  3.5e-001
+    YOUNGS_MODULUS:
+    1 1.25e11
+#STOP

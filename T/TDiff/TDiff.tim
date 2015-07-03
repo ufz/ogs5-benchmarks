@@ -1,0 +1,11 @@
+Lauwerier-Problem
+#TIME_STEPPING
+  $PCS_TYPE
+    HEAT_TRANSPORT
+  $TIME_STEPS
+   1000 390625e+0
+  $TIME_END
+    1E99
+  $TIME_START
+    0.0
+#STOP

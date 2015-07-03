@@ -1,0 +1,28 @@
+#COMPONENT_PROPERTIES
+$NAME
+ Bac
+$MOBILE
+ 0
+$TRANSPORT_PHASE
+ 0       ; 0 = aqueous phase, 1 = matrix,  2 = biophase, 3= NAPL
+$DIFFUSION
+ 1  0.0  
+
+#COMPONENT_PROPERTIES
+$NAME
+ C(4)
+$MOBILE
+ 0
+$TRANSPORT_PHASE
+ 0       ; 0 = aqueous phase, 1 = matrix,  2 = biophase, 3= NAPL
+$DIFFUSION
+ 1  0.0  
+#COMPONENT_PROPERTIES
+$NAME
+ C(4)_gas
+$MOBILE
+ 0
+$TRANSPORT_PHASE
+ 3       ; 0 = aqueous phase, 1 = matrix,  2 = biophase, 3= NAPL
+
+#STOP

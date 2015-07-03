@@ -1,0 +1,12 @@
+GeoSys-OUT: Output ------------------------------------------------
+#SOURCE_TERM
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $PRIMARY_VARIABLE
+  HEAD
+ $GEO_TYPE
+  POLYLINE BOTTOM
+ $DIS_TYPE
+  CONSTANT_NEUMANN 3.87e-7
+#STOP
+

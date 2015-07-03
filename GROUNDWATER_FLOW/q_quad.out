@@ -1,0 +1,20 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS: 1
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+ $GEO_TYPE
+  POINT POINT4
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+ STEPS: 1
+#STOP

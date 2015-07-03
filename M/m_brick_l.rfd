@@ -1,0 +1,21 @@
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+  BENCHMARK: PLASTIC 3D DEFORMATION: DRUCKER-PRAGER         
+ 
+#RENUMBER
+ 0 
+
+; 7 Materials ----------------------------------------------------------
+#REFERENCE_CONDITIONS
+ 0.0  ;9.810000  
+0.0  0.0 
+
+; 9 Functions ----------------------------------------------------------
+
+; for time-dependent BC: t u
+#CURVES 
+; KURVE Nr.1
+0.0 0.0
+20.0   -5.0e4
+
+#STOP

@@ -1,0 +1,20 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NUM_TYPE
+  NEW
+ $BOUNDARY_CONDITION_OUTPUT
+
+#PROCESS                                                              
+ $PCS_TYPE                                                             
+  MASS_TRANSPORT                                                     
+ $NUM_TYPE                                                             
+  NEW 
+
+#PROCESS                                                              
+ $PCS_TYPE                                                             
+  HEAT_TRANSPORT                                                     
+ $NUM_TYPE                                                             
+  NEW 
+#STOP

@@ -1,0 +1,33 @@
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+  BENCHMARK: THM (M: PLASTIC DEFORMATION, DRUCKER-PRAGER MODEL)  
+
+; 7 Materials ----------------------------------------------------------
+#REFERENCE_CONDITIONS
+ 9.810000  273.000000  101325.000000 
+
+; 9 Functions ----------------------------------------------------------
+#CURVES
+0.000000e+000 0.
+120. 1.
+2400. 1.
+
+; for time-dependent BC: t u
+#CURVES 
+; KURVE Nr.2
+0.000000e+000 0.
+1200.0       -2.4e-2
+2400.0       -4.8e-2
+4800.0       -9.6e-2
+9600.0      -19.2e-2
+
+;lateral load
+; KURVE Nr.3
+#CURVES 
+0.000000e+000 1.e5
+1200.0       1.e5
+2400.0       1.e5
+4800.0       1.e5
+9600.0       1.e5
+
+#STOP

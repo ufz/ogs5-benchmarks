@@ -1,0 +1,14 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $TIME_STEPS
+  200  0.005
+ $TIME_END
+  1.0
+ $TIME_START
+  0.0
+ $TIME_UNIT
+  SECOND
+#STOP
+

@@ -1,0 +1,15 @@
+GeoSys-MMP: Material Medium Properties ------------------------------------------------
+#MEDIUM_PROPERTIES
+ $NAME
+  DEFAULT
+ $GEO_TYPE
+  DOMAIN
+ $GEOMETRY_DIMENSION
+  1
+ $GEOMETRY_AREA
+  1.000000000000e+000
+ $POROSITY
+  1 1.000000000000e+000
+ $TORTUOSITY
+  1 1.000000000000e+000
+#STOP

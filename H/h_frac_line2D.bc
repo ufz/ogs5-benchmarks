@@ -1,0 +1,13 @@
+GeoSys-BC: Boundary Conditions ------------------------------------------------
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  LIQUID_FLOW
+ $PRIMARY_VARIABLE
+  PRESSURE1
+ $GEO_TYPE
+  POLYLINE BOTTOM
+ $DIS_TYPE
+  LINEAR 2
+  1 1.0e4
+  2 1.0e5
+#STOP

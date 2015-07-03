@@ -1,0 +1,12 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+  FLUX
+  WDEPTH
+ $ELE_VALUES
+ $GEO_TYPE
+  DOMAIN 
+ $TIM_TYPE
+  STEPS 1
+#STOP

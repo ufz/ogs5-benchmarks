@@ -1,0 +1,13 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+
+#COMPONENT_PROPERTIES 
+ $NAME
+  Tracer1;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 1.0e-9 ; diffusion model type, diffusion constant
+
+#STOP
+
+; Für jede Komponente einen dieser Blöcke

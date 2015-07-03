@@ -1,0 +1,9 @@
+GINA4 - Process
+#PROCESS
+  $PCS_TYPE
+    DEFORMATION
+  $TIME_CONTROLLED_EXCAVATION
+   1 1 0 1
+   ;MaterialGroup//Excavation Direction, 0=X, 1=Y, 2=Z//Excave Begin Coordinate in the excav direction//Excave Distance Curve
+#STOP
+ $BOUNDARY_CONDITION_OUTPUT   

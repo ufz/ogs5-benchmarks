@@ -1,0 +1,23 @@
+GeoSys-Component Properties: 
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  Wassertracer ;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $TRANSPORT_PHASE
+  0
+ $DIFFUSION
+  1  0.0    ; diffusion model type, diffusion constant
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME
+  CO2tracer ;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $TRANSPORT_PHASE
+  10
+ $DIFFUSION
+  1  0.0    ; diffusion model type, diffusion constant
+
+#STOP
+
+

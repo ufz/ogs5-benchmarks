@@ -1,0 +1,12 @@
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+  BENCHMARK: CONSOLIDATION: CAM-CLAY MODEL          
+
+
+#CURVES 
+0.0 -50.0
+11.0e8    -200.0
+#CURVES 
+0.0 0.0
+1.1e8    0.6
+#STOP

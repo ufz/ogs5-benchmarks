@@ -1,0 +1,20 @@
+Gina4 - TIM-Datei
+#TIME_STEPPING
+  $PCS_TYPE
+    HEAT_TRANSPORT
+  $TIME_STEPS
+    1  1
+   $TIME_END
+    1
+  $TIME_START
+    0.0
+#TIME_STEPPING
+  $PCS_TYPE
+    DEFORMATION
+  $TIME_STEPS
+    1 1
+  $TIME_END
+    1.0
+  $TIME_START
+    0.0
+#STOP

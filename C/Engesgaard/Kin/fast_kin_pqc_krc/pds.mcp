@@ -1,0 +1,90 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  C(4) ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant
+ $VALENCE
+  -2
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  Ca ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant
+ $VALENCE
+  +2
+#COMPONENT_PROPERTIES  ; comp3
+  $NAME
+  Mg ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant
+ $VALENCE
+  +2
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME  ; 
+  Cl ; 
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant
+ $VALENCE
+  -1
+#COMPONENT_PROPERTIES  ; comp6
+  $NAME
+  pH ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp7
+ $NAME
+  pe ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME  ; 
+  H+ ; 
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant  
+ $VALENCE
+  +1
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME  ; 
+  CO3-2 ; 
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant  
+ $VALENCE
+  -2
+
+#COMPONENT_PROPERTIES  ; comp8
+ $NAME
+  Calcite ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  1
+#COMPONENT_PROPERTIES  ; comp9
+ $NAME
+  Dolomite(dis) ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  1
+#STOP

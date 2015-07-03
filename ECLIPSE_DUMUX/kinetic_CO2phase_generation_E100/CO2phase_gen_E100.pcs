@@ -1,0 +1,45 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  MULTI_PHASE_FLOW
+ $NUM_TYPE
+   NEW
+ $USE_PRECALCULATED_FILES
+ $SAVE_ECLIPSE_DATA_FILES
+ $SIMULATOR ; switch on usage of ECLIPSE or DuMux
+   ECLIPSE
+ $SIMULATOR_PATH  ;eclipse exe path
+  C:\ecl\2012.1\bin\pc_x86_64\eclipse.exe 
+ $SIMULATOR_MODEL_PATH
+  ./eclipse/ECL.DATA
+ 	; path to eclipse model input file (with or without extension)  
+ $ELEMENT_MATRIX_OUTPUT
+   0
+ $ST_RHS
+   1
+ $BOUNDARY_CONDITION_OUTPUT  
+ $DISSOLVED_CO2_PCS_NAME
+  C(4)
+ $DISSOLVED_CO2_INGAS_PCS_NAME
+  C(4)_gas
+
+
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW
+ $BOUNDARY_CONDITION_OUTPUT  
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW
+ $BOUNDARY_CONDITION_OUTPUT
+ #PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW
+ $BOUNDARY_CONDITION_OUTPUT  
+#STOP

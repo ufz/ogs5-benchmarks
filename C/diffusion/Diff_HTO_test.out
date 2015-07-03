@@ -1,0 +1,14 @@
+Gina - Out-Datei
+#OUTPUT
+ $NOD_VALUES
+   C_HTO
+   C_Na
+   C_Cl
+   C_Cs
+ $GEO_TYPE
+   DOMAIN 
+ $DAT_TYPE
+   TECPLOT
+ $TIM_TYPE
+   STEPS 1
+#STOP

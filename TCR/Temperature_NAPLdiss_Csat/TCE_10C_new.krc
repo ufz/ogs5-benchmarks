@@ -1,0 +1,42 @@
+#KINREACTIONDATA
+ $SOLVER_TYPE
+  1
+ $RELATIVE_ERROR
+  1.E-6
+ $MIN_TIMESTEP
+  1.
+ $INITIAL_TIMESTEP
+  1000.0  
+ $NO_REACTIONS
+  POLYLINE CLEAN
+  POLYLINE CLEAN2
+  
+  																	
+#BLOB_PROPERTIES
+ $NAME
+  blob1
+ $D50
+  0.001
+ $CALC_SHERWOOD
+  1.15	0.654	0.486		 	
+ $GEOMETRY
+  0.66
+ $INTERFACIAL_AREA
+  DOMAIN 0;
+  POLYLINE NAPL_SOURCE_ZONE 636.3636 	
+  																
+#REACTION ;
+ $NAME
+  TCE-dissolution ;
+ $TYPE
+  NAPLdissolution ; 
+ $EQUATION
+  NAPL_TCE = - TCE
+ $NAPL_PROPERTIES
+  blob1  12.065           11111.1		; blob_name  Csat [mol/m3]	molar Density [mol/m3]	; !!!!!!!!!
+
+$TEMPERATURE_DEPENDENCE
+   ; Knauss-Model, a,        b,       c
+      2     -2637.6  118540  386.51 ;Chen: 1    -220.29  5136  23.04
+
+#STOP

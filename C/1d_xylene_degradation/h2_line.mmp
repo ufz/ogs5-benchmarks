@@ -1,0 +1,35 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $NAME
+   Layer1
+ $GEO_TYPE
+   LAYER 1  
+ $GEOMETRY_DIMENSION
+  1
+ $GEOMETRY_AREA
+  1.000000e+000
+ $POROSITY
+  1  0.24 ; 1 = porosity model, 1.3e-1 = actual porosity
+  $VOL_BIO
+  1  0.01
+  $VOL_MAT
+  1  0.75
+ $TORTUOSITY
+  1   1.000000e+000
+ $PERMEABILITY_TENSOR
+   ISOTROPIC  0.00215  ; FILE   ucs_14
+ $MASS_DISPERSION
+  1  0.250  0.05 ; modeltype, alpha_L, alpha_T
+ $DENSITY
+  1  2000.0  
+#STOP
+
+
+
+
+
+ $PERMEABILITY_TENSOR
+homogen, kf m/s
+  ISOTROPIC   1e-5
+heterogen, aus datei
+  FILE   2d_instat_kfhet1

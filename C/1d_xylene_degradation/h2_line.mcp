@@ -1,0 +1,151 @@
+#COMPONENT_PROPERTIES  ; Cons_Tracer
+ $NAME
+  Cons_Tracer;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0                ; 0 = Wasser, 1 = Matrix, 2 = Bio
+
+#COMPONENT_PROPERTIES  ; Xylene
+ $NAME
+  Xylene;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0              
+
+#COMPONENT_PROPERTIES  ; Oxygen
+ $NAME
+  Oxygen;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0     
+
+#COMPONENT_PROPERTIES  ; Meta_ProductO
+ $NAME
+  Metab_O;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  2     
+
+#COMPONENT_PROPERTIES  ; Meta_ProductO
+ $NAME
+  CO2;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  2     
+
+#COMPONENT_PROPERTIES  ; Biomass_Aerobic
+ $NAME
+  Biomass_Aerobic;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  2  
+
+#COMPONENT_PROPERTIES  ; Goethite
+ $NAME
+  Goethite;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  1    
+
+#COMPONENT_PROPERTIES  ; bioFe3
+ $NAME
+  bioFe3;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  2     
+
+#COMPONENT_PROPERTIES  ; Fe2
+ $NAME
+  Fe2;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0     
+
+#COMPONENT_PROPERTIES  ; Metab_Fe3
+ $NAME
+  Metab_Fe3;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  1     
+
+#COMPONENT_PROPERTIES  ; Biomass_Ironreducer
+ $NAME
+  Biomass_Ironreducer;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  2         
+  
+#COMPONENT_PROPERTIES  ; Sulfate
+ $NAME
+  Sulfate;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0  
+  
+#COMPONENT_PROPERTIES  ; S
+ $NAME
+  S;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0       
+  
+#COMPONENT_PROPERTIES  ; Meta_ProductS
+ $NAME
+  Meta_ProductS;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  1.0e-9              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  2  
+  
+#COMPONENT_PROPERTIES  ; Biomass_Sulfatereducer
+ $NAME
+  Biomass_Sulfatereducer;
+ $MOBILE
+  0; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0.0              ; diffusion model type, diffusion constant  
+ $TRANSPORT_PHASE
+  2    
+     
+#STOP

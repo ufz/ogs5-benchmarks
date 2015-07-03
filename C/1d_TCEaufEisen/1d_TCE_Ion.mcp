@@ -1,0 +1,207 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+
+#COMPONENT_PROPERTIES  ; 1
+ $NAME
+  TCE-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 2
+ $NAME
+  TCE-mat ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0
+ $TRANSPORT_PHASE
+  1
+
+#COMPONENT_PROPERTIES  ; 3
+ $NAME
+  trans-DCE-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+
+#COMPONENT_PROPERTIES  ; 4
+ $NAME
+  trans-DCE-mat ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0
+ $TRANSPORT_PHASE
+  1
+
+  #COMPONENT_PROPERTIES  ; 5
+ $NAME
+  cis-DCE-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+  #COMPONENT_PROPERTIES  ; 6
+ $NAME
+  cis-DCE-mat ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0
+ $TRANSPORT_PHASE
+  1
+
+#COMPONENT_PROPERTIES  ; 7
+ $NAME
+  11-DCE-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 8
+ $NAME
+  11-DCE-mat ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0
+ $TRANSPORT_PHASE
+  1
+
+#COMPONENT_PROPERTIES  ; 9
+ $NAME
+  Acet-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+
+#COMPONENT_PROPERTIES  ; 10
+ $NAME
+  Acet-mat ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0
+ $TRANSPORT_PHASE
+  1
+
+#COMPONENT_PROPERTIES  ; 11
+ $NAME
+  ClAcet-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 12
+ $NAME
+  ClAcet-mat ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0
+ $TRANSPORT_PHASE
+  1
+
+#COMPONENT_PROPERTIES  ; 13
+ $NAME
+  VC-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 14
+ $NAME
+  VC-mat ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0
+ $TRANSPORT_PHASE
+  1
+
+#COMPONENT_PROPERTIES  ; 15
+ $NAME
+  Ethylen-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 16
+ $NAME
+  Ethylen-mat ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0
+ $TRANSPORT_PHASE
+  1
+
+#COMPONENT_PROPERTIES  ; 17
+ $NAME
+  C4-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; 18
+ $NAME
+  Ethan-mob ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+
+#COMPONENT_PROPERTIES  ; tracer
+ $NAME
+  mobile ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION ;####
+  1 0
+ $TRANSPORT_PHASE
+  0
+
+#STOP
+#COMPONENT_PROPERTIES  ; 11
+ $NAME
+  Tracer ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+$TRANSPORT_PHASE
+  0
+
+#STOP
+

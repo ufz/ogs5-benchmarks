@@ -1,0 +1,30 @@
+GeoSys-TIM: ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $TIME_UNIT
+   DAY   
+$TIME_END
+  0.1
+ $TIME_START
+  0.0
+ 
+$TIME_STEPS
+5000  1e-7
+9500  1e-6
+9000  1e-5
+#STOP
+
+ 
+
+ $TIME_CONTROL
+  SELF_ADAPTIVE
+   3    1.7
+   10   0.7
+  MAX_TIME_STEP
+   1 
+
+ 
+
+ 
+

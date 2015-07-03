@@ -1,0 +1,34 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $TIME_END
+  20
+ $TIME_START
+  0.0
+ $TIME_STEPS
+  1 0.7
+
+#STOP
+
+$TIME_CONTROL   
+PI_AUTO_STEP_SIZE     //WW
+ 1 1.0e-3 1.0e-9 0.7
+
+#TIME_STEPPING
+ $PCS_TYPE
+  OVERLAND_FLOW
+
+#TIME_STEPPING
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+  
+     
+ $TIME_CONTROL
+   SELF_ADAPTIVE
+   4	1.7
+   10	0.7  
+ MAX_TIME_STEP
+   100
+ MINISH
+  2

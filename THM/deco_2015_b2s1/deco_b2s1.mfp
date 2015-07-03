@@ -1,0 +1,60 @@
+GeoSys-MAT-FP: Fluid Properties ------------------------------------
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+ $FLUID_NAME
+  WATER
+ $PCS_TYPE
+  PRESSURE1
+  TEMPERATURE1
+$NON_GRAVITY
+
+$TEMPERATURE
+  273.15      ; T_0 (Reference Temperature) (used for density calculation as T_0)
+$COMPRESSIBILITY 
+;compressibility_model_pressure compressibility_pressure compressibility_model_temperature compressibility_temperature JTC
+;1 4.4e-7 1 -0.5 ;modelP, drho/dp, modelT, drho/dT
+; 1 4.4e-7 1  0.0  ;modelP, drho/dp, modelT, drho/dT
+; 3 1e5  3  10.0  ;modelP, delta_P, modelT, delta_T
+; phase 1
+1  4.4e-7  ;modelP, drho/dp,
+3 2.      ; model T: 3= read from fct_table,
+; phase 2 (dummy)
+1  4.4e-7  ;modelP, drho/dp,
+3 2.   ; model T: 3= read from fct_table,
+
+; dies Eingabe fuer druck (model1) entspricht der  Eingabe bei density model 6. Ableitungen werden nicht aus dem dichte table bestimmt!
+
+; 			in >> compressibility_model_pressure; //sub_line 1 for first phase
+; 			in >> compressibility_pressure ; //sub_line 1
+;			in >> compressibility_model_temperature; //sub_line 2 for second phase
+;			in >> compressibility_temperature; //sub_line 2
+;			in >> JTC;
+;			// available models see CFluidProperties::drhodP and CFluidProperties::drhodT
+;			// 0 incompressible
+;			// 1 constant slope (d_rho/d_p)
+;			// 2 slope from fct_table
+;			// 3 difference quotient
+;			// 4 analytical derivation
+ 
+
+ $DENSITY
+ 10 273.15 ; model 10: read density from a rho-P-T table; T_0
+ ;  11 273.15 ; model 11: Peng-Robinson Equation of State: T_0
+ ;  T_0 will be added to the calculated Temperature before the look up table is used
+
+ 
+ $VISCOSITY
+ 3  273.15       ; viscosity model 3: my=f(T) (Yaws),T_0
+;   Dynamische Fluessigkeits-Viskositaet nach Yaws et al. (1976)
+;   als Funktion von Temperatur
+;   in Reid et al. (1988), S. 441/455
+;   Eqn.(3): ln(my) = A + B/T + CT' + DT'^2   T'=T+T_0
+ 
+ $SPECIFIC_HEAT_CAPACITY
+  1 4.18e+3
+
+ $HEAT_CONDUCTIVITY
+  1 0.6
+
+#STOP 

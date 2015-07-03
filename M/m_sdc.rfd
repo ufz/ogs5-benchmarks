@@ -1,0 +1,11 @@
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+  BENCHMARK: PLASTIC DEFORMATION: THE SINGLE YIELD SURFACE MODEL         
+
+; for time-dependent BC: t u
+#CURVES 
+; KURVE Nr.2
+0.000000e+000 0.0
+20.0   -0.04
+
+#STOP

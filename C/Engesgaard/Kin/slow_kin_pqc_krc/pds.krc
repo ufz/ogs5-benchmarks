@@ -1,0 +1,128 @@
+GeoSys Kinetic Reactions
+
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	2                ; Solver type 1 = SI-Extrapolation, 2 = RK5th
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1e-11		; min Timestep NEU: Sekunden
+ $INITIAL_TIMESTEP	
+	.1 ; init Timestep NEU: Sekunden
+ $DEBUG_OUTPUT
+ $NO_REACTIONS
+  ;POINT  POINT0
+ $ACTIVITY_MODEL
+  2 ; constant activity coefficient = 0, DH = 1, Davies = 2, CHEMAPP = 3    
+     
+#REACTION ;
+ $NAME
+  Dolomite(dis) ;
+ $CHEMAPPNAME
+  Dolomite(dis) 
+ $MINERALNAME
+  Dolomite(dis) 
+ $TYPE
+   Mineralkinetics ;
+ $EQUATION
+   Dolomite(dis)  = Ca + Mg + 2 CO3-2; 
+ $EQUILIBRIUM_CONSTANT
+  UNIFORM -17.09 ; UNIFORM/VARIABLE, log(K)
+ $RATE_EXPONENTS
+  1.0 1.0 ; theta, eta
+ $REACTIVE_SURFACE_AREA
+  0 0.32e0;  [m²/Laquifer] for m²/kg * kg/m³aquifer multiply by 1000
+ $PRECIPITATION_FACTOR
+  1
+ $BASETERM      ; neutral
+    -7.53	 52200 ; log(k_25) Eact_25
+ ;  -7.53	 52200 ; log(k_25) Eact_25
+ $MECHANISMTERM ; acid
+    -3.19  36100  ; log(k_25) Eact_25
+ ;  -3.18876  36100  ; log(k_25) Eact_25
+   H+ 0.5  
+ $PRODUCTIONSTOCH
+  Ca     -1.0
+  Mg     -1.0  
+  CO3-2 -2.0
+  C(4)  -2.0
+ 
+#STOP  
+  
+#REACTION ;
+ $NAME
+   Calcite ;
+ $CHEMAPPNAME
+   Calcite 
+ $MINERALNAME
+   Calcite 
+ $TYPE
+   Mineralkinetics ;
+ $EQUATION
+  Calcite  + H+ = Ca + C(4)  ; 
+ $EQUILIBRIUM_CONSTANT
+  UNIFORM 1.849 ; UNIFORM/VARIABLE, log(K)
+ $RATE_EXPONENTS
+  1.0 1.0 ; theta, eta
+ $REACTIVE_SURFACE_AREA
+  0.003832;  [m²/Laquifer] for m²/kg * kg/m³aquifer multiply by 1000
+ $PRECIPITATION_FACTOR
+  1
+ $BASETERM      ; neutral
+   -5.709965389  23500; log(k_25) Eact_25
+; $MECHANISMTERM ; acid
+;   -0.299988938  14400 ; log(k_25) Eact_25
+;   H+ 1.0  
+ $PRODUCTIONSTOCH
+  Ca     -1.0
+  C(4)    -1.0  
+  H+       +1
+
+
+#STOP
+
+Calcite             12                       # Dissolution reaction and log_k changed
+        CaCO3 + H+ = Ca+2 + HCO3- 
+        log_k           1.849
+#        delta_h -2.297 kcal
+#        -analytical     -171.9065       -0.077993       2839.319        71.595  0.0
+
+
+# Rate parameters taken from Palandri et al (2004), p. 241, Tab. 32
+#
+Calcite
+-start
+  1 	REM	Calculated according to Palandri et al (2004), p. 5 Formula 7 
+  2 	REM Rate constants for 25°C and pH=0
+  3 	REM parm(1) = amount of substance in the system (mol)
+  4		REM k0 (mol/(m2*sec))
+  5		REM Ea (kJ/mol)
+  6		REM n (-)
+  10	REM Definition of SR(Calcite)
+  11	SatIn = SR("Calcite")
+  12	MM = 58.32 # Unit: g mol-1
+  13	SA = 70.5 # Unit: cm2 g-1
+  14	SA_m2 = SA/10000*MM*Parm(1)
+  20	ka = 1.86e-5 
+  21	Ea = 59.0
+  22	na = 0.500
+  23	kn = 5.75e-9
+  24	En = 42.0
+  25	kc = 3.31e-4
+  26	Ec = 35.4
+  27	nc = 1
+  30    rate_1 = SA_m2*ka*exp(-1*Ea/0.008314*(1/TK - 1/298.15))*ACT("H+")^na*(1-SatIn)
+  40    rate_2 = SA_m2*kn*exp(-1*En/0.008314*(1/TK - 1/298.15))*(1-SatIn)
+  40    rate_3 = SA_m2*kc*exp(-1*Ec/0.008314*(1/TK - 1/298.15))*ACT("CO2")^nc*(1-SatIn)
+  60	rate = rate_1 + rate_2 + rate_3
+  100	REM do not dissolve more calcite than present
+  110	if (moles > M) then moles = M
+  120	if (moles >= 0) then goto 500
+  200  	rem decrease rate on precipitation
+  210	if SR("Calcite") > 1 then moles = moles * 0.1 
+  300 	REM do not precipitate more Ca than present
+  310	Ca_aq = TOT("Ca")
+  320	if -moles > Ca_aq then moles = -Ca_aq
+  500	moles = rate * TIME
+  510	SAVE moles
+-end

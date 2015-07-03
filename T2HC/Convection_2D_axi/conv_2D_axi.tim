@@ -1,0 +1,33 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+$PCS_TYPE
+TNEQ
+$TIME_STEPS
+  2000 0.02
+  2000 0.05
+  1000 0.1
+  3000 0.2
+  1000 0.5
+  2000 1.0
+  2000 2.0
+$TIME_END
+  5000
+$TIME_START
+0.0
+#STOP
+
+
+#TIME_STEPPING
+$PCS_TYPE
+TNEQ
+$TIME_STEPS
+  2000 0.02
+  3000  0.05
+  1000 0.1
+  10000 0.2
+  100000 0.5
+$TIME_END
+  10000
+$TIME_START
+0.0
+#STOP

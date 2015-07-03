@@ -1,0 +1,24 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  1
+ $GEOMETRY_AREA
+  1.000000e+000
+ $GEO_TYPE
+  DOMAIN
+ $POROSITY
+  ;1 0.2
+  13  0.20  ; Case 12: porosity update requested 
+ $TORTUOSITY
+  1	1.000000e+000
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  1.15700e-12 ; ORTHOTROPIC   1.15700e-12  1.15700e-12   
+ $PERMEABILITY_FUNCTION_POROSITY 
+  8	 Kozeny_Carman  ; Case 5: Permeability update requested
+ $MASS_DISPERSION
+  1  0.0067  0.1000
+ $DENSITY
+  1  1800.0
+#STOP
+
+

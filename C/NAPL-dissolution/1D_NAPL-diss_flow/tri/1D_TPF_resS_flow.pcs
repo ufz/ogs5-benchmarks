@@ -1,0 +1,32 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  PS_GLOBAL
+ $NUM_TYPE
+    dPcdSwGradSnw
+ $ELEMENT_MATRIX_OUTPUT
+  0
+#STOP
+ 
+  dPcdSwGradSnw
+  DirectPc
+$RELOAD
+  2
+
+
+
+
+#PROCESS
+ $PCS_TYPE
+ PS_GLOBAL
+ $NUM_TYPE
+   NEW 
+#PROCESS
+ $PCS_TYPE
+ PS_GLOBAL
+ $NUM_TYPE
+   NEW
+
+
+
+#STOP

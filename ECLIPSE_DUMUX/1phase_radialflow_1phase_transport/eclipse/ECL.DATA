@@ -1,0 +1,442 @@
+--
+-- -----------------------------------------------------------------------------
+-- Office Simulation File (DATA) Data Section Version 2008.1 Apr 26 2008
+-- -----------------------------------------------------------------------------
+--
+-- File: EINPHASENMODELL_E100.DATA
+-- Created on: 19-Feb-2009 at: 11:27:39
+--
+-- *****************************************************************************
+-- *                                  WARNING                                  *
+-- *                THIS FILE HAS BEEN AUTOMATICALLY GENERATED.                *
+-- *          ANY ATTEMPT TO EDIT MANUALLY MAY RESULT IN INVALID DATA.         *
+-- *****************************************************************************
+--
+-- Modell mit tstep=0.027 und verfeinertem Grid 
+RUNSPEC
+ 
+TITLE
+model10ref
+ 
+START
+ 1 'JAN' 2000 /
+ 
+METRIC
+ 
+FMTIN
+
+FMTOUT
+
+--SAVE
+-- 'FORMATTED' /
+ 
+WATER
+ 
+NSTACK
+ 15 /
+ 
+MONITOR
+ 
+RSSPEC
+ 
+NOINSPEC
+ 
+MSGFILE
+ 1 /
+
+ 
+AQUDIMS
+-- 1 1 0 0 3 10 10 0 /
+ 0 0 0 0 15 210 /
+ 
+ 
+--TRACERS
+-- 0 1 0 0 'NODIFF' 15 /
+ 
+DIMENS
+ 37 37 1 /
+ 
+EQLDIMS
+ 1 100 100 1 20 /
+ 
+REGDIMS
+ 1 1 0 0 /
+ 
+TABDIMS
+ 1 1 20 20 1 20 20 1 /
+ 
+WELLDIMS
+ 1 1 1 1 /
+ 
+DEBUG
+6* 1 72* /
+ 
+ 
+GRID
+ 
+GRIDFILE
+ 2 /
+ 
+INIT
+ 
+--
+PSEUDOS
+-- 
+-- PSEUDO Output
+-- 
+ECHO
+--
+
+GRIDUNIT
+-- 
+-- Grid data units
+-- 
+ 'METRES'  / 
+MAPAXES
+-- 
+-- Grid Axes wrt Map Coordinates
+-- 
+          0          0          0          0          0          0 / 
+
+
+
+EQUALS
+DX	10	1	13	1	37	1	1	/
+DX	5	14	16	1	37	1	1	/
+DX	2.5	17	17	1	37	1	1	/
+DX	2	18	18	1	37	1	1	/
+DX	1	19	19	1	37	1	1	/
+DX	2	20	20	1	37	1	1	/
+DX	2.5	21	21	1	37	1	1	/
+DX	5	22	24	1	37	1	1	/
+DX	10	25	37	1	37	1	1	/
+DY	10	1	37	1	13	1	1	/
+DY	5	1	37	14	16	1	1	/
+DY	2.5	1	37	17	17	1	1	/
+DY	2	1	37	18	18	1	1	/
+DY	1	1	37	19	19	1	1	/
+DY	2	1	37	20	20	1	1	/
+DY	2.5	1	37	21	21	1	1	/
+DY	5	1	37	22	24	1	1	/
+DY	10	1	37	25	37	1	1	/
+DZ 1 1 37 1 37 1 1 /
+TOPS -50 1 37 1 37 1 1 /
+
+		
+/
+EQUALS
+	ACTNUM 1 1 37 1 37 1 1 /
+	
+/
+ 
+EQUALS
+PERMX 11798.24 /
+/
+ 
+
+EQUALS
+PERMY 11798.24 /
+/
+
+EQUALS
+PERMZ 0 /
+/
+ 
+
+EQUALS
+PORO 0.3 /
+/
+ 
+
+PROPS
+ 
+--ECHO
+--TRACER
+-- 'TR1' 'WAT' /
+--/
+ 
+--ECHO
+--HDISPTR1 ´
+--10 10 /
+--/
+
+ 
+-- Tracer mechanical dispersion data
+
+
+
+PVTW
+ 
+-- Water PVT Properties
+ 
+        1     1.000   2.0e-015     1        1*
+/
+
+DENSITY 
+         700      1000      1.11
+/
+
+ECHO
+ROCK
+-- 
+-- Rock Properties
+-- 
+         1  4e-10                                       
+/
+
+
+
+
+REGIONS
+
+
+-- OFFICE-REGION-HEADER-DATA
+--  
+-- Off REG Regions:          0
+--
+-- -----------------------------------------------------------------------------
+-- Office REG Keywords
+-- -----------------------------------------------------------------------------
+--
+--  
+
+
+ 
+SOLUTION
+
+
+  
+--
+-- OFFICE-INIT-HEADER-DATA
+--  
+--
+-- -----------------------------------------------------------------------------
+-- Office INIT Keywords
+-- -----------------------------------------------------------------------------
+--
+ECHO
+EQUIL
+-- 
+-- Equilibration Data Specification
+-- 
+  -49.5  4.85595    2000      1*      1*      1*      1*      1*      1*      1*      1*
+/
+
+
+--TBLKFTR1
+--	1369*0.0 
+--/
+ 
+-- 1 2  18 1 1 1 1 'J-' 20000 /
+ECHO
+AQUANCON
+1 2  36 1 1 1 1 'J-'  /		-- hoch setzen???
+2 2  36 37 37 1 1 'J+'  /
+3 1  1 2 36 1 1 'I-'  /
+4 37 37 2 36 1 1 'I+'  /
+/
+
+
+ECHO
+AQUCHWAT
+-- 
+-- Property Data for Constant Head Water Aquifiers
+-- 1 -49.5 'PRESSURE' 14.76405 200 / --Produktivitätsindex (200) höher setzen?
+1 -49.5 'PRESSURE' 4.85595 20000 /
+2 -49.5 'PRESSURE' 4.85595 20000 /
+3 -49.5 'PRESSURE' 4.85595 20000 /
+4 -49.5 'PRESSURE' 4.85595 20000 /
+/
+
+
+ 
+SUMMARY
+
+
+DATE
+FPR
+/
+FTICTR1
+/
+FTIPTR1 
+/
+WTIRTR1
+/
+FTITTR1
+/
+FWPR
+/
+BPR
+ 16 16 1 /
+
+ 15 16 1 /
+
+ 14 16 1 /
+ 
+ 13 16 1 /
+ 
+ 12 16 1 /
+ 
+ 11 16 1 /
+
+ 10 16 1 /
+  
+ 9 16 1 /
+ 
+ 8 16 1 /
+ 
+ 7 16 1 /
+ 
+ 6 16 1 /
+ 
+ 5 16 1 /
+ 
+ 4 16 1 /
+ 
+ 3 16 1 /
+ 
+ 2 16 1 /
+ 
+ 1 16 1 /
+/
+
+BTCNFTR1
+ 16 16 1 /
+
+ 15 16 1 /
+
+ 14 16 1 /
+ 
+ 13 16 1 /
+ 
+ 12 16 1 /
+ 
+ 11 16 1 /
+
+ 10 16 1 /
+  
+ 9 16 1 /
+ 
+ 8 16 1 /
+ 
+ 7 16 1 /
+ 
+ 6 16 1 /
+ 
+ 5 16 1 /
+ 
+ 4 16 1 /
+ 
+ 3 16 1 /
+ 
+ 2 16 1 /
+ 
+ 1 16 1 /
+
+/
+BVELWI
+ 16 16 1 /
+/
+
+BVELWI
+ 3 16 1 /
+/
+BPR
+ 16 16 1 /
+/
+RUNSUM
+/
+SEPARATE
+/
+AAQR
+1
+/
+AAQR
+2
+/
+AAQR
+3
+/
+AAQR
+4
+/
+FWDEN
+/
+WBHP
+ 'I1' /
+
+WWIR
+ 'I1' /
+
+WWIT
+ 'I1' /
+
+
+
+EXCEL
+/
+ 
+--
+-- -----------------------------------------------------------------------------
+-- End of Office Summary (SUM) Data Section
+-- -----------------------------------------------------------------------------
+--
+
+
+ 
+SCHEDULE
+ 
+
+
+
+ECHO
+
+TUNING
+--TSINIT Maximum length of next time step (def=1), TSMAXZ Maximum length of time steps after the next (def=365.0)
+--TSMINZ Minimum length of all timesteps (def=0.1), TSMCHP Minimum choppable time step (def=0.15)
+--TSFMAX Maximum time step increase factor (def=3.0), TSFMIN Minimum time step cutback factor (def=0.3)
+--TSFCNV Factor by which time step is cut after convergence failure (def=0.1), TFDIFF Maximum increase factor after a convergence failure (def=1.25),
+--THRUPT Maximum throughput ratio (def=1e20), TMAXWC Maximum length of the next time step following a well modification (def= no limit)
+1 25 0.1 0.5 2 0.5 0.1 1.25 2* /
+
+--TRGTTE Target time truncation error (Def=0.1 Implicit), TRGCNV Target non-linear convergence error (Def=0.001 Implicit),
+--TRGMBE Target material balance error (Def=1.0e-7), TRGLCV Target linear convergence error (Def=0.0001),
+--XXXTTE Maximum time truncation error (Def=10.0), XXXCNV Maximum non-linear convergence error (Def=0.01 Implicit),
+--XXXMBE Maximum material balance error (Def=1.0e-6), XXXLCV Maximum linear convergence error (Def=0.001 Implicit),
+--XXXWFL Maximum well flow rate convergence error (Def=0.001), TRGFIP Target Fluid-in-place error for LGR runs (Def=0.025),
+--TRGSFT Target surfactant change (Surfactant Model only) (Def=no limit)
+0.1 0.001 1E-7 1E-9 1E-4 1E-6 1E-6 1E-8 1E-8 0.025 /
+
+20 1 50 1 2* 1 3* /
+/
+
+ 
+--RPTSCHED
+--'TBLK' /
+  
+RPTRST
+ 'BASIC=6' 'SAVE=2' /
+  
+
+WELSPECS
+
+	'I1' '1' 19 19 -49.5 'WATER' /
+/
+	
+COMPDAT
+	'I1' 19 19 1 1 1* 0 0 0.025 /
+/	
+
+WCONINJE
+	'I1' 'WATER' 1* 'RATE' 100 7* /
+/
+
+
+--WTRACER
+--	'I1' 'TR1' 1.0 0.8 /
+--/
+TSTEP
+1*0.0270023 /
+
+END
+

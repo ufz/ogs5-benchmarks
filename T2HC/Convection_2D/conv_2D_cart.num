@@ -1,0 +1,23 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+$OVERALL_COUPLING
+; 1 1.0e-03
+  20 1.0e-03
+#NUMERICS
+$PCS_TYPE
+  TNEQ
+$REACTION_SCALING
+  1
+$LOCAL_PICARD1
+200 1.0e-10
+$LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+2     6 1.0e-015       1000            1.0   101     4
+$NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+;PICARD 1.0e-05            2             0.0
+PICARD 1.0e-05            200             1.0
+$NON_LINEAR_UPDATE_VELOCITY
+1
+$ELE_GAUSS_POINTS
+2
+#STOP

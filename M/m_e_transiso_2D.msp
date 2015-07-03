@@ -1,0 +1,7 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $ELASTICITY
+    POISSION  0.6032        
+    YOUNGS_MODULUS:
+     10 561.121e6 1311.83e6 0.18384 375.0e6 84.0 1.1 0.0
+#STOP

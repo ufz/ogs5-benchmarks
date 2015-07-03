@@ -1,0 +1,26 @@
+#NUMERICS
+ $PCS_TYPE
+  LIQUID_FLOW
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2      2   1.e-14       1000           1.0    1      4
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  PICARD 1.e-10           1           0.0
+ $ELE_GAUSS_POINTS
+  2
+#NUMERICS
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2      2   1.e-14       3000           1.0    1      4
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  PICARD 1.e-10           1           0.0
+ $ELE_GAUSS_POINTS
+  2
+ $ELE_SUPG
+  1 0 0
+; method length_mode(0:max,1:min,2:avg) ele_diffusivity_mode(0:max,1:min,2:mag)
+#STOP

@@ -1,0 +1,42 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+$OVERALL_COUPLING
+;min_iter -- max_iter
+ 1           1
+
+#NUMERICS
+$PCS_TYPE
+MULTI_PHASE_FLOW
+$ELE_MASS_LUMPING
+1
+$ELE_GAUSS_POINTS
+1
+$LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+2      6 1.e-12      2000            1   100     4
+$NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+PICARD 1e-5            25           1
+$COUPLING_CONTROL
+;error method -- tolerances
+ LMAX            1.0e-3
+$COUPLED_PROCESS
+;process or variable -- min_iter -- max_iter
+ HEAT_TRANSPORT         1           1
+
+#NUMERICS
+$PCS_TYPE
+HEAT_TRANSPORT
+$ELE_MASS_LUMPING
+1
+$ELE_GAUSS_POINTS
+1
+$LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+2      6 1.e-12      2000            1.0   100     4
+$NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+PICARD 1e-5            25            1.0
+$COUPLING_CONTROL
+;error method -- tolerances
+ LMAX            1.0e-3 
+#STOP

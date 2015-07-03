@@ -1,0 +1,15 @@
+#PROJECT_MEMBER
+hm_foot_tri.gli
+hm_foot_tri.msh
+hm_foot_tri.pcs
+hm_foot_tri.bc
+hm_foot_tri.ic
+hm_foot_tri.mfp
+hm_foot_tri.mmp
+hm_foot_tri.num
+hm_foot_tri.out
+hm_foot_tri.st
+hm_foot_tri.tim
+hm_foot_tri.rfd
+hm_foot_tri.msp
+#STOP

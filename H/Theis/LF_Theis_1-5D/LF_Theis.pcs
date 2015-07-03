@@ -1,0 +1,10 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+$PRIMARY_VARIABLE
+  PRESSURE1 
+#STOP
+
+ $NUM_TYPE
+  NEW  

@@ -1,0 +1,10 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+
+#COMPONENT_PROPERTIES  ; comp0
+ $NAME
+  CONCENTRATION0 ;
+ $MOBILE 
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1	0.0
+#STOP

@@ -1,0 +1,18 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+   1.0
+;JM 02/2014: storage already considered by the density model (since OGS 5.5.2)!
+; $STORAGE
+;  1  4.6e-10
+ 
+ $POROSITY
+  1  1.0
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  1e-15
+ $TORTUOSITY
+  1   1.000000e+000
+#STOP
+

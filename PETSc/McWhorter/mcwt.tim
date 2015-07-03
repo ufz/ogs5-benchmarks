@@ -1,0 +1,23 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  MULTI_PHASE_FLOW
+  $TIME_STEPS
+ 10 5.0
+ 100 10.0
+ 100 100.0
+ $TIME_START
+  0.0
+ $TIME_END
+ 1.e4
+#STOP
+
+ $TIME_CONTROL
+PI_AUTO_STEP_SIZE 
+ 2 1.0e-2 1.0e-10 5
+
+
+ 
+ $TIME_UNIT
+ DAY 
+ 

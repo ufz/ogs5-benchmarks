@@ -1,0 +1,43 @@
+GeoSys-TIM: Timestepping ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  MULTI_PHASE_FLOW
+ $TIME_END
+ 20
+ $TIME_START
+  0.0
+ $TIME_UNIT
+  DAY
+  $TIME_STEPS
+  1 0.01
+  1 0.04
+  1 0.05
+  2 0.25
+  1 0.4
+  5 1.0
+  8 2.0
+#TIME_STEPPING
+ $PCS_TYPE
+  DEFORMATION
+ $TIME_END
+ 20
+ $TIME_START
+  0.0
+ $TIME_UNIT
+  DAY
+  $TIME_STEPS
+  1 0.01
+  1 0.04
+  1 0.05
+  2 0.25
+  1 0.4
+  5 1.0
+  8 2.0
+#STOP
+
+  $TIME_STEPS
+    100 1.0
+ 
+ $TIME_CONTROL
+  PI_AUTO_STEP_SIZE 
+ 1 1.0e-3 1.0e-8 1.e-2

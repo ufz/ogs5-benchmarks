@@ -1,0 +1,13 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+ RICHARDS_FLOW
+ $TIME_STEPS
+ 120  1.0
+  $TIME_END
+  120.0
+ $TIME_START
+  0.0
+ $TIME_UNIT
+ MINUTE 
+#STOP

@@ -1,0 +1,29 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  3
+ $GEOMETRY_AREA
+  1.000000e+000
+ $POROSITY
+  1  0.10
+ $TORTUOSITY
+  1   1.0
+ $STORAGE
+  1  0.000
+ $VOL_BIO
+  1   0.0
+ $VOL_MAT
+  1   0.5
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  2.000000e-13
+ $PERMEABILITY_SATURATION
+; model -- sr -- sm -- exponent -- multiplier -- min_krel
+  3        0.3   0.6   1.0         1.0
+  33       0.4   0.7   1.0         1.0  
+ $CAPILLARY_PRESSURE
+  0 1  
+ $DENSITY
+  1   1800.0
+ #STOP
+
+

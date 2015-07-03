@@ -1,0 +1,25 @@
+GeoSys-CAP  ChemApp Calculating Setting
+#DATABASE_PROPERTIES
+  $DATA_FILE
+   ./helg_0901_linux64.cst
+  $CAP_MODE
+    2 
+  $DATA_FORMAT
+   CST
+  $MASS_NUM
+   36
+  $MASS_TYPE
+   SPECIES
+  $PHASE_LIST
+   0 _s
+   1 _g
+   2 _w
+   2
+   END
+ $SPECIES_DEFINE
+   TRANS
+ $NLOG_AC
+   pH   H[+]
+   END
+#STOP          
+                

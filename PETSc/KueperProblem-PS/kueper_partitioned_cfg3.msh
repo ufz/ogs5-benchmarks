@@ -1,0 +1,5 @@
+Subdomain mesh (Nodes;  Nodes_linear; Elements; Ghost elements; Nodes of Linear elements; Nodes of quadratic elements) Nodes of Linear whole elements; Nodes of whole quadratic elements; Total integer variables of elements;Total integer variables of ghost elements  
+3
+827 827 720 45 781 781 2337 2337 5040 495
+842 842 715 65 775 775 2337 2337 5005 714
+850 850 717 67 781 781 2337 2337 5019 736

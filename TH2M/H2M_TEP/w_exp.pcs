@@ -1,0 +1,30 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+    MULTI_PHASE_FLOW
+
+ #PROCESS
+ $PCS_TYPE
+  DEFORMATION
+  
+
+#STOP
+
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+    MULTI_PHASE_FLOW
+
+ #PROCESS
+ $PCS_TYPE
+  DEFORMATION 
+
+#STOP
+
+ $NUM_TYPE
+   NEW   
+  $ELEMENT_MATRIX_OUTPUT 
+  0
+  $RELOAD
+   -1
+ $BOUNDARY_CONDITION_OUTPUT

@@ -1,0 +1,38 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES			; 0...Opalinuston
+ $GEOMETRY_DIMENSION
+  2
+ $POROSITY
+  1  0.06			
+ $TORTUOSITY
+  1   0.278
+ $STORAGE
+  1  1e-5  
+ $PERMEABILITY_TENSOR
+  ORTHOTROPIC  1.0e-13 2.0e-14
+ $DENSITY
+  1  2430.0
+ $MASS_DISPERSION
+  1  0.100  0.100
+  
+#MEDIUM_PROPERTIES			; 1...Bentonit
+ $GEOMETRY_DIMENSION
+  2
+ $POROSITY
+  1  0.05
+ $TORTUOSITY
+  1   1.0
+ $STORAGE
+  1  2e-4 
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  1.0e-13
+ $DENSITY
+  1  1770.0
+ $MASS_DISPERSION
+  1  0.100  0.100
+ $MASS_DISPERSION
+  1  0.2500  0.2500
+
+#STOP
+
+ 

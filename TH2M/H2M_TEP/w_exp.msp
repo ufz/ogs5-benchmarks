@@ -1,0 +1,33 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $DENSITY
+    1 2010.0
+ $ELASTICITY
+    POISSION  0.4   
+  $PLASTICITY
+    CAM-CLAY
+    1.5     //M
+    1.5   // Vergin compression index  
+    0.1   // Swelling index 
+    8.0e6   //Initial preconsolidation pressure 
+    0.7   // Initial void ratio  
+    1.0     //OCR 
+     0.0 //Initial stress_xx
+     0.0 //Initial stress_yy
+     0.0 //Initial stress_zz      
+     0.1e6 // Minimum haydrostatic pressure. Must be a positive number    
+
+    $SWELLING_PRESSURE_TYPE   
+      3  0.01 -0.003e-6 0.25 -0.1609 -0.03e-6  0.1e6  
+ $BIOT_CONSTANT
+  -1.0    
+$STRESS_INTEGRATION_TOLERANCE
+1.e-9 1.e-8  // f_tol, s_tol
+#STOP
+
+     //! 0: \f$ \kapa_i0     \f$  
+        //! 1: \f$ \alpha_i     \f$  
+        //! 2: \f$ \kappa_{s0}  \f$  
+        //! 3: \f$ \alpha_{sp}  \f$  
+        //! 4: \f$ \alpha_{ss}  \f$  
+        //! 5: \f$ p_ref        \f$  

@@ -1,0 +1,82 @@
+GeoSys-OUT: Output -------------------------
+#OUTPUT
+ $NOD_VALUES
+  Comp_A
+  Comp_B
+  Comp_C
+  Comp_D
+  Comp_E
+  Biomass
+  ConsTracer		;auszugebener Wert
+  TEMPERATURE1
+ $GEO_TYPE
+  DOMAIN		;in welchem Gebiet wird der Wert ausgegeben
+ $DAT_TYPE		
+  TECPLOT		;Ausgabeformat
+ $TIM_TYPE
+  STEPS 480
+#OUTPUT
+ $NOD_VALUES
+  Comp_A
+  Comp_B
+  Comp_C
+  Comp_D
+  Comp_E
+  Biomass
+  ConsTracer		;auszugebener Wert
+  TEMPERATURE1
+ $GEO_TYPE
+  POINT POINT2		;in welchem Gebiet wird der Wert ausgegeben
+ $DAT_TYPE		
+  TECPLOT		;Ausgabeformat
+ $TIM_TYPE
+  STEPS 120
+#OUTPUT
+ $NOD_VALUES
+  Comp_A
+  Comp_C
+  Comp_B
+  Comp_D
+  Comp_E
+  Biomass
+  ConsTracer		;auszugebener Wert
+  TEMPERATURE1
+ $GEO_TYPE
+  POINT POINT3		;in welchem Gebiet wird der Wert ausgegeben
+ $DAT_TYPE		
+  TECPLOT		;Ausgabeformat
+ $TIM_TYPE
+  STEPS 120
+#OUTPUT
+ $NOD_VALUES
+  Comp_A
+  Comp_C
+  Comp_B
+  Comp_D
+  Comp_E
+  Biomass
+  ConsTracer		;auszugebener Wert
+  TEMPERATURE1
+ $GEO_TYPE
+  POINT POINT4		;in welchem Gebiet wird der Wert ausgegeben
+ $DAT_TYPE		
+  TECPLOT		;Ausgabeformat
+ $TIM_TYPE
+  STEPS 120
+#OUTPUT
+ $NOD_VALUES
+  Comp_A
+  Comp_C
+  Comp_B
+  Comp_D
+  Comp_E
+  Biomass
+  ConsTracer		;auszugebener Wert
+  TEMPERATURE1
+ $GEO_TYPE
+  POINT POINT5		;in welchem Gebiet wird der Wert ausgegeben
+ $DAT_TYPE		
+  TECPLOT		;Ausgabeformat
+ $TIM_TYPE
+  STEPS 120
+#STOP

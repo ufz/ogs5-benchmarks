@@ -1,0 +1,34 @@
+GeoSys-CP: Component Properties
+#COMPONENT_PROPERTIES ; TCE
+ $NAME
+  TCE ;
+ $MOBILE
+  1 			; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 3.5E-08 			; diffusion model type, diffusion constant			
+ $TRANSPORT_PHASE
+  0				; 0=water, 1=matrix, 2=Bio, 3=NAPL (REV)
+ $MOLAR_DENSITY
+  11111.1																		
+ $MOLAR_WEIGHT
+  0.13139
+ $MAXIMUM_AQUEOUS_SOLUBILITY
+  120.065																;temp. abhängigkeit								!!!!!!!!!!!!	
+  
+#COMPONENT_PROPERTIES ; NAPL_TCE
+ $NAME
+  NAPL_TCE ;
+ $MOBILE
+  0 			
+ $DIFFUSION									
+  1 0 		
+ $TRANSPORT_PHASE
+  3			
+ $MOLAR_DENSITY
+  11111.1
+ $MOLAR_WEIGHT
+  0.13139
+ $MAXIMUM_AQUEOUS_SOLUBILITY
+  120.065
+
+#STOP

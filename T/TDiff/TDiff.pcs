@@ -1,0 +1,7 @@
+Lauwerier-Problem
+#PROCESS
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $NUM_TYPE
+  NEW
+#STOP

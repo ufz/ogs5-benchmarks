@@ -1,0 +1,38 @@
+   Input file: phinp.dat
+  Output file: phinp.out
+Database file: phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	RATES
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	SOLUTION 1 #New Version 
+	units mol/kgw 
+	temp 25.000000 
+	C(4)       1.000000000000e-10     # comp 
+	Ca       1.000000000000e-10     # comp 
+	Mg       1.000000000000e-03     # comp 
+	Cl       2.000000000000e-03     # comp 
+	pH       6.944197496887e+00 charge        # comp 
+	pe       -6.899081015409e+00       # comp 
+	EQUILIBRIUM_PHASES   1
+	Calcite 0.000000000000e+00  0.000000000000e+00       # comp 
+	Dolomite(dis) 0.000000000000e+00  0.000000000000e+00       # comp 
+	PRINT
+	 reset false
+------------------------------
+End of Run after 0.08 Seconds.
+------------------------------
+

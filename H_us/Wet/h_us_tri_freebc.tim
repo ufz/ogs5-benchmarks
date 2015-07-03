@@ -1,0 +1,33 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $TIME_STEPS
+  620  1e+3
+ $TIME_END
+  61200.0
+ $TIME_START
+  0.0
+#STOP
+
+ $TIME_CONTROL           
+   ERROR_CONTROL_ADAPTIVE
+   
+   
+ $TIME_CONTROL   
+  SELF_ADAPTIVE
+   4	1.7
+   10	0.7 
+  MAX_TIME_STEP
+   50 
+  MIN_TIME_STEP
+   0.0001  
+
+
+
+ $TIME_STEPS
+  100  .001
+  100  .01
+  1000  .1
+  1000  1.
+  350000  10.

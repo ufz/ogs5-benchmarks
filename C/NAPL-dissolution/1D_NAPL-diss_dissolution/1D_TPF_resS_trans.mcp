@@ -1,0 +1,111 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+
+#COMPONENT_PROPERTIES  ; PCE
+ $NAME
+  PCE ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0              ; 0 = Wasser, 1 = Matrix, 2 = Bio, 3= NAPL (REV)
+$MOLAR_DENSITY
+  9770.8
+$MOLAR_WEIGHT
+  0.16583
+$MAXIMUM_AQUEOUS_SOLUBILITY
+  1.15             
+  
+#COMPONENT_PROPERTIES  ; TCE
+ $NAME
+  TCE ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0              ; 0 = Wasser, 1 = Matrix, 2 = Bio, 3= NAPL (REV)
+$MOLAR_DENSITY
+  11111.1
+$MOLAR_WEIGHT
+  0.13139
+$MAXIMUM_AQUEOUS_SOLUBILITY
+  10.65          
+  
+#COMPONENT_PROPERTIES  ; TCM
+ $NAME
+  TCM ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0              ; 0 = Wasser, 1 = Matrix, 2 = Bio, 3= NAPL (REV)
+$MOLAR_DENSITY
+   12395.3
+$MOLAR_WEIGHT
+  0.1538227
+$MAXIMUM_AQUEOUS_SOLUBILITY
+   72.86        
+   
+#COMPONENT_PROPERTIES  ; NAPL_PCE
+ $NAME
+  NAPL_PCE ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  3
+$MOLAR_DENSITY
+  9770.8
+$MOLAR_WEIGHT
+  0.16583  
+$MAXIMUM_AQUEOUS_SOLUBILITY
+  1.15     
+
+#COMPONENT_PROPERTIES  ; NAPL_TCE
+ $NAME
+  NAPL_TCE ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  3
+$MOLAR_DENSITY
+  11111.1
+$MOLAR_WEIGHT
+  0.13139
+$MAXIMUM_AQUEOUS_SOLUBILITY
+  10.65          
+
+#COMPONENT_PROPERTIES  ; NAPL_TCM
+ $NAME
+  NAPL_TCM ;
+ $MOBILE
+  0              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  3
+$MOLAR_DENSITY
+   12395.3
+$MOLAR_WEIGHT
+  0.1538227
+$MAXIMUM_AQUEOUS_SOLUBILITY
+   72.86  
+
+
+#COMPONENT_PROPERTIES  ; Tracer 
+ $NAME
+  Tracer ;
+ $MOBILE
+  1              ; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1 0              ; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0              ; 0 = Wasser, 1 = Matrix, 2 = Bio, 3= NAPL (REV)
+
+
+#STOP

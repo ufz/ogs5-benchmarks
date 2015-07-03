@@ -1,0 +1,313 @@
+GeoSys Kinetic Reactions
+
+
+#REACTION ; 
+ $NAME
+   TCE-mat-deg ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   TCE-mat
+  $RATECONSTANT
+   -7.52315E-08  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $PRODUCTIONSTOCH
+  trans-DCE-mat -0.000754
+  cis-DCE-mat   -0.017505
+  11-DCE-mat    -0.00432
+  ClAcet-mat    -0.977421
+
+
+#REACTION ; 
+ $NAME
+   trans-DCE-mat ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   trans-DCE-mat
+  $RATECONSTANT
+   -9.86204E-07  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $PRODUCTIONSTOCH
+  Acet-mat  -0.988107
+  VC-mat    -0.011893
+  
+#REACTION ; 
+ $NAME
+   cis-DCE-mat-deg ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   cis-DCE-mat
+  $RATECONSTANT
+   -5.11464E-07  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $PRODUCTIONSTOCH
+  Acet-mat  -0.939655
+  VC-mat    -0.060345
+  
+#REACTION ; 
+ $NAME
+   11-DCE-mat-deg ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   11-DCE-mat
+  $RATECONSTANT
+   -8.20106E-07  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $PRODUCTIONSTOCH
+  Ethylen-mat  -1.
+  
+#REACTION ; 
+ $NAME
+   Acet-mat-deg ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Acet-mat
+  $RATECONSTANT
+   -2.55765E-06  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $PRODUCTIONSTOCH
+  Ethylen-mat  -.992113
+  C4-mob       -.007887
+  
+#REACTION ; 
+ $NAME
+   ClAcet-mat-deg ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   ClAcet-mat
+  $RATECONSTANT
+   -1.42416E-06  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $PRODUCTIONSTOCH
+  Acet-mat -1.
+  
+#REACTION ; 
+ $NAME
+   VC-mat-deg ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   VC-mat
+  $RATECONSTANT
+   -6.06481E-06  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $PRODUCTIONSTOCH
+  Ethylen-mat  -1.
+  
+#REACTION ; 
+ $NAME
+   Ethylen-mat-deg ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Ethylen-mat
+  $RATECONSTANT
+   -1.99074E-06  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $PRODUCTIONSTOCH
+  Ethan-mob  -1.
+
+  
+#REACTION ; 
+ $NAME
+  langmuir1;
+ $TYPE
+   exchange;
+ $SORPTION_TYPE
+	langmuir;
+ $EQUATION
+   TCE-mat =  TCE-mob ; 
+ $EXCHANGE_PARAMETERS
+    5.78704E-08    2.39583E-05  1              ; Adsorptionsrate, Desorptionsrate, surfaceID
+
+#REACTION ; 
+ $NAME
+  langmuir2;
+ $TYPE
+   exchange;
+ $SORPTION_TYPE
+	langmuir;
+ $EQUATION
+   trans-DCE-mat =  trans-DCE-mob ; 
+ $EXCHANGE_PARAMETERS
+    1.02431E-08  1.73611E-05   1              ; Adsorptionsrate, Desorptionsrate, surfaceID
+    
+#REACTION ; 
+ $NAME
+  langmuir3;
+ $TYPE
+   exchange;
+ $SORPTION_TYPE
+	langmuir;
+ $EQUATION
+   cis-DCE-mat =  cis-DCE-mob ; 
+ $EXCHANGE_PARAMETERS
+     1.73611E-07  1.62037E-04  1              ; Adsorptionsrate, Desorptionsrate, surfaceID
+    
+#REACTION ; 
+ $NAME
+  langmuir4;
+ $TYPE
+   exchange;
+ $SORPTION_TYPE
+	langmuir;
+ $EQUATION
+   11-DCE-mat =  11-DCE-mob ; 
+ $EXCHANGE_PARAMETERS
+     1.02431E-08  1.73611E-05  1              ; Adsorptionsrate, Desorptionsrate, surfaceID
+    
+#REACTION ; 
+ $NAME
+  langmuir5;
+ $TYPE
+   exchange;
+ $SORPTION_TYPE
+	langmuir;
+ $EQUATION
+   Acet-mat =  Acet-mob ; 
+ $EXCHANGE_PARAMETERS
+    5.78704E-08  1.38889E-05  1              ; Adsorptionsrate, Desorptionsrate, surfaceID
+    
+#REACTION ; 
+ $NAME
+  langmuir6;
+ $TYPE
+   exchange;
+ $SORPTION_TYPE
+	langmuir;
+ $EQUATION
+   ClAcet-mat =  ClAcet-mob ; 
+ $EXCHANGE_PARAMETERS
+   5.78704E-08  6.01852E-06  1              ; Adsorptionsrate, Desorptionsrate, surfaceID
+    
+#REACTION ; 
+ $NAME
+  langmuir7;
+ $TYPE
+   exchange;
+ $SORPTION_TYPE
+	langmuir;
+ $EQUATION
+   VC-mat =  VC-mob ; 
+ $EXCHANGE_PARAMETERS
+    3.47222E-08  1.73611E-05  1              ; Adsorptionsrate, Desorptionsrate, surfaceID
+    
+#REACTION ; 
+ $NAME
+  langmuir8;
+ $TYPE
+   exchange;
+ $SORPTION_TYPE
+	langmuir;
+ $EQUATION
+   Ethylen-mat =  Ethylen-mob ; 
+ $EXCHANGE_PARAMETERS
+   3.47222E-08  1.73611E-05  1              ; Adsorptionsrate, Desorptionsrate, surfaceID                    
+
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-8		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-1		; min Timestep
+ $INITIAL_TIMESTEP	
+	10.0       ; init Timestep
+ $SURFACES
+  1  2000.             ; surfaceID, Anz. Oberflächenplätze
+
+#STOP
+$LANGMUIR
+  2  1  1  5.E-3  2.07    ; sorbiert, mobil, surfaceID, Adsorptionsrate, Desorptionsrate TCE
+
+$LANGMUIR
+  4  3  1  .885E-3  1.5   ; sorbiert, mobil, surfaceID, Adsorptionsrate, Desorptionsrate trans-DCE
+
+$LANGMUIR
+  6  5  1  15.E-3  14.    ; sorbiert, mobil, surfaceID, Adsorptionsrate, Desorptionsrate cis-DCE
+
+$LANGMUIR
+  8  7  1  .885E-3  1.5   ; sorbiert, mobil, surfaceID, Adsorptionsrate, Desorptionsrate 1,1-DCE
+
+$LANGMUIR
+ 10  9  1  5.E-3  1.2     ; sorbiert, mobil, surfaceID, Adsorptionsrate, Desorptionsrate Acet
+
+$LANGMUIR
+ 12 11  1  5.E-3  5.2E-1  ; sorbiert, mobil, surfaceID, Adsorptionsrate, Desorptionsrate ClAcet
+
+$LANGMUIR
+ 14 13  1  3.E-3  1.5     ; sorbiert, mobil, surfaceID, Adsorptionsrate, Desorptionsrate VC
+
+$LANGMUIR
+ 16 15  1  3.E-3  1.5     ; sorbiert, mobil, surfaceID, Adsorptionsrate, Desorptionsrate VC
+
+$SURFACE
+  1  2000.             ; surfaceID, Anz. Oberflächenplätze
+  
+  ;#BIODEGRADATION
+$BACTERIAPROPERTIES
+  2  -6.5E-3  1            ; X-Species, Wachstumsrate, flag Wachstum TCE
+$PRODUCTION
+  4  -0.000754
+$PRODUCTION
+  6  -0.017505
+$PRODUCTION
+  8  -0.00432
+$PRODUCTION
+ 12  -0.977421
+
+$BACTERIAPROPERTIES
+  4  -85.208E-3  1            ; X-Species, Wachstumsrate, flag Wachstum trans-DCE
+$PRODUCTION
+ 10  -0.988107
+$PRODUCTION
+ 14  -0.011893
+
+$BACTERIAPROPERTIES
+  6  -44.19048E-3  1            ; X-Species, Wachstumsrate, flag Wachstum cis-DCE
+$PRODUCTION
+ 10  -0.939655
+$PRODUCTION
+ 14  -0.060345
+
+$BACTERIAPROPERTIES
+  8  -70.85714E-3  1            ; X-Species, Wachstumsrate, flag Wachstum 1,1-DCE
+$PRODUCTION
+ 16  -1.
+
+$BACTERIAPROPERTIES
+ 10  -220.9810E-3  1            ; X-Species, Wachstumsrate, flag Wachstum Acet
+$PRODUCTION
+ 16  -.992113
+$PRODUCTION
+ 17  -.007887
+
+$BACTERIAPROPERTIES
+ 12  -123.0476E-3  1            ; X-Species, Wachstumsrate, flag Wachstum ClAcet
+$PRODUCTION
+ 10  -1.
+
+$BACTERIAPROPERTIES
+ 14  -524.0E-3  1            ; X-Species, Wachstumsrate, flag Wachstum VC
+$PRODUCTION
+ 16  -1.
+
+$BACTERIAPROPERTIES
+ 16  -172.0E-3  1            ; X-Species, Wachstumsrate, flag Wachstum Ethylen
+$PRODUCTION
+ 18  -1.
+
+  

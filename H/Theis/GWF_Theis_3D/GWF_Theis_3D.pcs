@@ -1,0 +1,9 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NUM_TYPE
+  NEW   
+$PRIMARY_VARIABLE
+  HEAD 
+#STOP

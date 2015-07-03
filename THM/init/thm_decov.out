@@ -1,0 +1,23 @@
+GeoSys-OUT: Output ------------------------------------------------
+
+#OUTPUT
+ $NOD_VALUES
+  DISPLACEMENT_X1
+  DISPLACEMENT_Y1
+  STRESS_XX
+  STRESS_XY
+  STRESS_YY
+  STRESS_ZZ
+  STRAIN_XX
+  STRAIN_XY
+  STRAIN_YY  
+  STRAIN_PLS   
+ $GEO_TYPE
+  DOMAIN:
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 1
+#STOP
+
+

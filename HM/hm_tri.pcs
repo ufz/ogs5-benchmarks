@@ -1,0 +1,10 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+  DEFORMATION
+#STOP
+
+
+ $PCS_TYPE
+  DEFORMATION_SINGLEFLOW_MONO

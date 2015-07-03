@@ -1,0 +1,10 @@
+GeoSys Reaction Interface Data
+#REACTION_INTERFACE
+  $TEMPERATURE
+   VARIABLE 
+   ;CONSTANT 300.15  ; K
+#STOP
+
+
+
+

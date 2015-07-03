@@ -1,0 +1,140 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NUM_TYPE
+   NEW  
+   
+; Transport Process  ; 1
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 2
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 3 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 4 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 5 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 6 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 7 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 8 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 9
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 10 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 11 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; 12 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; 13 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; 14 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; 15 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; 16 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; 17 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; 18 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+; Transport Process  ; 19 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+#STOP

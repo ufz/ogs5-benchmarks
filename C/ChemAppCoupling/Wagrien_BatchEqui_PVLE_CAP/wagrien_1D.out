@@ -1,0 +1,106 @@
+GeoSys-OUT: Output ------------------------------------------------
+  
+#OUTPUT // profile
+  $NOD_VALUES
+    HEAD                      
+    water_liquid             
+    Al[3+]                    
+    CO2                       
+    CO3[2-]                   
+    Ca[2+]                    
+    Cl[-]                     
+    Fe[2+]                    
+    Fe[3+]                    
+    H[+]                      
+    H2                        
+    HCO3[-]                   
+    HS[-]                     
+    K[+]                      
+    Mg[2+]                    
+    Na[+]                     
+    OH[-]                     
+    SO4[2-]                   
+    SiO2                      
+    AlCH2NaO5_dawsonite(s)_s  
+    CO3Mg_mgco3(s)_s          
+    HO2Al_alo(oh)_boehmit(s)_s
+    O2Si_sio2_quartz(s8)_s    
+    O3SiMg_mgsio3(s)_s        
+    O4SiMg2_mg2sio4(s)_s      
+    H4O9Al2Si2_al2si2o5((s3)_s
+    O8AlSi3Na_naalsi3o8_l(s)_s
+    O8AlSi3K_kalsi3o8_k-f(s)_s
+    H2O12Al3Si3K_kal2(als(s)_s
+    CO3Ca_caco3_calcite(s2)_s 
+    C2O6CaMg_camg(co3)2(s)_s  
+    O8Al2CaSi2_ca(al2si2)(s)_s
+    O4CaS_caso4(s)_s          
+    O3Fe2_fe2o3(s)_s          
+    CO3Fe_feco3(s)_s          
+    O4Fe2Si_fe2sio4(s)_s      
+    S2Fe_fes2(s)_s            
+    pH
+  $GEO_TYPE
+    POLYLINE  OUT_LINE
+  $DAT_TYPE
+    TECPLOT
+  $TIM_TYPE
+    STEPS  10
+
+  
+#OUTPUT // profile
+ $ELE_VALUES
+  VELOCITY1_X
+  POROSITY
+  PERMEABILITY
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS  10
+     
+#STOP
+
+
+
+
+    
+HEAD                      
+water_liquid             
+Al[3+]                    
+CO2                       
+CO3[2-]                   
+Ca[2+]                    
+Cl[-]                     
+Fe[2+]                    
+Fe[3+]                    
+H[+]                      
+H2                        
+HCO3[-]                   
+HS[-]                     
+K[+]                      
+Mg[2+]                    
+Na[+]                     
+OH[-]                     
+SO4[2-]                   
+SiO2                      
+AlCH2NaO5_dawsonite(s)_s  
+CO3Mg_mgco3(s)_s          
+HO2Al_alo(oh)_boehmit(s)_s
+O2Si_sio2_quartz(s8)_s    
+O3SiMg_mgsio3(s)_s        
+O4SiMg2_mg2sio4(s)_s      
+H4O9Al2Si2_al2si2o5((s3)_s
+O8AlSi3Na_naalsi3o8_l(s)_s
+O8AlSi3K_kalsi3o8_k-f(s)_s
+H2O12Al3Si3K_kal2(als(s)_s
+CO3Ca_caco3_calcite(s2)_s 
+C2O6CaMg_camg(co3)2(s)_s  
+O8Al2CaSi2_ca(al2si2)(s)_s
+O4CaS_caso4(s)_s          
+O3Fe2_fe2o3(s)_s          
+CO3Fe_feco3(s)_s          
+O4Fe2Si_fe2sio4(s)_s      
+S2Fe_fes2(s)_s            
+                          

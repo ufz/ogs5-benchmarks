@@ -1,0 +1,61 @@
+GeoSys Kinetic Reactions -------------
+#KINREACTIONDATA
+ $SOLVER_TYPE
+		1
+ $RELATIVE_ERROR
+		1.e-6
+ $MIN_TIMESTEP
+		1.e-6
+ $INITIAL_TIMESTEP
+		1.0
+ $BACTERIACAPACITY
+  1
+ $NO_REACTIONS
+  POINT POINT0
+ $DEBUG_OUTPUT
+
+#REACTION
+ $NAME
+  DoubleMonod
+ $TYPE
+  monod
+ $BACTERIANAME
+  Biomass
+ $EQUATION
+  1 Comp_A + 21 Comp_B = 8 Comp_C + 21 Comp_D + 8 Comp_E
+ $RATECONSTANT
+  1.0  1.0	;first- order rate, exponent
+ $TEMPERATURE_DEPENDENCE
+  ;Ratkowski2-Model, Tmin, Tmax,    b,    c
+    1                 290.15    313.15   0.2030012 0.0012304
+ $GROWTH
+  1
+ $MONODTERMS
+  Comp_A	1.14e-02 	1.0 ; for each monod term: species, half saturation concentration, order
+  Comp_B	7.0e-02 	1.0
+ $INHIBITIONTERMS
+ $PRODUCTIONSTOCH
+  Comp_A -1.0
+  Comp_B -21.0
+  Comp_C +8.0
+  Comp_D +21
+  Comp_E +8
+
+#REACTION ;
+ $NAME
+  DoubleMonodDecay
+ $TYPE
+  monod
+ $BACTERIANAME
+  Biomass
+ $EQUATION
+  Biomass = Biomass
+ $RATECONSTANT
+  -1.16e-6 1.0	;  first- order rate , exponent
+ $GROWTH
+  1
+ $MONODTERMS
+ $INHIBITIONTERMS
+ $PRODUCTIONTERMS
+
+#STOP

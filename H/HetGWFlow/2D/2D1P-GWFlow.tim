@@ -1,0 +1,12 @@
+GeoSys-TIM: ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $TIME_START
+  0.000000000000e+000
+ $TIME_END
+  1.000000000000e+004
+ $TIME_STEPS
+  1 2.0e+003
+
+#STOP

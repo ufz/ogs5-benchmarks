@@ -1,0 +1,45 @@
+#PBS -S /bin/bash
+### Declare job non-rerunable
+#PBS -r n
+#PBS -N thm_quad
+#PBS -o thm_quad.txt
+#PBS -e thm_quad.err
+###PBS -q short
+#PBS -m bae
+#PBS -V
+#PBS -l nodes=3
+##PBS -l walltime=12:00:00
+##PBS -l cput=12:00:00
+# Boot the MPI2 engine.
+NODES=6
+HOST=`hostname`
+echo Local MPD console on $HOST
+##mpdboot --totalnum=$NODES 
+mpdboot  
+# Inspect if all MPI nodes have been activated.
+mpdtrace -l
+# Check the connectivity.
+mpdringtest 100
+# Check if you can run trivial non-MPI jobs.
+mpdrun -l -n $NODES hostname
+cd $PBS_O_WORKDIR
+mpiexec -n $NODES /home/wenqing/code/GeoSys4321/rf4 thm_quad 
+echo Running on host `hostname`
+echo Time is `date`
+echo Directory is `pwd`
+echo This jobs runs on the following processors:
+echo `cat $PBS_NODEFILE`
+# Shut down the MPI2 engine and exit the PBS script.
+mpdallexit
+exit 0
+
+
+
+
+
+
+
+
+
+
+

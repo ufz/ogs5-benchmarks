@@ -1,0 +1,34 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+  ConsTracer
+  Comp_A
+  Comp_B
+  Comp_C
+  Biomass
+ $GEO_TYPE
+  POLYLINE  PLY_X1
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 108
+#STOP
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+  ConsTracer
+  Comp_A
+  Comp_B
+  Comp_C
+  Biomass
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+ STEPS 108
+#STOP
+ STEPS 7200
+
+POLYLINE

@@ -1,0 +1,70 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $TIME_END
+  10.0
+ $TIME_START
+  0.0
+ $TIME_CONTROL
+PI_AUTO_STEP_SIZE 
+1 1.0e-2 1.0e-9 0.01
+$TIME_UNIT
+  DAY 
+#STOP
+
+
+  
+
+$TIME_END
+  518624.0  
+
+
+ $TIME_CONTROL
+  SELF_ADAPTIVE
+   4	1.7
+   10	0.7  
+
+ $TIME_END
+  618624.0
+
+ $TIME_CONTROL           
+   ERROR_CONTROL_ADAPTIVE
+   
+   
+ $TIME_CONTROL   
+  SELF_ADAPTIVE
+   4	1.7
+   10	0.7 
+  MAX_TIME_STEP
+   50 
+  MIN_TIME_STEP
+   0.0001  
+
+
+
+ $TIME_STEPS
+  100     .1
+  1000    1
+  1000    10.
+  35000   20.
+  100000  20.
+
+ $TIME_STEPS
+  100  .001
+  100  .01
+  1000  .1
+  1000  1.
+  35000  10.
+ $TIME_END
+  618624.
+
+#TIME
+ 35000. ; final simulation time
+ 0 ; maximum time step number
+ 0 ; time step control
+ 100  .001
+ 100  .01
+ 1000  .1
+ 1000  1.
+ 3500  10.

@@ -1,0 +1,38 @@
+GINA - RFD-Datei
+#PROJECT
+  Diffusion mir Anisotropie
+#REFERENCE_CONDITIONS
+9.81 293 101325
+#STOP
+#CURVES
+0 1
+1e7 1
+2e7 0
+3e7 0
+4e7 0
+5e7 0
+6e7 0
+7e7 0
+8e7 0
+9e7 0
+1e8 0
+1.1e8 0
+1.2e8 0
+1.3e8 0
+1.4e8 0
+1.5e8 0
+1.6e8 0
+1.7e8 0
+1.8e8 0
+1.9e8 0
+2e8 0
+2.1e8 0
+2.2e8 0
+2.3e8 0
+2.4e8 0
+2.5e8 0
+2.68 0
+2.7e8 0
+2.8e8 0
+2.9e8 0
+3e8 0

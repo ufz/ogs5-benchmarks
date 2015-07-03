@@ -1,0 +1,14 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+ MULTI_PHASE_FLOW
+ $NUM_TYPE
+   NEW 
+$ELEMENT_MATRIX_OUTPUT
+ 0
+
+ $BOUNDARY_CONDITION_OUTPUT   
+#STOP
+
+
+ 

@@ -1,0 +1,11 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  DEFORMATION
+ $TIME_STEPS
+100 1.0
+ $TIME_END
+  100.
+ $TIME_START
+  0.0
+#STOP

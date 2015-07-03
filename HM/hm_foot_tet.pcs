@@ -1,0 +1,16 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+  DEFORMATION
+ $MEMORY_TYPE
+ 0  
+ $ST_RHS
+  2       
+#STOP
+ 
+   
+$ST_RHS
+   0     // Default. Nothing
+   1         // Write integrated Neumann BC or sourse term
+   2         // Read from file

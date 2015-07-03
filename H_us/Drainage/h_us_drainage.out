@@ -1,0 +1,74 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $NOD_VALUES
+  PRESSURE1
+  SATURATION1
+ $GEO_TYPE
+  DOMAIN
+ $TIM_TYPE
+   180
+   600
+   1800
+   3600
+   5400
+   7200
+   10800
+   18000
+   36000
+   72000
+   75600
+   79200
+   82800
+   86400
+ $DAT_TYPE
+  TECPLOT
+#STOP
+
+
+    24
+    96
+    480
+    2400
+
+
+
+#OUTPUT // profile
+ $NOD_VALUES
+  PRESSURE1
+  SATURATION1
+ $GEO_TYPE
+  POLYLINE OUT
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+ 0.001
+ 0.01
+ 0.1
+ 1.0
+ 100.
+ 1000.
+ 10000.
+ 35000.
+#STOP
+
+
+
+  STEPS 1
+#OUTPUT
+; 0  1  1  0  1  2  1
+ 0  1  0  0  1  5 ; method 5: output after time 
+100.
+1000.
+10000.
+30000.
+#OUTPUT_NODES
+ 1  10
+
+#OUTPUT_EX
+ 5 2mrich1d_mb.PLT  
+ 1  35000
+ 10.  3  Z PRESSURE1 SATURATION1
+
+

@@ -1,0 +1,12 @@
+#PROJECT
+  Buckley-Leverett benchmark one. Prepared by WW
+; Pc(s): Sw
+#CURVES   
+0.2  3.0   
+0.84   0.0
+
+#STOP
+
+
+0.0  3.0   
+1.   -2.0

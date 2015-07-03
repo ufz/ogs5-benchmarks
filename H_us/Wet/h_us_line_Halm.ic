@@ -1,0 +1,25 @@
+GeoSys-IC  Initial Conditions ------------------------------------------------
+#INITIAL_CONDITION
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $PRIMARY_VARIABLE
+  PRESSURE1
+ $GEO_TYPE
+  DOMAIN 
+ $DIS_TYPE
+  CONSTANT -55.435
+#STOP
+
+; C1.5 Initial Conditions ---------------------------------------------
+#INITIAL_CONDITIONS_PRESSURE
+ 0 0 -21500
+;#INITIAL_CONDITIONS_SATURATION
+; 0 0 0.530000000000000000000 
+
+
+ $PCS_TYPE
+  SATURATION1
+ $GEO_TYPE
+  DOMAIN 
+ $DIS_TYPE
+  CONSTANT 0.065 

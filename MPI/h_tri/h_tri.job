@@ -1,0 +1,47 @@
+#PBS -S /bin/bash
+## 06/2006 WW
+### Declare job non-rerunable
+#PBS -r n
+#PBS -N m_sdc
+#PBS -o m_sdc.txt
+#PBS -e m_sdc.err
+###PBS -q short
+###PBS -m bae
+#PBS -m e
+#PBS -V
+#PBS -l nodes=2
+##PBS -l walltime=12:00:00
+##PBS -l cput=12:00:00
+# Boot the MPI2 engine.
+NODES=4
+HOST=`hostname`
+echo Local MPD console on $HOST
+##mpdboot --totalnum=$NODES 
+mpdboot  
+# Inspect if all MPI nodes have been activated.
+mpdtrace -l
+# Check the connectivity.
+mpdringtest 100
+# Check if you can run trivial non-MPI jobs.
+mpdrun -l -n $NODES hostname
+cd $PBS_O_WORKDIR
+mpiexec -n $NODES /home/wenqing/code/tmp/GeoSys_Parallel/rf4 h_tri 
+echo Running on host `hostname`
+echo Time is `date`
+echo Directory is `pwd`
+echo This jobs runs on the following processors:
+echo `cat $PBS_NODEFILE`
+# Shut down the MPI2 engine and exit the PBS script.
+mpdallexit
+exit 0
+
+
+
+
+
+
+
+
+
+
+

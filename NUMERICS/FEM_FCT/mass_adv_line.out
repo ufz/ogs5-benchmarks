@@ -1,0 +1,18 @@
+Gina - Out-Datei
+#OUTPUT
+ $NOD_VALUES
+   CONCENTRATION0
+ $GEO_TYPE
+   POLYLINE PLY_0
+ $DAT_TYPE
+   TECPLOT
+ $TIM_TYPE
+   STEPS 10
+#STOP
+
+   VELOCITY_X1
+   0.1
+   0.2
+   0.3
+   0.4
+   0.5

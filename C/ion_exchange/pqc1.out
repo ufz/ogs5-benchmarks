@@ -1,0 +1,42 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  Ca
+  Cl
+  K
+  Na
+  N(5)
+  pH
+  pe
+  CaX2
+  NaX
+  KX
+ $GEO_TYPE
+  POINT  POINT2
+ $DAT_TYPE
+  TECPLOT
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  Ca
+  Cl
+  K
+  Na
+  N(5)
+  pH
+  pe
+  CaX2
+  NaX
+  KX
+ $GEO_TYPE
+  POLYLINE  OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+   0.0
+   180.0
+   360.0
+   8640.0
+   86400.0
+#STOP
+

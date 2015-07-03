@@ -1,0 +1,13 @@
+#SOLID_PROPERTIES
+$DENSITY
+1 1.0
+CAPACITY:
+1 620.573
+CONDUCTIVITY:
+1 0.4
+$REACTIVE_SYSTEM
+SINUSOIDAL
+-5.0e+05 ;in J/kg negative for exothermic composition reaction
+#STOP
+
+# 1 0.620573e+003

@@ -1,0 +1,12 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+ $NUM_TYPE
+  NEW
+
+#PROCESS
+ $PCS_TYPE
+  FLUID_MOMENTUM
+
+#STOP

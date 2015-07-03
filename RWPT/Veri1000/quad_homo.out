@@ -1,0 +1,18 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $PCS_TYPE
+  LIQUID_FLOW 
+ $NOD_VALUES
+  VELOCITY_X1
+  VELOCITY_Y1
+  VELOCITY_Z1
+ $RWPT_VALUES
+  PARTICLES
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+  STEPS 1
+#STOP
+

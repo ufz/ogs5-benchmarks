@@ -1,0 +1,23 @@
+#NUMERICS
+ $PCS_TYPE
+  LIQUID_FLOW
+ $ELE_GAUSS_POINTS
+  3
+ $LINEAR_SOLVER
+  ;method error_tolerance max_iteration theta precond storage
+  2 6 1.0e-10 1000 1.0 1 4
+; $NON_LINEAR_SOLVER 
+;  ; method error_tolerance max_iterations relaxation
+;  PICARD 1.0e-5            60            1.0
+#NUMERICS
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $ELE_GAUSS_POINTS
+  3
+ $LINEAR_SOLVER
+  ;method error_tolerance max_iteration theta precond storage
+  2 6 1.0e-10 2000 1.0 1 4
+; $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+;  PICARD 1.0e-5            60            1.0
+#STOP

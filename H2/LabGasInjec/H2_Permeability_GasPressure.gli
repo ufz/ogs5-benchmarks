@@ -1,0 +1,30 @@
+#POINTS
+1 0 0 0 
+2 .05 0 0 
+3 .05 .2 0 
+4 0 .2 0 
+#POLYLINE
+ $NAME
+  PLY_1
+ $POINTS
+  1
+  2
+#POLYLINE
+ $NAME
+  PLY_2
+ $POINTS
+  2
+  3
+#POLYLINE
+ $NAME
+  PLY_3
+ $POINTS
+  3
+  4
+#POLYLINE
+ $NAME
+  PLY_4
+ $POINTS
+  4
+  1
+#STOP

@@ -1,0 +1,13 @@
+GeoSys-TIM: Timestepping ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  PS_GLOBAL
+ $TIME_STEPS
+  3  21600.0
+ $TIME_END
+  864000000.0
+ $TIME_START
+  0.0
+
+#STOP
+

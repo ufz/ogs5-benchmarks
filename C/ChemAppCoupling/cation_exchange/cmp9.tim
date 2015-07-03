@@ -1,0 +1,33 @@
+GeoSys-TIM: Timestepping ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $TIME_STEPS
+   10  1800.0
+ $TIME_END
+  86400.0
+ $TIME_START
+  0.0
+
+#TIME_STEPPING
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $TIME_STEPS
+   10  1800.0
+ $TIME_END
+  86400.0
+ $TIME_START
+  0.0
+
+#TIME_STEPPING
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $TIME_STEPS
+  10  1800.0
+ $TIME_END
+  86400.0
+ $TIME_START
+  0.0
+  
+#STOP
+

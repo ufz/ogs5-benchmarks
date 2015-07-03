@@ -1,0 +1,67 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+#NUMERICS
+ $PCS_TYPE
+  DEFORMATION
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  NEWTON 1e-4 1e-10      100            0.0
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2      0 1.e-010       10000          1.0   100     4
+ $ELE_GAUSS_POINTS
+  3
+#STOP
+
+
+#NUMERICS_DEFORMATION 
+  $METHOD 0  ; FEM
+  $ITERATION_METHOD 1  ; 0:Picard   1:Newton
+  $PLASTIC_DEFORMATION 1 ;2  
+  $TOL_LOCAL_NEWTON 1.0e-10
+  $TOL_NEWTON  1.0e-4  
+  $TIMECOLLOCATION
+    &GLOBAL 0 1.;  Voll implizit 
+
+; 4.1 Linear Solver Properties -----------------------------------------
+
+#LINEAR_SOLVER_PROPERTIES_DISPLACEMENT
+ 2   0   100  10000  0  0  1.000000e-0010  0  4 ; Schluesselwort: #LINEAR_SOLVER_PROPERTIES_????
+;SpBICGSTAB, mit Vork,abs.F., SparseSpeichersymm.
+; Das Schluesselwort muss nicht vorhanden sein, es wird dann
+; mit Default-Werte gearbeitet.
+; - Gleichungsloeser (loeser_flow) [1..6;6]
+;   1: SpGAUSS; 2:SpBICGSTAB; 3:SpBICG;     4:SpQMRCGSTAB; 5: SpCG
+;   6: SpCGNR;  7:CGS,        8: SpRichard; 9:SpJOR;      10:SpSOR
+; - Normierung [0]
+; - Vorkonditionierer fuer Gleichungsloeser (addierbar!) 
+;   0: keine Vorkonditionierung
+;   1: Diagonalen-Vorkonditionierung
+;   10: Ergebnis-Extraktion
+;   100: ILU
+; - Max. Anzahl der Iterationen fuer Gleichungsloeser (maxiter_flow) [>=0;1000]
+;   (Einfluss nur bei iterativen Loesern)
+; - Wiederholungen (repeat) [>=0;1000]
+;   (Einfluss nur bei iterativen Loesern)
+; - Fehlertyp (linear_error_type_flow) [0..4;2]
+;   0: abs. ; 1:rel. zu B0; 2:rel. zu R0; 3:abs. und/oder rel.; 4:R/x; 5: rel. zu MAX(r0,b,x0)
+;   Zu Fehlertyp 3 : Kombination zwischen 0 und 2
+;                    ist |R0| < 1 dann wird Fehlertyp 0 betrachtet,
+;                    ansonsten ist Fehlertyp 2 massgebend.
+;   Zu Fehlertyp 4 : Vektornorm des aktuellen Residuums
+;                    wird mit der aktuellen Loesung normiert
+; - Fehlerschranke fuer Gleichungsloeser (eps_flow) [>0.0;1.E-9]
+; - Daempfungs-/Relaxationsfaktor fuer iterative Gleichungsloeser (gls_iter_theta) [>0.0;1.0]
+;   (Einfluss nur bei iterativen Loesern: Richardson,JOR,SOR)
+;     JOR-Verfahren mit:
+;     Faktor 0 < theta < 1 --> gedaempfte Jacobi-Verfahren
+;     Faktor theta = 1     --> Jacobi oder Gesamtschrittverfahren
+;     Faktor theta > 1     --> Jacobi Ueberrelaxation
+;     SOR-Verfahren mit:
+;     Faktor 0 < theta < 1 --> sukzessive Unterrelaxation
+;     Faktor theta = 1     --> Gauss-Seidel oder Einzelschrittverfahren
+;     Faktor theta > 1     --> sukzessive Ueberrelaxation
+; - Typ [0]
+; - Speichertechnik fuer Gesamtgleichungssystem  [1,2,4;2]
+;   1: vollbesetzte Matrix
+;   2: Sparse (nur A[i,j]!=0.0 werden gespeichert)
+;   4: Sparse unsymmetrisch (nur A[i,j]!=0.0 werden gespeichert)

@@ -1,0 +1,11 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  Cl-36
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1   5.98905e-11           ; diffusion model type, diffusion constant
+ $DECAY
+  1  7.31994E-14   1.0		; Cl-36 Abbau je Sekunde
+ $OutputMassOfComponentInModel
+#STOP

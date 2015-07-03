@@ -1,0 +1,10 @@
+GeoSys-MSP: Material Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $DENSITY
+    1 2500.0
+#SOLID_PROPERTIES
+  $DENSITY
+    1 0.0
+#STOP
+
+

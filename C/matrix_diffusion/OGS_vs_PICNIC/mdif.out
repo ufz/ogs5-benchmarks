@@ -1,0 +1,30 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NOD_VALUES
+  ConsTracer
+ $GEO_TYPE
+  POINT POINT555
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 1
+#STOP
+#STOP
+#STOP
+
+#OUTPUT
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NOD_VALUES
+  HEAD
+ $ELE_VALUES
+  VELOCITY
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+  STEPS 50
+

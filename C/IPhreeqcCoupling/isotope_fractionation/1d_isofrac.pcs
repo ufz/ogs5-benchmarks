@@ -1,0 +1,106 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NUM_TYPE
+   NEW  
+   
+; Transport Process  ; 0 Pce_l
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 1 Pce_h
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+   
+; Transport Process  ; 2 Tce_l
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 3 Tce_h
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW  
+
+   
+; Transport Process  ; 2 Dce_l
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 3 Dce_h
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW     
+
+   
+; Transport Process  ; 2 Vc_l
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 3 Vc_h
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW           
+
+; Transport Process  ; 2 Eth_l
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+
+; Transport Process  ; 3 Eth_h
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW           
+
+; Transport Process  ; 5 Chl
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+   
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW   
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW      
+   
+#STOP
+
+; Transport Process  ; 4 Micros
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW     

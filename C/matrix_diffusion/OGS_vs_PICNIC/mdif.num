@@ -1,0 +1,21 @@
+GeoSys-NUM: Numerics ------------------------------------------------
+#NUMERICS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $LINEAR_SOLVER
+  2 1 1.0e-12 5000 1.0 1 2
+ $ELE_GAUSS_POINTS
+  3
+ $ELE_MASS_LUMPING
+  0
+ $ELE_UPWINDING
+  0.000000000000e+000
+#NUMERICS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2 6 1.0e-12 3000 0.5 1 2
+ $ELE_GAUSS_POINTS
+  3
+#STOP

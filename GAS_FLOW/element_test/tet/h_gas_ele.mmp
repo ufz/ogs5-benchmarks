@@ -1,0 +1,32 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  3
+ $GEOMETRY_AREA
+  1.000000e+000
+ $POROSITY
+  1  5.000000e-003
+ $TORTUOSITY
+  1  1.000000e+000
+ $STORAGE
+  1  5.000000e-003
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  2.770000e-019
+#STOP
+
+#SOIL_PROPERTIES
+ 1  1.000000e+000             ; dimension, (area),
+ 0                            ; porosity model
+ 5.000000e-003  1.000000e+000 ; porosity, tortuosity
+ 0                            ; mobile immobile model
+ 0                            ; lithological component
+ 0                            ; maximum sorption model
+ 0 ; nonlinear flow parameter
+ 5.000000e-003 ; storativity
+ 0  0  2.770000e-019 ; permeability model, permeability tensor, permeabilities
+ 0.000000e+000  0.000000e+000  0.000000e+000  0.000000e+000  0.000000e+000  0.000000e+000  0.000000e+000 ; k-S function
+ 0.000000e+000  0.000000e+000  0.000000e+000  0.000000e+000  0.000000e+000  0.000000e+000  0.000000e+000 ; p-S function
+ 0.000000e+000  0.000000e+000 ; mass dispersion parameters
+ 0.000000e+000  0.000000e+000 ; heat dispersion parameters
+ 0.000000e+000  0.000000e+000 ; rock density, heat capacity
+ 0  0.000000e+000 ; heat conductivity parameters

@@ -1,0 +1,16 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  SALT
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  3e-10              ; diffusion model type, diffusion constant
+#STOP
+
+ $DECAY
+  1  1.0e-6  1.0  ;
+ $ISOTHERM
+  1  1e-3 ; sorption
+  $TRANSPORT_PHASE
+ 0       ; 0 = aqueous phase, 1 = matrix,  2 = biophase, 3= NAPL
+  

@@ -1,0 +1,24 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $NAME
+  Bretsch Oberboden lS
+ $GEOMETRY_DIMENSION
+  1								; 1D Elements
+ $GEOMETRY_AREA
+  1.0							; 0,2m2 Surface Extension
+ $POROSITY
+  1  0.406						; Porosity = Theta_Sat
+ $TORTUOSITY
+  1  1.000000e+000
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  	8.36e-14		; 8.2e-7 m/s * 1.02e-7 Umrechnungsfaktor
+ $PERMEABILITY_SATURATION
+  0 9 ;4 0.056  1.00  0.254			; VGM Rel_Res_Sat Rel_Sat_Sat m=1-1/n
+ $CAPILLARY_PRESSURE
+  0 8 ;4 4.56						; VGM alpha [1/m]
+ $MASS_DISPERSION
+  1  0.1  0.01					; longit. Dispersivität [m], trans. Dispersivität [m]
+#STOP
+
+ $SPECIFIC_STORAGE
+  1.00e-05

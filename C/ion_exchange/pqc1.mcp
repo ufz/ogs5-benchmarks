@@ -1,0 +1,58 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  Ca ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME  ; 
+  Cl ; 
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+#COMPONENT_PROPERTIES  ; comp3
+  $NAME
+  K ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+
+#COMPONENT_PROPERTIES  ; comp4
+ $NAME
+  Na ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+
+#COMPONENT_PROPERTIES  ; comp5
+ $NAME
+  N(5) ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+
+#COMPONENT_PROPERTIES  ; comp6
+  $NAME
+  pH ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+
+#COMPONENT_PROPERTIES  ; comp7
+ $NAME
+  pe ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+
+#COMPONENT_PROPERTIES  ; comp8
+ $NAME
+  CaX2 ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+
+#COMPONENT_PROPERTIES  ; comp9
+ $NAME
+  NaX ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+
+#COMPONENT_PROPERTIES  ; comp10
+ $NAME
+  KX ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+#STOP

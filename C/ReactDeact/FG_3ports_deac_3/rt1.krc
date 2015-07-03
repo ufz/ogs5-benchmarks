@@ -1,0 +1,68 @@
+GeoSys Kinetic Reactions
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-7		; min Timestep
+ $INITIAL_TIMESTEP	
+	1.e-4       ; init Timestep
+ $BACTERIACAPACITY
+  100.0
+ $NO_REACTIONS
+   POLYLINE PLY_BC_LEFT
+ $REACTION_DEACTIVATION	
+  3   1e-6  1 RELATIVE   1e-5    ; ReactDeactMode ReactDeactEpsilon  tecplotflag
+;  $DEBUG_OUTPUT 
+
+#REACTION ; 
+ $NAME
+   DoubleMonod ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Aromaticum
+ $EQUATION
+  1 Toluene + 7.2 Nitrate =  7 Comp_C; 
+ $RATECONSTANT
+  7.87037e-06 1.0 ;  max growth rate my_max , exponent
+ $GROWTH
+    0
+ $MONODTERMS
+  ;2   ; Number of monod terms in kinetic equation
+  Toluene   0.023035  1.0 ; for each monod term: species concentration order
+  Nitrate   4.340343E-03  1.0
+ $INHIBITIONTERMS
+  ;0
+ $PRODUCTIONSTOCH
+  ;2
+  Toluene  -1.0
+  Nitrate  -7.2.0
+  Comp_C  +7.0
+  Reaction_Mark +1
+  
+
+  
+#STOP
+
+
+#REACTION ; 
+ $NAME
+   DoubleMonodDecay ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+  Aromaticum
+ $EQUATION
+  Aromaticum =  Aromaticum ; 
+ $RATECONSTANT
+ -8.10185E-09  1.0   ; first- order rate , exponent
+ $GROWTH
+    1
+ $MONODTERMS
+  ;0   ; Number of monod terms in kinetic equation
+ $INHIBITIONTERMS
+  ;0
+ $PRODUCTIONTERMS
+  ;0

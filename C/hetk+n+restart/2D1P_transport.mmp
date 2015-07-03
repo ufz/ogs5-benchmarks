@@ -1,0 +1,35 @@
+GeoSys-MMP: Material Medium Properties ------------------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $GEOMETRY_AREA
+  1.000000e+000
+ $POROSITY
+  1  0.1 ; 0.25 & 0.5 in file
+ $POROSITY_DISTRIBUTION
+  _het_n.dat
+ $TORTUOSITY
+  1  1.000000e+000
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  1.0
+ $PERMEABILITY_DISTRIBUTION
+  _het_k.dat
+ $MASS_DISPERSION
+  1  0.5  0.05 ; modell_id, alpha_l, alpha_t
+  
+#STOP
+
+; Für jede Materialgruppe einen dieser Blöcke
+; der erste Block bezieht sich auf alle Elemente, die im .msh file in der Elemente-Sektion 
+; in der zweiten Spalte den Eintrag "0" haben (Materialgruppe 0)
+; 5000	0	quad	0	1	102	101
+; der zweite Block dementsprechend für alle Elemente mit "1"
+; 0	1	quad	0	1	102	101
+
+
+ $PERMEABILITY_SATURATION
+  4  0.05 1.0 0.5  ; Van Genuchten Modell, Sr, Ss, m
+  3  0.4 0.8 2.    ; exponential function, Sr, Ss, Exponent
+ $CAPILLARY_PRESSURE
+  1  0.0           ; Modell, parameter
+

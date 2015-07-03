@@ -1,0 +1,274 @@
+#!MC 1000
+$!VarSet |LFDSFN1| = '"advdiffsorption_time_POINT2_MULTI_COMPONENTIAL_FLOW.tec" "advdiffsorption_time_POINT3_MULTI_COMPONENTIAL_FLOW.tec" "ads_Analytical_time_POINT2.tec" "ads_Analytical_time_POINT3.tec"'
+$!VarSet |LFDSVL1| = '"TIME" "WATER1" "PRESSURE1" "TEMPERATURE1" "VELOCITY_X1" "VELOCITY_Y1" "VELOCITY_Z1" "V1" "V2"'
+$!SETSTYLEBASE FACTORY
+$!PAPER 
+  BACKGROUNDCOLOR = WHITE
+  ISTRANSPARENT = YES
+  ORIENTPORTRAIT = NO
+  SHOWGRID = YES
+  SHOWRULER = YES
+  SHOWPAPER = YES
+  PAPERSIZE = LETTER
+  PAPERSIZEINFO
+    {
+    LETTER
+      {
+      WIDTH = 8.5
+      HEIGHT = 11
+      LEFTHARDCLIPOFFSET = 0.125
+      RIGHTHARDCLIPOFFSET = 0.125
+      TOPHARDCLIPOFFSET = 0.125
+      BOTTOMHARDCLIPOFFSET = 0.125
+      }
+    }
+  RULERSPACING = ONEINCH
+  PAPERGRIDSPACING = HALFINCH
+  REGIONINWORKAREA
+    {
+    X1 = -0.05
+    Y1 = -0.05
+    X2 = 11.05
+    Y2 = 8.55
+    }
+$!COLORMAP 
+  CONTOURCOLORMAP = SMRAINBOW
+$!COLORMAPCONTROL RESETTOFACTORY
+### Frame Number 1 ###
+$!READDATASET  '|LFDSFN1|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  RESETSTYLE = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL1|' 
+$!REMOVEVAR |LFDSVL1|
+$!REMOVEVAR |LFDSFN1|
+$!FRAMELAYOUT 
+  SHOWBORDER = NO
+  ISTRANSPARENT = YES
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 2.3135
+    Y = 1.8762
+    }
+  WIDTH = 6
+  HEIGHT = 5
+$!PLOTTYPE  = XYLINE
+$!FRAMENAME  = 'Frame 001' 
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1-4]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    BOX
+      {
+      BOXTYPE = NONE
+      }
+    XYPOS
+      {
+      X = 95
+      }
+    }
+$!LINEMAP  [1]
+  NAME = 'x=5 m' 
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = BLACK
+    LINETHICKNESS = 0.4
+    }
+  CURVES
+    {
+    CURVETYPE = SPLINE
+    NUMPTS = 5000
+    }
+  SYMBOLS
+    {
+    SHOW = NO
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [2]
+  NAME = 'x=10 m' 
+  ASSIGN
+    {
+    ZONE = 2
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.4
+    }
+  CURVES
+    {
+    CURVETYPE = SPLINE
+    NUMPTS = 5000
+    }
+  SYMBOLS
+    {
+    SHOW = NO
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
+    }
+$!LINEMAP  [3]
+  NAME = 'Analytical solution' 
+  ASSIGN
+    {
+    ZONE = 3
+    XAXISVAR = 8
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    SHOW = NO
+    COLOR = BLUE
+    }
+  CURVES
+    {
+    CURVETYPE = SPLINE
+    NUMPTS = 5000
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLMODE = USELINECOLOR
+    FILLCOLOR = BLUE
+    SIZE = 1
+    SKIPMODE = BYFRAMEUNITS
+    SKIPPING = 3
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [4]
+  NAME = 'Analytical solution' 
+  ASSIGN
+    {
+    ZONE = 4
+    XAXISVAR = 8
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    SHOW = NO
+    COLOR = CYAN
+    }
+  CURVES
+    {
+    CURVETYPE = SPLINE
+    NUMPTS = 5000
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLMODE = USELINECOLOR
+    FILLCOLOR = CYAN
+    SIZE = 1
+    SKIPMODE = BYFRAMEUNITS
+    SKIPPING = 3
+    }
+  BARCHARTS
+    {
+    COLOR = CYAN
+    FILLCOLOR = CYAN
+    }
+  ERRORBARS
+    {
+    COLOR = CYAN
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    RANGEMIN = -2592000
+    RANGEMAX = 31104000
+    AUTOGRID = NO
+    GRSPACING = 2592000
+    TICKLABEL
+      {
+      SHOWONAXISLINE = NO
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Time (Month)' 
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = -0.010000000000000002
+    RANGEMAX = 0.03999999999999989
+    GRSPACING = 0.01
+    TICKLABEL
+      {
+      LABELALIGNMENT = ALONGAXIS
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Tracer mass fraction (-)' 
+      }
+    }
+$!LINEPLOTLAYERS 
+  SHOWSYMBOLS = YES
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 18.0323232323
+    Y = 7.97727272727
+    }
+  TEXTSHAPE
+    {
+    FONT = HELV
+    SIZEUNITS = FRAME
+    HEIGHT = 3
+    }
+  TEXT = '0       1       2       3       4       5       6       7       8       9      10    11     12' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 61.8386363636
+    Y = 49.7498585859
+    }
+  TEXT = 'R=1+(n<sup>-1</sup>-1)*<greek>r</greek><sub>s</sub>K<sub>D</sub>\n\nK<sub>D</sub>=1.0<math>4</math>10<sup>-4</sup> m<sup>3</sup> kg<sup>-1</sup>' 
+$!SETSTYLEBASE CONFIG

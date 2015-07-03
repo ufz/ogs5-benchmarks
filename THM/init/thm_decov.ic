@@ -1,0 +1,35 @@
+GeoSys-IC: Initial Conditions ------------------------------------------------
+#INITIAL_CONDITION
+ $PCS_TYPE
+  DEFORMATION
+ $PRIMARY_VARIABLE
+  STRESS_XX
+ $GEO_TYPE
+  SUB_DOMAIN
+   3
+   0   -32.1e6+0.55e5*y
+   1     -32.1e6+0.55e5*y 
+   2    -32.1e6+0.55e5*y   
+#INITIAL_CONDITION
+ $PCS_TYPE
+  DEFORMATION
+ $PRIMARY_VARIABLE
+  STRESS_YY
+ $GEO_TYPE
+  SUB_DOMAIN
+   3
+   0   -13243500+26487*y
+   1   -13243500+26487*y 
+   2   -13243500+26487*y
+#INITIAL_CONDITION
+ $PCS_TYPE
+  DEFORMATION
+ $PRIMARY_VARIABLE
+  STRESS_ZZ
+ $GEO_TYPE
+  SUB_DOMAIN
+   3
+   0   -10.6e6+0.2e5*y
+   1   -10.6e6+0.2e5*y
+   2   -10.6e6+0.2e5*y
+#STOP

@@ -1,0 +1,18 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $DENSITY
+   1    0.0 
+  $ELASTICITY
+   POISSION  0.335     
+    YOUNGS_MODULUS
+      2 2.14e10 2750.0 1.0e+00
+        
+#STOP
+
+
+ $STRESS_UNIT
+    MegaPascal     
+
+Young's modulus: 21400 MPa
+Poisson's ratio: 0.335
+ 

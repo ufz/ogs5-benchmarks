@@ -1,0 +1,18 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $TIME_STEPS
+  10 0.00001
+  10 0.00009
+  10 0.0009
+  10 0.009 
+  10 0.09
+  10 0.9
+ $TIME_END
+  10
+ $TIME_START
+  0.0
+ $TIME_UNIT
+  DAY 
+#STOP

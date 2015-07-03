@@ -1,0 +1,47 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $TIME_STEPS
+  1000  1
+  1000 1
+  100 1e+1
+  1000 1e+2
+ $TIME_END
+  1900.
+ $TIME_START
+  0.0
+#STOP  
+  
+#TIME_STEPPING
+ $PCS_TYPE
+  DUAL_RICHARDS
+ $TIME_STEPS
+  100 1
+  100 1e+1
+  1000 1e+2
+ $TIME_END
+  93600.0
+ $TIME_START
+  0.0  
+
+ 61200.
+
+ $TIME_STEPS
+  100  .001
+  100  .01
+  1000  .1
+  1000  1.
+  3500  10.
+ $TIME_END
+  35000.
+
+#TIME
+ 35000. ; final simulation time
+ 0 ; maximum time step number
+ 0 ; time step control
+ 100  .001
+ 100  .01
+ 1000  .1
+ 1000  1.
+ 3500  10.

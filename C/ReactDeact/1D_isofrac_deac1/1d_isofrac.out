@@ -1,0 +1,24 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT 
+ $NOD_VALUES
+  HEAD
+  PCE-l
+  PCE-h
+  TCE-l
+  TCE-h
+  DCE-l
+  DCE-h
+  VC-l
+  VC-h
+  Eth-l
+  Eth-h
+  Micros
+  Tracer
+ $GEO_TYPE
+  POLYLINE OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  630720000
+#STOP
+

@@ -1,0 +1,392 @@
+-- 2D transport in two phases
+-- Bastian Graupner
+-- 10-2010
+
+-- =======================
+RUNSPEC
+-- =======================
+
+TITLE
+   2D transport in two phases
+
+DIMENS
+   21   1    5  /
+   
+START
+1 'JAN' 2000 /
+
+METRIC
+
+NUPCOL
+-- Number of iterations to update well targets
+-- sets the number of non-linear iterations for which a full hierarchical production/injection system solution is carried out
+-- followed by an integer denoting the last non-linear iteration for which well rate targets are recalculated
+
+-- Note If the NUPCOL keyword is used in a restart run it must be specified after the restart 
+--------------time, or it will be ignored and the value from the base run will be used instead.
+--------------either in RUNSPEC OR SECHEDULE section
+    6 /
+    
+FMTIN
+
+FMTOUT
+
+SAVE
+ 'FORMATTED' /
+ 
+WATER
+
+OIL
+
+NSTACK
+50 /
+
+MONITOR
+
+RSSPEC
+
+NOINSPEC
+
+MSGFILE
+1 /
+
+------------------------------------
+-- DEFINING BOUNDARY CONDITION 
+------------------------------------
+
+AQUDIMS 
+--  Dimensions for aquifers
+--1 MXNAQN The maximum number of lines of numerical aquifer data entered in keyword AQUNUM in the GRID section.
+--2 MXNAQC The maximum number of lines of connection data for numerical aquifers entered in keyword AQUCON in the GRID section.
+--3 NIFTBL The maximum number of influence tables for Carter-Tracy aquifers, entered by the keyword AQUTAB in the PROPS section. 
+--4 NRIFTB The maximum number of rows in a Carter-Tracy aquifer influence table. As table 1 contains 36 rows, a minimum value of 36 is always recorded.
+--5 NANAQU The maximum number of analytic aquifers in the model.
+--6 NCAMAX The maximum number of grid blocks connected to any single analytic aquifer.
+0 0 0 0 5 1 / 
+
+--TRACERS
+-- number of passive oil tracer, water tracer, gas tracer
+-- 1 1 0 0 'NODIFF' 15 /
+ 
+EQLDIMS
+1 21 21 1 5 /
+
+REGDIMS
+1 1 0 0 /
+
+TABDIMS
+-- Saturation Tables
+-- PVT Tables
+-- Nodes in Saturation and PVT tables
+-- Number of FIP regions
+-- RS nodes in PVT table
+-- SATNUM, PVTNUM, NSSFUN, NPPVT, NTFIP, NRPVT
+1 1 4000 100 1 40/
+
+WELLDIMS
+-- maximum number of wells|maximum number of connections per well (that is the maximum number of grid blocks connected to any one well)
+-- maximum number of groups|maximum number of wells in any one group (or child groups in a group)
+    1    5    1    1 /
+
+DEBUG
+6* 1 72* /
+
+-- =======================
+GRID
+-- =======================
+
+GRIDFILE
+-- produce a standard and extensible gridfile 
+2 0 /
+
+INIT
+
+PSEUDOS
+
+GRIDUNIT
+'METRES' /
+
+
+EQUALS
+  ---------------------IR1-IR2  JT1-JT2  KZ1-KZ2
+DX	0.500000       1    1   1   1    1   5/
+DX      1.027354       2    2   1   1    1   5/
+DX      1.236354       3    3   1   1    1   5/
+DX      1.487874       4    4   1   1    1   5/
+DX      1.790562       5    5   1   1    1   5/
+DX      2.154827       6    6   1   1    1   5/
+DX      2.593197       7    7   1   1    1   5/
+DX      3.120748       8    8   1   1    1   5/
+DX      3.755621       9    9   1   1    1   5/
+DX      4.519652      10   10   1   1    1   5/
+DX      5.439112      11   11   1   1    1   5/
+DX      6.545626      12   12   1   1    1   5/
+DX      7.877244      13   13   1   1    1   5/
+DX      9.479761      14   14   1   1    1   5/
+DX      11.40829      15   15   1   1    1   5/
+DX      13.72915      16   16   1   1    1   5/
+DX      16.522159     17   17   1   1    1   5/
+DX      19.883369     18   18   1   1    1   5/
+DX      23.92836      19   19   1   1    1   5/
+DX      28.79627      20   20   1   1    1   5/
+DX      34.20447      21   21   1   1    1   5/
+
+DY	0.1     1   21   1   1    1   5/
+  
+DZ      4       1   21   1   1    1   5/ 
+
+TOPS    -20     1   21   1   1    1   1/ 
+
+ACTNUM  1       1   21   1   1    1   5/
+
+PERMX   202.65  1   21   1   1    1   5/  -- in mD 
+PERMY   202.65  1   21   1   1    1   5/
+PERMZ   20.27   1   21   1   1    1   5/
+PORO    0.2     1   21   1   1    1   5/
+      ----- PORO : non-negative real number for every grid block
+/  --EQUALS IS TERMINATED BY A NULL RECORD
+
+
+-- ===========================
+--Input Large Pore volume cells
+EDIT
+-- ===========================
+
+EQUALS
+	PORV 100000000000000000000 21  21   1 1   1  5 /
+/  --EQUALS IS TERMINATED BY A NULL RECORD
+
+-- =======================
+PROPS
+-- =======================
+
+PVTW
+--Water PVT function  
+--Reference pressure; Water formation volume factor; water compressibility; water viscosity; viscosibility
+        200     1.0     10E-20    0.51    /
+
+DENSITY 
+-- Oil Density    Water Density   Gas Density 
+     675.0            1050           675      /
+
+ROCK
+--reference pressure    rock compressibility  
+        1.0                 0.0           /
+
+--PVDG
+--Dry gas PVT functions (no vaporized oil)
+--gas phase pressure; gas formation volume factor; gas viscosity
+--    P            Bg         My_g
+--  [bar]       [Rm3/Sm3]     [cp]  1 cP = 1000 Pa s
+--	1	1.000002	0.055
+--	250	1.000001	0.055
+--	700	1.000000	0.055
+--	800	0.999999	0.055
+--/
+
+
+PVDO
+--Dead Oil PVT function (gas not dissolveable in oil)
+--oil phase pressure; oil volume formation factor; oil viscosity
+	1	1.000002	0.055
+	250	1.000001	0.055
+	700	1.000000	0.055
+	800	0.999999	0.055
+/
+
+--PVTO
+--Live Oil PVT function 
+--First Line: Rs..dissolved gas-oil ratio; bubble point pressure (Pbub);oil formation volume factor; oil viscosity
+--several following lines: oil phase pressure; oil volume formation factor; oil viscosity
+--     Rs          P           Bo         My_b
+--  [Sm3/Sm3]    [bar]      [Rm3/Sm3]     [cp]
+
+
+SWOF
+--Gas-oil saturation function
+-- gas saturation; gas relative permeability; oil relative permeability; oil-gas capillary pressure 
+0.25	3.61949E-24	0.999997241	42.57346592
+0.2501	3.61949E-16	0.999724138	4.257346591
+0.26	3.61949E-08	0.972419005	0.425734659
+0.3	2.26218E-05	0.862702377	0.190394328
+0.35	0.000361949	0.729024249	0.13462912
+0.4	0.001832369	0.602087431	0.109924216
+0.45	0.005791192	0.484470811	0.095197164
+0.5	0.014138652	0.378210358	0.085146932
+0.55	0.029317909	0.284799111	0.077728159
+0.6	0.054315046	0.205187189	0.071962292
+0.65	0.09265907	0.139781784	0.06731456
+0.7	0.148421914	0.088447166	0.063464776
+0.75	0.226218434	0.050504679	0.060207973
+0.8	0.331206409	0.024732744	0.05740605
+0.85	0.469086544	0.009366857	0.054962108
+0.9	0.646102468	0.00209959	0.052805885
+0.95	0.869040735	8.05903E-05	0.050885024
+0.9749	0.99944839	5.24791E-12	0.050003449
+0.975	0.999994483	5.24826E-18	0.050000034
+/
+
+--TRACER
+-- Passive Tracer Names
+--   'T_W'   'WAT'    /
+--   'T_G'   'OIL'    /
+--/
+
+--HDISPT_W
+--0.5 0.5 /
+
+--HDISPT_G
+--0.5 0.5 /
+
+-- ==================-====
+SOLUTION
+-- =======================
+--EQUIL
+--Equilibration Data
+--  1. Datum Depth
+--  2. Pressure      
+--  3. Depth of Water-Oil contact or Water-Gas contact
+--  4. Oil-Water pc or Gas-Water pc
+--  5. Gas-Oil-Contact
+--  6. Gas-Oil pc
+--  7. Type of initialization (0...predefined depth dependend saturation (RSVD), 1... bubble point pressure
+-- Datum depth|Pressure at the datum depth|Depth of the water-oil contact ...(for three-phase or oil-water problems) or
+------------------------------------------|Depth of the gas-water contact ...(for gas-water problems).
+--2400 248.225 2400/  -- the  datam concides with the Tops
+---------------------- Note that: the depth of gas water contact should be above the model
+
+-----------------------------------------------------------------------
+
+PRESSURE
+	21*246.37091
+	21*246.78293
+	21*247.19495
+	21*247.60697
+	21*248.01899 /
+
+SWAT
+	105*0.975/
+
+AQUANCON
+-- Initialization of Aquifer boundary condition
+-- connection data for  analytic aquifers
+-- Aquifer number     lower I   higher I  lower J   higher J  lower K  higher K     cell face     influx coefficient
+             1             21   21      1   1    1   1    'I+' /
+             2             21   21      1   1    2   2    'I+' /
+             3             21   21      1   1    3   3    'I+' /
+             4             21   21      1   1    4   4    'I+' /
+             5             21   21      1   1    5   5    'I+' /
+/ 
+
+AQUCHWAT
+-- Specifies the property data for constant head/pressure water aquifers
+--1 Aquifer identification number, This should be a number between 1 and the maximum number of aquifers, entered using the keyword AQUDIMS.
+--2 Datum depth UNITS: METRIC: m, FIELD: ft, LAB: cm
+--3 Describes the input to item 4.PRESSURE, HEAD, DEFAULT: PRESSURE
+--4 Pressure in the aquifer at the datum depth if item 3 is PRESSURE, • UNITS: METRIC: bars, FIELD: psia, LAB: atm
+1	-18 'PRESSURE'	246.37091	1.00E+07	1*	0 /
+2	-14 'PRESSURE'	246.78293	1.00E+07	1*	0 /
+3	-10 'PRESSURE'	247.19495	1.00E+07	1*	0 /
+4	 -6 'PRESSURE'	247.60697	1.00E+07	1*	0 /
+5	 -2 'PRESSURE'	248.01899	1.00E+07	1*	0 /
+/
+
+--Initial Tracer concentration
+--TBLKFT_W
+--7*0
+--1*1
+--13*0
+--7*0
+--1*1
+--13*0
+--7*0
+--1*1
+--13*0
+--7*0
+--1*1
+--13*0
+--7*0
+--1*1
+--13*0
+--/
+
+--TBLKFT_G
+--7*0
+--1*1
+--13*0
+--7*0
+--1*1
+--13*0
+--7*0
+--1*1
+--13*0
+--7*0
+--1*1
+--13*0
+--7*0
+--1*1
+--13*0
+--/
+
+-- =======================
+SUMMARY
+-- =======================
+
+--REQUEST PRINTED OUTPUT OF SUMMARY FILE DATA
+
+RUNSUM
+
+
+-- =======================
+SCHEDULE
+-- =======================
+
+MESSAGES
+ 2* 100000000 10000000 4* 100000000 100000000 2* /
+ 
+--WSEGITER
+-- 20 5 0.3 2.0 /
+
+--RPTRST
+-- Controls on output to the RESTART file
+--'RPORV' 'DEN' 'FLOWS' 'KRG' 'KRW' /
+
+
+------------------------------------------------------------------------
+WELSPECS
+--  well name    well group   I-Location    J-Location    reference depth for BHP   Preferred Phase     drainage radius for injectivity
+      I1            1           1              1                   1*              'OIL' /
+/
+
+COMPDAT      
+--  well name     I-Location  J-Location    upper K   lower K   Open flag   Saturation table number     Transmissibility factor  Wellbore diameter 
+      I1             1           1           1        5         'OPEN'     1*      1*        0.1        3*   'Z'  /
+/
+
+WCONINJE      
+--  well name   Injector type     open/shut flag      Control Mode  bis Item 8      
+      'I1'            'OIL'             'OPEN'              'RATE'   0.256  /
+/
+
+-- set Tracer concentration for injection wells
+--WTRACER
+--well name, tracer name, concentration
+--I1 T_G 1.0 /
+--/
+
+ZIPPY2
+-- besonders empfohlen wenn NON-LINEAR EQUATION CONVERGENCE FAILURE
+'SIM=8.1' 'MINSTEP=0.00000001' 'MAXSTEP=1' 'NEXTSTEP=0.0000001' 'AGGRESSIVE=YES' /
+
+RPTRST
+--BASIC=2...output every report timestep
+--BASIC=6...output every timestep
+ 'BASIC=2' 'SAVE=2' 'PCOW' 'PCOG' / 
+---------------------------------------------------------------------- 
+
+TSTEP
+1*0.5 /
+
+END
+-------------------------------------------------
+-------------------------------------------------

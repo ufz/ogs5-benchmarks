@@ -1,0 +1,36 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  PRESSURE1
+  SATURATION1
+ $GEO_TYPE
+  DOMAIN
+ $TIM_TYPE
+ 0.001
+ 0.01
+ 0.3
+ 0.35
+ 0.4
+ 1.0
+ 1800.
+ 3600.
+ 10800.
+ 21600.
+ $DAT_TYPE
+  TECPLOT
+#STOP
+
+
+  STEPS 1
+#OUTPUT
+; 0  1  1  0  1  2  1
+ 0  1  0  0  1  5 ; method 5: output after time 
+100.
+1000.
+10000.
+30000.
+#OUTPUT_NODES
+ 1  10
+
+
+

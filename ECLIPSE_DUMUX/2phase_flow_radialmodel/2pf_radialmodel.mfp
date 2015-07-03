@@ -1,0 +1,34 @@
+GeoSys-MAT-FP: Fluid Properties ------------------------------------
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+ $PCS_TYPE
+  PRESSURE1
+ $DENSITY
+  18 0		;1 1050.0
+ $VISCOSITY
+  1 5.1e-4
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  GAS
+ $PCS_TYPE
+  PRESSURE2
+ $DENSITY
+  18 0		;1 675
+ $VISCOSITY
+  1 5.5e-5
+#STOP
+
+
+#FLUID_PROPERTIES_NEW
+$DENSITY
+ 0  1.000000e+003 ; density function, parameter
+$VISCOSITY
+ 0  1.000000e-003 ; viscosity function, parameter
+$HEAT_CAPACITY
+ 0  0.0
+$HEAT_CONDUCTIVITY
+ 0 0.0 ; heat capacity, heat conductivity
+$PHASE_DIFFUSION
+ 0  0.0
+

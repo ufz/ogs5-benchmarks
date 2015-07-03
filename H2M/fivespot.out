@@ -1,0 +1,266 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  MULTI_PHASE_FLOW                                                 
+ $NOD_VALUES                                                       
+  PRESSURE1                                                        
+  PRESSURE2                                                        
+  SATURATION1                                                      
+  VELOCITY_X1                                                      
+  VELOCITY_Y1                                                      
+  VELOCITY_Z1                                                      
+  VELOCITY_X2                                                      
+  VELOCITY_Y2                                                      
+  VELOCITY_Z2                                                      
+ $GEO_TYPE                                                         
+  POLYLINE prof_y                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE   
+1.
+2.
+5.
+10.
+16
+20
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  MULTI_PHASE_FLOW                                                 
+ $NOD_VALUES                                                       
+  PRESSURE1                                                        
+  PRESSURE2                                                        
+  SATURATION1                                                      
+  VELOCITY_X1                                                      
+  VELOCITY_Y1                                                      
+  VELOCITY_Z1                                                      
+  VELOCITY_X2                                                      
+  VELOCITY_Y2                                                      
+  VELOCITY_Z2                                                      
+ $GEO_TYPE                                                         
+  DOMAIN                                                           
+ $DAT_TYPE                                                         
+  PVD                                                          
+ $TIM_TYPE 
+ 1.
+ 5.
+ 10.  
+ 16
+ 20                                                     
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  MULTI_PHASE_FLOW                                                 
+ $NOD_VALUES                                                       
+  PRESSURE1                                                        
+  PRESSURE2                                                        
+  SATURATION1                                                      
+  VELOCITY_X1                                                      
+  VELOCITY_Y1                                                      
+  VELOCITY_Z1                                                      
+  VELOCITY_X2                                                      
+  VELOCITY_Y2                                                      
+  VELOCITY_Z2                                                      
+ $GEO_TYPE                                                         
+  POINT PUMP_t                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE                                                         
+ STEPS 1          
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  MULTI_PHASE_FLOW                                                 
+ $NOD_VALUES                                                       
+  PRESSURE1                                                        
+  PRESSURE2                                                        
+  SATURATION1                                                      
+  VELOCITY_X1                                                      
+  VELOCITY_Y1                                                      
+  VELOCITY_Z1                                                      
+  VELOCITY_X2                                                      
+  VELOCITY_Y2                                                      
+  VELOCITY_Z2                                                      
+ $GEO_TYPE                                                         
+  POINT PUMP_b                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE                                                         
+ STEPS 1          
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  MULTI_PHASE_FLOW                                                 
+ $NOD_VALUES                                                       
+  PRESSURE1                                                        
+  PRESSURE2                                                        
+  SATURATION1                                                      
+  VELOCITY_X1                                                      
+  VELOCITY_Y1                                                      
+  VELOCITY_Z1                                                      
+  VELOCITY_X2                                                      
+  VELOCITY_Y2                                                      
+  VELOCITY_Z2                                                      
+ $GEO_TYPE                                                         
+  POINT inject_t                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE                                                         
+ STEPS 1          
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  MULTI_PHASE_FLOW                                                 
+ $NOD_VALUES                                                       
+  PRESSURE1                                                        
+  PRESSURE2                                                        
+  SATURATION1                                                      
+  VELOCITY_X1                                                      
+  VELOCITY_Y1                                                      
+  VELOCITY_Z1                                                      
+  VELOCITY_X2                                                      
+  VELOCITY_Y2                                                      
+  VELOCITY_Z2                                                      
+ $GEO_TYPE                                                         
+  POINT inject_b                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE                                                         
+ STEPS 1    
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  DEFORMATION                                                 
+ $NOD_VALUES                                                       
+   DISPLACEMENT_X1
+   DISPLACEMENT_Y1
+   DISPLACEMENT_Z1
+   STRESS_XX
+   STRESS_XY
+   STRESS_YY
+   STRESS_ZZ
+   STRAIN_XX
+   STRAIN_XY
+   STRAIN_YY
+   STRAIN_ZZ
+ $GEO_TYPE                                                         
+  POLYLINE prof_y                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE   
+1.
+2.
+5.
+10.
+16
+20
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+ DEFORMATION                                                 
+ $NOD_VALUES                                                       
+   DISPLACEMENT_X1
+   DISPLACEMENT_Y1
+   DISPLACEMENT_Z1
+   STRESS_XX
+   STRESS_XY
+   STRESS_YY
+   STRESS_ZZ
+   STRAIN_XX
+   STRAIN_XY
+   STRAIN_YY
+   STRAIN_ZZ
+ $GEO_TYPE                                                         
+  DOMAIN                                                           
+ $DAT_TYPE                                                         
+  PVD                                                          
+ $TIM_TYPE 
+ 1.
+ 5.
+ 10.  
+ 16
+ 20                                                     
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+ DEFORMATION                                                 
+ $NOD_VALUES                                                       
+   DISPLACEMENT_X1
+   DISPLACEMENT_Y1
+   DISPLACEMENT_Z1
+   STRESS_XX
+   STRESS_XY
+   STRESS_YY
+   STRESS_ZZ
+   STRAIN_XX
+   STRAIN_XY
+   STRAIN_YY
+   STRAIN_ZZ
+ $GEO_TYPE                                                         
+  POINT PUMP_t                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE                                                         
+ STEPS 1          
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  DEFORMATION                                                 
+ $NOD_VALUES                                                       
+   DISPLACEMENT_X1
+   DISPLACEMENT_Y1
+   DISPLACEMENT_Z1
+   STRESS_XX
+   STRESS_XY
+   STRESS_YY
+   STRESS_ZZ
+   STRAIN_XX
+   STRAIN_XY
+   STRAIN_YY
+   STRAIN_ZZ
+ $GEO_TYPE                                                         
+  POINT PUMP_b                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE                                                         
+ STEPS 1          
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+  DEFORMATION                                                 
+ $NOD_VALUES                                                       
+   DISPLACEMENT_X1
+   DISPLACEMENT_Y1
+   DISPLACEMENT_Z1
+   STRESS_XX
+   STRESS_XY
+   STRESS_YY
+   STRESS_ZZ
+   STRAIN_XX
+   STRAIN_XY
+   STRAIN_YY
+   STRAIN_ZZ
+ $GEO_TYPE                                                         
+  POINT inject_t                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE                                                         
+ STEPS 1          
+#OUTPUT                                                            
+ $PCS_TYPE                                                         
+ DEFORMATION                                                 
+ $NOD_VALUES                                                       
+   DISPLACEMENT_X1
+   DISPLACEMENT_Y1
+   DISPLACEMENT_Z1
+   STRESS_XX
+   STRESS_XY
+   STRESS_YY
+   STRESS_ZZ
+   STRAIN_XX
+   STRAIN_XY
+   STRAIN_YY
+   STRAIN_ZZ
+ $GEO_TYPE                                                         
+  POINT inject_b                                             
+ $DAT_TYPE                                                         
+  TECPLOT                                                          
+ $TIM_TYPE                                                         
+ STEPS 1    
+#STOP 
+
+                                                         
+                                                                   
+
+
+

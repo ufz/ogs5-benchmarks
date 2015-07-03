@@ -1,0 +1,26 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $TIME_STEPS
+   900 1
+ $TIME_END
+  900
+ $TIME_START
+  0.0
+#TIME_STEPPING
+ $PCS_TYPE
+  OVERLAND_FLOW
+ $TIME_STEPS
+   900 1
+ $TIME_END
+  900
+ $TIME_START
+  0.0
+#STOP
+
+
+
+
+
+

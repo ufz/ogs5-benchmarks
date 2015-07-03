@@ -1,0 +1,7 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2
+ $POROSITY
+  1  1.090000e-001
+#STOP

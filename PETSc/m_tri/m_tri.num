@@ -1,0 +1,9 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+#NUMERICS
+ $PCS_TYPE
+  DEFORMATION
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond  storage
+petsc cg jacobi 1.e-16  2000 1.0
+#STOP
+  2     5 1.e-10      1000           1.0  1       4

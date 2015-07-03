@@ -1,0 +1,12 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $NOD_VALUES
+  TEMPERATURE1
+ $ELE_VALUES
+ $GEO_TYPE
+  DOMAIN 
+ $TIM_TYPE
+  STEPS 1
+#STOP

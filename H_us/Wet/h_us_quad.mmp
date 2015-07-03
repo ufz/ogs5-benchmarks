@@ -1,0 +1,44 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  2             //2 für XY, 3für XZ, wenn Gravity auf Z betrachtet.
+ $GEOMETRY_AREA
+  1.0
+ $POROSITY
+  1  0.38
+ $TORTUOSITY
+  1  1.000000e+000
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  4.46e-13
+ $PERMEABILITY_SATURATION
+  0	2   
+  0	2   
+ $CAPILLARY_PRESSURE
+  0      1
+#STOP
+
+
+#SOIL_PROPERTIES
+ 1                    ; element dimension
+ 1.                   ; element exchange area
+ 0                    ; porosity model
+ .38   1.             ; porosity, tortuosity
+ 0                    ; mobile immobile model
+ 0                    ; lithological component
+ 0                    ; maximum sorption model
+; flow
+ 0                    ; non-linear flow behavior
+ .00000               ; storativity
+ 0   0   4.46e-13     ; permeability model, permeability tensor, permeabilities
+1.0  2.0  2.0  1.0  1.0  1.0  1.0 
+1.0  1.0  1.0  1.0  1.0  1.0  1.0
+; mass transport
+ 0. 0.                ; long. and trans. dispersion lengths
+; heat transport
+ 0. 0.                ; long. and trans. dispersion lengths
+; solid properties
+ 0. 0.                ; density, heat capacity
+ 0  0.  
+ 
+ 
+   4  0.2 0.8 2.

@@ -1,0 +1,280 @@
+GeoSys Kinetic Reactions
+
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-10		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-8		; min Timestep
+ $INITIAL_TIMESTEP	
+	1.e-4       ; init Timestep
+; $BACTERIACAPACITY
+;  101.0
+; $NO_REACTIONS
+;  POINT  POINT0
+ $REACTION_DEACTIVATION	
+   2   1e-15  1 RELATIVE   1e-5    ; ReactDeactMode ReactDeactEpsilon  tecplotflag
+;   3   1e-8  1 ; ReactDeactMode ReactDeactEpsilon  
+ $DEBUG_OUTPUT
+  
+#REACTION ; 
+ $NAME
+    PCE-deg-l ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Micros
+ $EQUATION
+  1 PCE-l =  1 TCE-l; 
+ $RATECONSTANT
+    6.365741E+03  1.0   ; first- order rate , exponent  1.0 1.0;  
+ $GROWTH
+    0
+ $MONODTERMS
+;  1  ; Number of monod terms in kinetic equation
+  PCE-l  1e11   1.0 ; for each monod term: species concentration order
+ $INHIBITIONTERMS
+; 0
+ $PRODUCTIONTERMS
+;  0
+ $PRODUCTIONSTOCH
+;  2
+  PCE-l -1
+  TCE-l  1
+ $ISOTOPE_FRACTIONATION
+  PCE-l PCE-h 0.0  ; light_isotope_name, heavy_isotope_name, e = fractionationfactor
+  
+#REACTION ; 
+ $NAME
+    PCE-deg-h ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Micros
+ $EQUATION
+  1 PCE-h =  1 TCE-h; 
+ $RATECONSTANT
+    6.365741E+03  1.0   ; first- order rate , exponent  1.0 1.0;  
+ $GROWTH
+    0
+ $MONODTERMS
+;  1   ; Number of monod terms in kinetic equation
+  PCE-h  1e11   1.0 ; for each monod term: species concentration order
+ $INHIBITIONTERMS
+; 0
+ $PRODUCTIONTERMS
+;  0
+ $PRODUCTIONSTOCH
+;  2
+  PCE-h -1
+  TCE-h  1
+ $ISOTOPE_FRACTIONATION
+  PCE-l PCE-h -5.2  ; light_isotope_name, heavy_isotope_name, e = enrichment factor
+
+
+;*******************************************************  
+;*******************************************************  
+;*******************************************************  
+
+#REACTION ; 
+ $NAME
+    TCE-deg-l ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Micros
+ $EQUATION
+  1 TCE-l =  1 DCE-l; 
+ $RATECONSTANT
+    3.125000E+3  1.0   ; first- order rate , exponent  1.0 1.0;  
+ $GROWTH
+    0
+ $MONODTERMS
+;  1  ; Number of monod terms in kinetic equation
+  TCE-l  1e11   1.0 ; for each monod term: species concentration order
+ $INHIBITIONTERMS
+; 0
+ $PRODUCTIONTERMS
+;  0
+ $PRODUCTIONSTOCH
+;  2
+  TCE-l -1
+  DCE-l  1
+ $ISOTOPE_FRACTIONATION
+  TCE-l TCE-h 0.0  ; light_isotope_name, heavy_isotope_name, e = fractionationfactor
+  
+#REACTION ; 
+ $NAME
+    TCE-deg-h ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Micros
+ $EQUATION
+  1 TCE-h =  1 DCE-h; 
+ $RATECONSTANT
+    3.125000E+3  1.0   ; first- order rate , exponent  1.0 1.0;  
+ $GROWTH
+    0
+ $MONODTERMS
+;  1   ; Number of monod terms in kinetic equation
+  TCE-h  1e11   1.0 ; for each monod term: species concentration order
+ $INHIBITIONTERMS
+; 0
+ $PRODUCTIONTERMS
+;  0
+ $PRODUCTIONSTOCH
+;  2
+  TCE-h -1
+  DCE-h  1
+ $ISOTOPE_FRACTIONATION
+  TCE-l TCE-h -8.5  ; light_isotope_name, heavy_isotope_name, e = enrichment factor
+
+
+;*******************************************************  
+;*******************************************************  
+;*******************************************************  
+
+#REACTION ; 
+ $NAME
+    DCE-deg-l ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Micros
+ $EQUATION
+  1 DCE-l =  1 VC-l; 
+ $RATECONSTANT
+    2.199074E+3  1.0   ; first- order rate , exponent  1.0 1.0;  
+ $GROWTH
+    0
+ $MONODTERMS
+;  1  ; Number of monod terms in kinetic equation
+  DCE-l  1e11   1.0 ; for each monod term: species concentration order
+ $INHIBITIONTERMS
+; 0
+ $PRODUCTIONTERMS
+;  0
+ $PRODUCTIONSTOCH
+;  2
+  DCE-l -1
+  VC-l  1
+ $ISOTOPE_FRACTIONATION
+  DCE-l DCE-h 0.0  ; light_isotope_name, heavy_isotope_name, e = fractionationfactor
+  
+#REACTION ; 
+ $NAME
+    DCE-deg-h ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Micros
+ $EQUATION
+  1 DCE-h =  1 VC-h; 
+ $RATECONSTANT
+    2.199074E+3  1.0   ; first- order rate , exponent  1.0 1.0;  
+ $GROWTH
+    0
+ $MONODTERMS
+;  1   ; Number of monod terms in kinetic equation
+  DCE-h  1e11   1.0 ; for each monod term: species concentration order
+ $INHIBITIONTERMS
+; 0
+ $PRODUCTIONTERMS
+;  0
+ $PRODUCTIONSTOCH
+;  2
+  DCE-h -1
+  VC-h  1
+ $ISOTOPE_FRACTIONATION
+  DCE-l DCE-h -17.8  ; light_isotope_name, heavy_isotope_name, e = enrichment factor
+
+
+
+;*******************************************************  
+;*******************************************************  
+;*******************************************************  
+
+#REACTION ; 
+ $NAME
+    VC-deg-l ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Micros
+ $EQUATION
+  1 VC-l =  1 Eth-l; 
+ $RATECONSTANT
+    1.273148E+03  1.0   ; first- order rate , exponent  1.0 1.0;  
+ $GROWTH
+    0
+ $MONODTERMS
+;  1  ; Number of monod terms in kinetic equation
+  VC-l  1e11   1.0 ; for each monod term: species concentration order
+ $INHIBITIONTERMS
+; 0
+ $PRODUCTIONTERMS
+;  0
+ $PRODUCTIONSTOCH
+;  2
+  VC-l -1
+  Eth-l  1
+ $ISOTOPE_FRACTIONATION
+  VC-l VC-h 0.0  ; light_isotope_name, heavy_isotope_name, e = fractionationfactor
+  
+#REACTION ; 
+ $NAME
+    VC-deg-h ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Micros
+ $EQUATION
+  1 VC-h =  1 Eth-h; 
+ $RATECONSTANT
+    1.273148E+03  1.0   ; first- order rate , exponent  1.0 1.0;  
+ $GROWTH
+    0
+ $MONODTERMS
+;  1   ; Number of monod terms in kinetic equation
+  VC-h  1e11   1.0 ; for each monod term: species concentration order
+ $INHIBITIONTERMS
+; 0
+ $PRODUCTIONTERMS
+;  0
+ $PRODUCTIONSTOCH
+;  2
+  VC-h -1
+  Eth-h  1
+ $ISOTOPE_FRACTIONATION
+  VC-l VC-h -23.2  ; light_isotope_name, heavy_isotope_name, e = enrichment factor
+
+
+
+  
+
+#STOP
+
+
+    
+
+#REACTION ; 
+ $NAME
+   Tracer-decay;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Tracer
+ $EQUATION
+  Tracer =  Tracer ; 
+ $RATECONSTANT
+    -6.365741E-08  1.0   ; first- order rate , exponent  -0.10 1.0;
+ $GROWTH
+    1
+ $MONODTERMS
+;  0   ; Number of monod terms in kinetic equation
+ $INHIBITIONTERMS
+;  0
+ $PRODUCTIONTERMS
+;  0

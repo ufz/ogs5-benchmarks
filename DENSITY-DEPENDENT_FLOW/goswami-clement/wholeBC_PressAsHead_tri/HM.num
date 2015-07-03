@@ -1,0 +1,27 @@
+$OVERALL_COUPLING
+ 2 12
+#NUMERICS
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+;  2 1 1e-14 5000 1 100 4
+  3 6 1e-14 1000 1 100 4
+ $NON_LINEAR_ITERATION
+;type -- error_method -- max_iterations -- relaxation -- tolerance(s)
+  PICARD ERNORM 25 0 1e-7
+ $COUPLING_CONTROL
+;error method -- tolerances per DOF - max abs diff of DOF variable in domain between two coupling steps
+  ERNORM 5e-3
+
+#NUMERICS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $LINEAR_SOLVER
+  2 6 1e-14 5000 1 100 4
+ $COUPLING_CONTROL
+;error method -- tolerances per DOF - max abs diff of DOF variable in domain between two coupling steps
+  ERNORM 5e-3
+
+#STOP
+

@@ -1,0 +1,38 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+  ConsTracer
+ $GEO_TYPE
+  POLYLINE OUT1
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  1728000.0
+  3456000.0
+  5184000.0
+  6912000.0
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+  ConsTracer
+ $GEO_TYPE
+  POLYLINE OUT2
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  1728000.0
+  3456000.0
+  5184000.0
+  6912000.0
+#OUTPUT
+ $NOD_VALUES
+  HEAD
+  ConsTracer
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  6912000
+#STOP

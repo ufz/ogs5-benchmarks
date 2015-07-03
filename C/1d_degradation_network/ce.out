@@ -1,0 +1,50 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  c3h5o3
+  o2
+  no3
+  so4
+  ca
+  fe2
+  hplus
+  oh
+  h2co3
+  hco3
+  co3
+  mn2
+  h2s
+  hs
+  s2minus
+  c3h6o3
+  c3h5o2
+  c3h6o2
+  c2h3o2
+  c2h4o2
+  fes
+  feco3
+  feooh
+  c3h5o3bio
+  c3h5o2bio
+  o2bio
+  no3bio
+  so4bio
+  mno2bio
+  feoohbio
+  baco
+  bacn
+  bacc
+  bacm
+  bacf
+  bacs
+  mno2
+  caco3
+  tracer_mob
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 200
+#STOP

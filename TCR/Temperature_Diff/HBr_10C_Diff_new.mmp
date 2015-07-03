@@ -1,0 +1,21 @@
+GeoSys-MMP Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  1  					; Dimensionalität des Modells, 1, 2 oder 3
+ $GEOMETRY_AREA
+  1.0 					; Modellausdehnung in m in der nicht diskretisierten Dimension
+ $POROSITY
+  1 0.45  
+ $TORTUOSITY
+  1 0.45  				; reduziert zB Diffusion durch Verwinkeltheit des por Mediums
+ $STORAGE
+  1 0.000
+ $PERMEABILITY_TENSOR
+  ISOTROPIC 2.8935e-3  	; hydraulische Leitfähigkeit in m/s
+ $DENSITY
+  1 2650.0  			; Dichte des por. Mediums in kg/m³ 
+ $MASS_DISPERSION
+  1 1.0e-4 5e-5 		; modell, alpha_l, alpha_t in m
+ $HEAT_DISPERSION
+  1 1.0e-4 5e-5 		; modell, alpha_l, alpha_t in m
+#STOP

@@ -1,0 +1,29 @@
+GeoSys-ST: Source Terms ------------------------------------------------
+#SOURCE_TERM
+ $PCS_TYPE
+   DEFORMATION   
+ $PRIMARY_VARIABLE
+  DISPLACEMENT_X1
+ $GEO_TYPE
+  POLYLINE LEFT
+ $DIS_TYPE
+  CONSTANT_NEUMANN 1.0
+ $TIM_TYPE
+  CURVE 3
+#SOURCE_TERM
+  $PCS_TYPE
+   DEFORMATION
+ $PRIMARY_VARIABLE
+  DISPLACEMENT_X1
+ $GEO_TYPE
+  POLYLINE RIGHT
+ $DIS_TYPE
+  CONSTANT_NEUMANN -1.0
+ $TIM_TYPE
+  CURVE 3
+#STOP
+
+; 6.2 Source/Sink Terms ------------------------------------------------
+#LOAD_SOLID_PHASE_X
+ 14 0 3 TRACTION_L 
+ 14 0 3 TRACTION_R

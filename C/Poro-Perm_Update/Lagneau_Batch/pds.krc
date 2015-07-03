@@ -1,0 +1,41 @@
+GeoSys Kinetic Reactions
+
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	2                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1e-11		; min Timestep NEU: Sekunden
+ $INITIAL_TIMESTEP	
+	10 ; init Timestep NEU: Sekunden
+ $DEBUG_OUTPUT
+ ;$NO_REACTIONS
+ ; POINT  POINT0
+ $ACTIVITY_MODEL
+  0 ; constant activity coefficient = 0, DH = 1, Davies = 2, CHEMAPP = 3    
+ $LAGNEAU_BENCHMARK
+
+#REACTION ;
+ $NAME
+   Bprecip ;
+ $CHEMAPPNAME
+   B;
+ $MINERALNAME
+   B
+ $TYPE
+   Mineralkinetics ;
+ $EQUATION
+  1 A = B ; 
+ $EQUILIBRIUM_CONSTANT
+  UNIFORM -4 ; UNIFORM/VARIABLE, log(K)
+ $RATE_EXPONENTS
+  1 1 ; theta, eta
+ $REACTIVE_SURFACE_AREA
+  0 1e4 ; 5e2 ; CONSTANT/VARIABLE , 0.98m²/m³aquifer 
+ $BASETERM
+  -7.698970004 10000   ; -11.30103   log(k_25) Eact_25 [J/mol] 
+ $PRODUCTIONSTOCH
+    A     -1
+
+#STOP

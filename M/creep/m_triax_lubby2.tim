@@ -1,0 +1,17 @@
+Gina - TIM-Datei
+#TIME_STEPPING
+  $PCS_TYPE
+    DEFORMATION
+  $TIME_STEPS
+     10  2.3148e-05
+    100  1.6667e-04
+     10  5.0000e-02
+  $TIME_END
+   100.02e+02
+  $TIME_START
+    0
+  $TIME_UNIT
+   DAY  
+
+ 
+#STOP

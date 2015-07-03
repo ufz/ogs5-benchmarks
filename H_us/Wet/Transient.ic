@@ -1,0 +1,17 @@
+GeoSys-IC  Initial Conditions ------------------------------------------------
+#INITIAL_CONDITION
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $PRIMARY_VARIABLE
+  PRESSURE1
+ $GEO_TYPE
+  DOMAIN 
+ $DIS_TYPE
+  RESTART Transient.rfr
+
+#STOP
+  ;CONSTANT -31600
+  RESTART gs_falk221.rfr
+  
+  
+    CONSTANT  -30999.6

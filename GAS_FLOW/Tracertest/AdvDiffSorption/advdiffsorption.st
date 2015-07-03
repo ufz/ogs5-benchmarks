@@ -1,0 +1,16 @@
+GeoSys-ST: Source Terms ------------------------------------------------
+#SOURCE_TERM
+$PCS_TYPE
+MULTI_COMPONENTIAL_FLOW
+$PRIMARY_VARIABLE
+PRESSURE1
+$GEO_TYPE
+POINT POINT0
+$DIS_TYPE
+CONSTANT 1.0
+$TIM_TYPE  
+CURVE 2
+#STOP
+
+
+

@@ -1,0 +1,16 @@
+GINA4 - Solid Properties
+#SOLID_PROPERTIES
+  $DENSITY
+    1 0.0
+  $ELASTICITY
+    POISSION  3.5e-001
+    YOUNGS_MODULUS:
+    1 1.25e5
+  $PLASTICITY
+    DRUCKER-PRAGER
+      2.0e2     // Initial yield stress
+      .0   // Platstic hardening modulus  
+      0.0      // Internal frictional angle 
+       .0       // Dilantacy angle
+      0.0       // Localized hardening modulus    
+#STOP

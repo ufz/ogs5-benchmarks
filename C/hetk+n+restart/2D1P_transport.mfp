@@ -1,0 +1,14 @@
+GeoSys-MAT-FP: Fluid Properties ------------------------------------
+#FLUID_PROPERTIES
+ $FLUID_TYPE
+  LIQUID
+ $PCS_TYPE
+  HEAD
+ $DENSITY
+  1 1.000000e+003  ; constant
+ $VISCOSITY
+  1 1.000000e-003  ; constant
+#STOP
+
+; Für jede Fluid-Phase einen dieser Blöcke
+

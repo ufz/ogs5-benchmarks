@@ -1,0 +1,8 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+$PCS_TYPE
+MULTI_COMPONENTIAL_FLOW
+$NUM_TYPE
+NEW 
+
+#STOP

@@ -1,0 +1,100 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+ GROUNDWATER_FLOW
+ $NUM_TYPE
+   NEW   
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS          ;1
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS          ;2
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS        ;3
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS           ;4
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS           ;5
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS         ;6
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS         ;7
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS         ;8
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS         ;9
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS         ;10
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS         ;11
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS         ;12
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#PROCESS         ;13
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+   NEW    
+ $RELOAD
+  1 1000  ; write restart file every 100th timestep
+#STOP

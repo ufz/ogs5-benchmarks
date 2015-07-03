@@ -1,0 +1,26 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+
+#NUMERICS
+ $PCS_TYPE
+ MULTI_PHASE_FLOW
+ $ELE_MASS_LUMPING
+  1
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+petsc bcgs sor 1.e-7 2000 1.0
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+PICARD 1.e-5          25            1.0
+
+
+#STOP
+NEWTON 1.e-6 1.e-10          25            1.0
+
+
+PICARD 1e-5            25            1.0
+
+
+ 
+
+  2      1 1.e-12      2000            1.0   100     4
+

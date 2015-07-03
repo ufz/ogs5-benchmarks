@@ -1,0 +1,25 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+ $NUM_TYPE
+  NEW
+ 
+#PROCESS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $NUM_TYPE
+  NEW 
+#STOP
+
+$NUM_TYPE
+  HETERO
+$NUM_TYPE
+  HOMO_ADVECTION
+
+#PROCESS
+ $PCS_TYPE
+  FLUID_MOMENTUM
+ $NUM_TYPE
+  NEW
+

@@ -1,0 +1,86 @@
+#COMPONENT_PROPERTIES
+$NAME
+CO2; component
+$TRANSPORT_PHASE
+0; index of the MFP vector for reaction
+$FLUID_PHASE
+0; index of the MFP vector for composition
+$MOL_MASS
+44.0; molecular mass, in kg/kmol
+$CRITICAL_PRESSURE
+7.382e+006; critical pressure, in Pa
+$CRITICAL_TEMPERATURE
+304.2; critical temperature, in K
+$CRITICAL_VOLUME
+9.228e+001;  critical volume, in m3/kmol
+$CRITICAL_DENSITY
+4.676e+002;  critical density, in kg/m3
+$ACENTRIC_FACTOR
+0.228
+$COMP_CAPACITY
+1.7500e+03; heat capacity, in J/kgK
+$COMP_CONDUCTIVITY
+2.5500e-02; thermal conductivity, in W/mK
+$MOBILE
+1
+$DIFFUSION
+1 9.6500e-06; molecular diffusion coefficient m2/s
+
+#COMPONENT_PROPERTIES 
+$NAME
+CH4; component
+$TRANSPORT_PHASE
+0; index of the MFP vector for reaction
+$FLUID_PHASE
+0; index of the MFP vector for composition
+$MOL_MASS
+16.0; molecular mass, in kg/kmol
+$CRITICAL_PRESSURE
+4.604e+006; critical pressure, in Pa
+$CRITICAL_TEMPERATURE
+190.6; critical temperature, in K
+$CRITICAL_VOLUME
+9.756e+001;  critical volume, in in m3/kmol
+$CRITICAL_DENSITY
+1.6266e+002;  critical density, in kg/m3
+$ACENTRIC_FACTOR
+0.011
+$COMP_CAPACITY
+2.6000e+03; heat capacity, in J/kgK
+$COMP_CONDUCTIVITY
+2.5500e-02; thermal conductivity, in W/mK
+$MOBILE
+1
+$DIFFUSION
+1 2.0000e-05; molecular diffusion coefficient m2/s
+
+#COMPONENT_PROPERTIES 
+$NAME
+N2; component
+$TRANSPORT_PHASE
+0; index of the MFP vector for reaction
+$FLUID_PHASE
+0; index of the MFP vector for composition
+$MOL_MASS
+46.0; molecular mass, in kg/kmol
+$CRITICAL_PRESSURE
+3.394e+006; critical pressure, in Pa
+$CRITICAL_TEMPERATURE
+126.1; critical temperature, in K
+$CRITICAL_VOLUME
+2.4914e+002;  critical volume, in m3/kmol
+$CRITICAL_DENSITY
+3.133e+002;  critical density, in kg/m3
+$ACENTRIC_FACTOR
+0.04
+$COMP_CAPACITY
+1.1000e+03; component capacity, in J/kgK
+$COMP_CONDUCTIVITY
+4.800e-02; thermal conductivity, in W/mK
+$MOBILE
+1
+$DIFFUSION
+1 1.7800e-05; molecular diffusion coefficient m2/s
+
+#STOP
+

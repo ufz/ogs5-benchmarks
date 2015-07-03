@@ -1,0 +1,19 @@
+ADD_BENCHMARK ("BG" ECLIPSE_DUMUX/1phase_radialflow_1phase_transport/1pf_1pt "OGS_FEM" 1
+	ECLIPSE_DUMUX/1phase_radialflow_1phase_transport/1pf_1pt_domain_hex.tec)
+ADD_BENCHMARK ("BG" ECLIPSE_DUMUX/2phase_flow_2phase_tracertransport/2pf_2pt "OGS_FEM" 1
+	ECLIPSE_DUMUX/2phase_flow_2phase_tracertransport/2pf_2pt_domain_hex.tec
+	ECLIPSE_DUMUX/2phase_flow_2phase_tracertransport/2pf_2pt_time_POINT16.tec
+	ECLIPSE_DUMUX/2phase_flow_2phase_tracertransport/2pf_2pt_time_POINT17.tec)
+ADD_BENCHMARK ("BG" ECLIPSE_DUMUX/2phase_flow_radialmodel/2pf_radialmodel "OGS_FEM" 1
+	ECLIPSE_DUMUX/2phase_flow_radialmodel/2pf_radialmodel_domain_hex.tec)
+ADD_BENCHMARK ("BG" ECLIPSE_DUMUX/kinetic_CO2phase_generation_E100/CO2phase_gen_E100 "OGS_FEM" 1
+	ECLIPSE_DUMUX/kinetic_CO2phase_generation_E100/CO2phase_gen_E100_domain_ele.tec
+	ECLIPSE_DUMUX/kinetic_CO2phase_generation_E100/CO2phase_gen_E100_domain_hex.tec)
+ADD_BENCHMARK ("BG" ECLIPSE_DUMUX/kinetic_CO2phase_generation_E300/CO2phase_gen_E300 "OGS_FEM" 1
+	ECLIPSE_DUMUX/kinetic_CO2phase_generation_E300/CO2phase_gen_E300_domain_ele.tec
+	ECLIPSE_DUMUX/kinetic_CO2phase_generation_E300/CO2phase_gen_E300_domain_hex.tec)
+ADD_BENCHMARK ("BG" C/2d_Cl_transport_Clay/Nuklidtransport "OGS_FEM" 1
+	C/2d_Cl_transport_Clay/Mass_Cl-36_nodes.csv
+	C/2d_Cl_transport_Clay/Nuklidtransport_domain_tri.tec
+	C/2d_Cl_transport_Clay/Nuklidtransport_POLYLINE_BC_up_TIM_MASS_TRANSPORT.tec
+	C/2d_Cl_transport_Clay/Nuklidtransport_POLYLINE_PLY_Source_TIM_MASS_TRANSPORT.tec)

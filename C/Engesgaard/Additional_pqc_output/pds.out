@@ -1,0 +1,65 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  C(4)
+  Ca
+  Mg
+  Cl
+  pH
+  pe
+  Calcite
+  Dolomite(dis)
+ $GEO_TYPE
+  POINT  POINT2
+ $DAT_TYPE
+  TECPLOT
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  C(4)
+  Ca
+  Mg
+  Cl
+  pH
+  pe
+  CO3-2
+  HCO3-
+  a_HCO3-
+  Calcite
+  Dolomite(dis)
+ $GEO_TYPE
+  POLYLINE  OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+   0.0
+   100.0
+   1000.0
+   10000.0
+   21000.0
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  C(4)
+  Ca
+  Mg
+  Cl
+  pH
+  pe
+  CO3-2
+  HCO3-  
+  a_HCO3-  
+  Calcite
+  Dolomite(dis)
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+   0.0
+   100.0
+   1000.0
+   10000.0
+   21000.0
+#STOP
+

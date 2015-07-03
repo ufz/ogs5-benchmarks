@@ -1,0 +1,12 @@
+Gina - TIM-Datei
+#TIME_STEPPING
+  $PCS_TYPE
+    DEFORMATION
+  $TIME_STEPS
+      10  2.00e+00
+     200  7.20e+00
+  $TIME_END
+   1460
+  $TIME_START
+    0
+#STOP

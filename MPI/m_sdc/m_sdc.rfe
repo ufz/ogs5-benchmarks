@@ -1,0 +1,18 @@
+***
+*** ROCKFLOW - Protokolldatei m_sdc.rfe 
+*** Kurzprotokoll (Standard) 
+
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+   BENCHMARK: PLASTIC DEFORMATION: THE SINGLE YIELD SURFACE MODEL          
+
+; 4.3 Iteration Process Properties -------------------------------------
+
+; 8 Adaptation ---------------------------------------------------------
+
+; 9 Functions ----------------------------------------------------------
+#CURVES
+ 0.000000e+000  0.000000e+000 
+ 20.000000  -4.000000e-002 
+
+#STOP

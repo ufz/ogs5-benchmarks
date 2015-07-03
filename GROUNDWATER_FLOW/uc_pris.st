@@ -1,0 +1,11 @@
+GeoSys-ST: Source Terms ------------------------------------------------
+#SOURCE_TERM
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $PRIMARY_VARIABLE
+  HEAD
+ $GEO_TYPE
+  SURFACE SFCTOP
+ $DIS_TYPE
+  CONSTANT_NEUMANN 1.0000000e-008
+#STOP

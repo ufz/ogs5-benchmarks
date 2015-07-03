@@ -1,0 +1,23 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  A ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-10             	; diffusion model type, diffusion constant
+
+
+#COMPONENT_PROPERTIES  ; comp9
+ $NAME
+  B ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+ $TRANSPORT_PHASE
+  0
+ $MOLAR_WEIGHT
+  0.400 ;g/mol
+ $MINERAL_DENSITY
+  1000     ;g/cm³
+#STOP

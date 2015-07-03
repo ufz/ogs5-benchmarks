@@ -1,0 +1,18 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $DENSITY
+    1 0.0
+  $ELASTICITY
+    POISSION  0.4        
+    YOUNGS_MODULUS
+      1 2.0e+07  
+  $PLASTICITY
+    DRUCKER-PRAGER
+     2.96925e4    // Initial yield stress
+      0.8165e+4   // Platstic hardening modulus  
+      -0.233345   // Internal frictional angle 
+      -0.141421   // Dilantacy angle
+     0.0   // Localized hardening modulus              
+#STOP
+
+

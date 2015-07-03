@@ -1,0 +1,34 @@
+#POINTS
+1 -.3 0 0 
+2 1.3 0 0 
+3 1.3 1 0 
+4 -.3 1 0 
+#POLYLINE
+ $NAME
+  PLY_OUTSIDE
+ $POINTS
+  1
+  2
+  3
+  4
+  1
+#POLYLINE
+ $NAME
+  PLY_LEFT
+ $POINTS
+  1
+  4
+#POLYLINE
+ $NAME
+  PLY_RIGHT
+ $POINTS
+  2
+  3
+#SURFACE
+ $NAME
+  SURF_1
+ $POLYLINES
+  PLY_OUTSIDE
+ $TYPE
+  0
+#STOP

@@ -1,0 +1,17 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT
+ $NOD_VALUES
+  PRESSURE1
+  TEMPERATURE1
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+STEPS 1
+#STOP
+
+
+
+$TIM_TYPE:
+  8.640000e+004

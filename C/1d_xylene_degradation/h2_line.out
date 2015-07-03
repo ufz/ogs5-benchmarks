@@ -1,0 +1,41 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $PCS_TYPE
+  NO_PCS
+ $NOD_VALUES
+  HEAD
+  Cons_Tracer
+  Xylene
+  Oxygen
+  Metab_O
+  CO2
+  Biomass_Aerobic
+  Goethite
+  bioFe3
+  Metab_Fe3
+  Fe2
+  Biomass_Ironreducer
+  Sulfate
+  S
+  Meta_ProductS
+  Biomass_Sulfatereducer
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 20
+#STOP
+
+ $TIM_TYPE
+  5e+5
+  1e+6
+  5e+6
+  1e+7
+  5e+7
+  1e+8 
+  2e+8
+
+
+
+

@@ -1,0 +1,12 @@
+Gina - TIM-Datei
+#TIME_STEPPING
+  $PCS_TYPE
+    LIQUID_FLOW
+  $TIME_STEPS
+    100 1e-3
+;    1000 1e-3
+  $TIME_END
+    0.5
+  $TIME_START
+    0
+#STOP

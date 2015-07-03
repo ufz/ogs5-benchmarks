@@ -1,0 +1,892 @@
+#!MC 1000
+$!VarSet |LFDSFN1| = '"1d_ho_domain_RICHARDS_FLOW_line.tec"'
+$!VarSet |LFDSVL1| = '"X" "Y" "Z" "PRESSURE1" "SATURATION1"'
+$!SETSTYLEBASE FACTORY
+$!PAPER 
+  BACKGROUNDCOLOR = WHITE
+  ISTRANSPARENT = YES
+  ORIENTPORTRAIT = NO
+  SHOWGRID = YES
+  SHOWRULER = YES
+  SHOWPAPER = YES
+  PAPERSIZE = LETTER
+  PAPERSIZEINFO
+    {
+    LETTER
+      {
+      WIDTH = 8.5
+      HEIGHT = 11
+      LEFTHARDCLIPOFFSET = 0.125
+      RIGHTHARDCLIPOFFSET = 0.125
+      TOPHARDCLIPOFFSET = 0.125
+      BOTTOMHARDCLIPOFFSET = 0.125
+      }
+    }
+  RULERSPACING = ONEINCH
+  PAPERGRIDSPACING = HALFINCH
+  REGIONINWORKAREA
+    {
+    X1 = -0.05
+    Y1 = -0.05
+    X2 = 11.05
+    Y2 = 8.55
+    }
+$!COLORMAP 
+  CONTOURCOLORMAP = SMRAINBOW
+$!COLORMAPCONTROL RESETTOFACTORY
+### Frame Number 1 ###
+$!READDATASET  '|LFDSFN1|' 
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL1|' 
+$!REMOVEVAR |LFDSVL1|
+$!REMOVEVAR |LFDSFN1|
+$!FRAMELAYOUT 
+  SHOWBORDER = NO
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 0.12035
+    Y = 0.14334
+    }
+  WIDTH = 5.5
+  HEIGHT = 5.5
+$!PLOTTYPE  = XYLINE
+$!FRAMENAME  = 'Frame 001' 
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1-9]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    SHOWTEXT = NO
+    BOX
+      {
+      BOXTYPE = NONE
+      MARGIN = 0
+      }
+    XYPOS
+      {
+      X = 87.729
+      Y = 54.983
+      }
+    }
+$!LINEMAP  [1]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = PURPLE
+    LINEPATTERN = DASHED
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = PURPLE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = PURPLE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = PURPLE
+    }
+$!LINEMAP  [2]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 2
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM4
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM4
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM4
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM4
+    }
+$!LINEMAP  [3]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 3
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
+    }
+$!LINEMAP  [4]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 5
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM21
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM21
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM21
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM21
+    }
+$!LINEMAP  [5]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 6
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM37
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM37
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM37
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM37
+    }
+$!LINEMAP  [6]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 7
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM22
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM22
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM22
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM22
+    }
+$!LINEMAP  [7]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 8
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM47
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM47
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM47
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM47
+    }
+$!LINEMAP  [8]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 12
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM8
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM8
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM8
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM8
+    }
+$!LINEMAP  [9]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 13
+    XAXISVAR = 1
+    YAXISVAR = 5
+    }
+  LINES
+    {
+    COLOR = CUSTOM48
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM48
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM48
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM48
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+  VIEWPORTPOSITION
+    {
+    Y1 = 11.194
+    Y2 = 88.194
+    }
+  VIEWPORTTOPSNAPTARGET = 88.1940433213
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    RANGEMIN = 0
+    RANGEMAX = 10
+    GRSPACING = 2
+    TITLE
+      {
+      TEXTSHAPE
+        {
+        HEIGHT = 2.6
+        }
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = 0.5
+    RANGEMAX = 1
+    GRSPACING = 0.2
+    TITLE
+      {
+      TEXTSHAPE
+        {
+        HEIGHT = 2.6
+        }
+      }
+    }
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.6783806911
+    Y = 44.4064279116
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '1y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.7002153963
+    Y = 40.564255968
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '3y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.6237939276
+    Y = 37.3038640032
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 13
+    }
+  TEXT = '4y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.4709509899
+    Y = 33.9707495411
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '5y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.3617774631
+    Y = 26.7833427191
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '10y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.6994777375
+    Y = 51.6105230546
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '0.01y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.8959900859
+    Y = 48.3137698411
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '0.1y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.6994777375
+    Y = 30.4725171564
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '6y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 64.6994777375
+    Y = 22.9093774314
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '20y' 
+### Frame Number 2 ###
+$!CREATENEWFRAME 
+$!FRAMELAYOUT 
+  SHOWBORDER = NO
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 4.9774
+    Y = 2.7565
+    }
+  WIDTH = 5.5
+  HEIGHT = 5.5
+$!PLOTTYPE  = XYLINE
+$!FRAMENAME  = 'Frame 001' 
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1-9]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    SHOWTEXT = NO
+    BOX
+      {
+      BOXTYPE = NONE
+      MARGIN = 0
+      }
+    XYPOS
+      {
+      X = 86.353
+      Y = 54.789
+      }
+    }
+$!LINEMAP  [1]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = PURPLE
+    LINEPATTERN = DASHED
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [2]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 2
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = CUSTOM4
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [3]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 3
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [4]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 5
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = CUSTOM21
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [5]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 6
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = CUSTOM37
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [6]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 7
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = CUSTOM22
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [7]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 8
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = CUSTOM47
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [8]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 9
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = CUSTOM8
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [9]
+  NAME = '&DV&' 
+  ASSIGN
+    {
+    ZONE = 10
+    XAXISVAR = 1
+    YAXISVAR = 4
+    }
+  LINES
+    {
+    COLOR = CUSTOM48
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+  VIEWPORTPOSITION
+    {
+    Y1 = 11.194
+    Y2 = 88.194
+    }
+  VIEWPORTTOPSNAPTARGET = 88.1940433213
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    RANGEMIN = 0
+    RANGEMAX = 10
+    GRSPACING = 2
+    TITLE
+      {
+      TEXTSHAPE
+        {
+        HEIGHT = 2.6
+        }
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = -100000000
+    RANGEMAX = 20000000
+    GRSPACING = 20000000
+    TITLE
+      {
+      TEXTSHAPE
+        {
+        HEIGHT = 2.6
+        }
+      }
+    }
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 66.2715765248
+    Y = 51.416596395
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '0.01y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 66.2715765248
+    Y = 48.3137698411
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '0.1y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 65.4644300847
+    Y = 44.4064279116
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '1y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 65.6827771384
+    Y = 40.564255968
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '3y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 65.8028680181
+    Y = 37.1099373436
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 13
+    }
+  TEXT = '4y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 65.6500250804
+    Y = 33.3889695623
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '5y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 65.878551828
+    Y = 29.6968105179
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '6y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 65.5408515536
+    Y = 25.813709421
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '10y' 
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 65.4855271311
+    Y = 22.7154507718
+    }
+  TEXTSHAPE
+    {
+    HEIGHT = 12
+    }
+  TEXT = '20y' 
+$!SETSTYLEBASE CONFIG

@@ -1,0 +1,23 @@
+GeoSys-ST: Source Terms ------------------------------------------------
+#SOURCE_TERM
+ $PCS_TYPE
+  PS_GLOBAL
+ $PRIMARY_VARIABLE
+  PRESSURE1
+ $GEO_TYPE
+  POLYLINE RIGHTPLINE
+ $DIS_TYPE
+  CONSTANT  0.0; -1.15741E-05 ;
+#STOP
+ 
+
+#SOURCE_TERM
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $PRIMARY_VARIABLE 
+  HEAD
+ $GEO_TYPE
+  POINT: POINT3
+ $DIS_TYPE
+  CONSTANT   -2.89352E-6  ; m3/s     Q=-2.5 m3/d mit A=1 m2 und ne=0.25  => u=1m/d
+

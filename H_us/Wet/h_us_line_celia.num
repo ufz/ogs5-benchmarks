@@ -1,0 +1,62 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+#NUMERICS
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $ELE_UPWINDING
+  0.5
+ $ELE_MASS_LUMPING
+  1
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  3      6      1.e-010       1000       1.0   101     4
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  PICARD   1.0e-3            10             0.0
+#STOP
+
+
+#NUMERICS_PRESSURE
+  $TIMECOLLOCATION
+    &GLOBAL 0 1.
+  $REFERENCE_PRESSURE_METHOD 0
+  $MASS_LUMPING 1
+  $UPWINDING 1 0.5  
+  
+#NUMERICS_SATURATION
+  $METHOD 7; Saturation expressed via capillary pressure
+  $MASS_LUMPING 1
+  $TIMECOLLOCATION
+    &GLOBAL 0 1.
+  $UPWINDING 1 0.5  
+
+#RENUMBER
+0 -1
+
+; 4.1 Linear Solver Properties -----------------------------------------
+#LINEAR_SOLVER_PROPERTIES_PRESSURE
+ 2  0  101 ; method, norm, preconditioning
+ 1000  0 ; maximum iterations, repeating
+ 3  1.000000e-010 ; criterium, absolute error
+ 0 ; kind
+ 4 ; matrix storage technique
+#LINEAR_SOLVER_PROPERTIES_SATURATION
+ 2  0  101 ; method, norm, preconditioning
+ -1  0 ; maximum iterations, repeating
+ 3  1.000000e-010 ; criterium, absolute error
+ 0 ; kind
+ 4 ; matrix storage technique
+
+#NONLINEAR_SOLVER_PROPERTIES_PRESSURE
+ 1  10 ; method, maximum iterations
+; 3  1.000000e-003  1.000000e-003 ; criterium, absolute eps, relative eps
+ 1  1.000000e-003  1.000000e-003 ; criterium, absolute eps, relative eps
+ 1  0.000000e+000 ; re-assembling, adaptive eps
+ 0 ; time control
+#NONLINEAR_SOLVER_PROPERTIES_SATURATION
+ 1  10 ; method, maximum iterations
+ 3  1.000000e-003  1.000000e-003 ; criterium, absolute eps, relative eps
+ 1  1.000000e-003 ; re-assembling, adaptive eps
+ 0 ; time control
+
+
+

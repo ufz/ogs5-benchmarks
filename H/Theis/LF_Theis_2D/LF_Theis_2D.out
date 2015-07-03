@@ -1,0 +1,24 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $PCS_TYPE
+  LIQUID_FLOW
+ $NOD_VALUES
+  PRESSURE1
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 1
+#OUTPUT 
+ $PCS_TYPE
+  LIQUID_FLOW
+ $NOD_VALUES
+  PRESSURE1
+ $GEO_TYPE
+  POINT OBS
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 1
+#STOP

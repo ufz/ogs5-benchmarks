@@ -1,0 +1,21 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  OVERLAND_FLOW
+ $NUM_TYPE
+  NEW
+
+#PROCESS
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $NUM_TYPE
+  NEW   
+
+#PROCESS
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $NUM_TYPE
+  NEW  
+
+#STOP
+

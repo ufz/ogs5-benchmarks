@@ -1,0 +1,13 @@
+#PROJECT_MEMBER
+hs3.gli
+hs3.msh
+hs3.pcs
+hs3.tim
+hs3.num
+hs3.out
+hs3.ic
+hs3.bc
+hs3.st
+hs3.mfp
+hs3.mmp
+#STOP

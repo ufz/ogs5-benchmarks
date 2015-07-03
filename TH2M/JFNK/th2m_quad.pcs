@@ -1,0 +1,10 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+$PCS_TYPE
+  DEFORMATION_H2
+  
+#STOP
+
+ $ELEMENT_MATRIX_OUTPUT 
+  0
+

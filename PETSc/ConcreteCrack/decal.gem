@@ -1,0 +1,27 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#GEM_PROPERTIES
+  $FLAG_DISABLE_GEM
+   0
+  $GEM_THREADS
+   4
+  $GEM_INIT_FILE
+    cement_bc-dat.lst    ; only file name, no path
+  $FLAG_POROSITY_CHANGE
+    1    ; 0-not coupled;1=coupled;
+  $MIN_POROSITY
+    1.e-6
+  $MAX_POROSITY
+    1.0
+  $FLAG_COUPLING_HYDROLOGY
+    1    ; 0-not coupled;1=coupled;
+  $TEMPERATURE_GEM
+    298.15       ; temperature for GEMS in degree Celsius
+  $MY_SMART_GEMS
+   -1.0e-30    ; negative values are recommened for kintetic control
+  $MAX_FAILED_NODES
+     5 ; number of nodes allowed to fail 
+#STOP
+
+
+
+

@@ -1,0 +1,21 @@
+GeoSys-PCS: Processes ------------------------------------------------
+
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+  DEFORMATION
+
+#STOP
+ $WRITE_READ_SOURCE_OR_NEUMANN_RHS
+   0     // Do nothing
+   1     // Write
+   2     // Read what has already written      
+
+ $MEMORY_TYPE
+ 1      
+
+
+ $WRITE_READ_SOURCE_OR_NEUMANN_RHS
+   2      
+ 
+

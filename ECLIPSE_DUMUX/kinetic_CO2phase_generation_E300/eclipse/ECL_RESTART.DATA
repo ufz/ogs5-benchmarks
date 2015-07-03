@@ -1,0 +1,282 @@
+-- Co2-Benchmark 13
+-- Simulation der Bildung einer CO2-Phase
+-- erstellt am 14.02.2011 
+-- Bastian Graupner
+
+-----------------------------------------------------------------------------------------------------------
+--Runspec Section
+
+RUNSPEC
+
+TITLE
+ CO2-Injektion Benchmark 2
+ 
+START
+1 'JAN' 2000
+/
+
+METRIC
+
+CO2STORE
+
+
+
+
+
+FORMOPTS
+ NOPCSPT /
+ 
+COMPS
+3 /
+
+
+OPTIONS3
+7*1 1 /
+
+-- Numerik
+
+FULLIMP
+
+FMTIN
+
+FMTOUT
+
+NSTACK
+50 /
+
+MONITOR
+ 
+RSSPEC
+ 
+NOINSPEC
+
+
+MSGFILE
+ 1 /
+ 
+DIMENS
+   20   1    5  /
+   
+AQUDIMS 
+--  Dimensions for aquifers
+--1 MXNAQN The maximum number of lines of numerical aquifer data entered in keyword AQUNUM in the GRID section.
+--2 MXNAQC The maximum number of lines of connection data for numerical aquifers entered in keyword AQUCON in the GRID section.
+--3 NIFTBL The maximum number of influence tables for Carter-Tracy aquifers, entered by the keyword AQUTAB in the PROPS section. 
+--4 NRIFTB The maximum number of rows in a Carter-Tracy aquifer influence table. As table 1 contains 36 rows, a minimum value of 36 is always recorded.
+--5 NANAQU The maximum number of analytic aquifers in the model.
+--6 NCAMAX The maximum number of grid blocks connected to any single analytic aquifer.
+  0 0 0 0 10 10 / 
+
+EQLDIMS 
+1 21 21 1 5 /
+
+REGDIMS
+1 1 0 0 /
+
+TABDIMS
+-- Saturation Tables
+-- PVT Tables
+-- Nodes in Saturation and PVT tables
+-- Number of FIP regions
+-- RS nodes in PVT table
+-- SATNUM, PVTNUM, NSSFUN, NPPVT, NTFIP, NRPVT
+1 1 4000 100 1 40/
+
+
+
+GRID
+
+INIT
+
+GRIDFILE
+-- produce a standard and extensible gridfile 
+2 0 /
+
+
+GRIDUNIT
+'METRES' /
+
+EQUALS
+  ---------------------IR1-IR2  JT1-JT2  KZ1-KZ2
+DX	0.5	1	20	 1	 1       1	 5/
+DY	1       1       20       1       1       1       5/
+DZ      0.4     1       20       1       1       1       5/
+
+TOPS    2000    1       20       1       1       1       1/ 
+
+ACTNUM  1       1       20       1       1       1       5/
+
+PERMX   202.65  1       20       1       1       1       5/  -- in mD 
+PERMY   202.65  1       20       1       1       1       5/
+PERMZ   202.65  1       20       1       1       1       5/
+PORO    0.2     1       20       1       1       1       5/
+/  --EQUALS IS TERMINATED BY A NULL RECORD
+
+
+
+-- ===========================
+--Input Large Pore volume cells
+EDIT
+-- ===========================
+
+EQUALS
+	PORV 100000000000000000000   1   1   1   1     1    5 /
+	PORV 100000000000000000000  20  20   1   1     1    5 /	
+/  --EQUALS IS TERMINATED BY A NULL RECORD
+
+
+-- property section
+
+PROPS
+
+
+NCOMPS
+ 3 /
+
+
+CNAMES
+ H2O
+ CO2
+ NACL /
+
+
+--EOS   
+-- PR /
+
+TEMPVD
+
+ 642.5 34.0 
+ 800 34.0 /
+
+
+MW
+ 18 44 58.44 /
+
+
+STCOND 
+
+ 25 1 /
+ 
+
+
+ACF
+ 0.3443 0.22394 1.0 /
+ 
+
+ 
+-- Wasser PVT Funktion mit NaCl 
+
+PVTW
+        200     1.0     10E-20    0.51    /
+ 
+DENSITY 
+-- Oil Density    Water Density   Gas Density 
+--     1050            1000           675      /
+    1050            1000           1.40388 /	--1.871849      /
+
+ROCK
+
+--
+--reference pressure    rock compressibility  
+--  
+        1.0                 0.0           /
+
+-- Gas-water saturation function
+-- gas saturation, gas rel. permeability, water rel. perm., gas-water capillary pressure
+--SGWFN
+--	0	0	1.0	0
+--        0.4	0     	1.0     0.0
+--        0.7	1.0     0      30
+--/	
+
+-- Water saturation function
+-- water saturation, water rel. permeability, water-oil capillary pressure
+SWFN
+	0.3	0	30
+	0.6	1	0.0
+	1	1	0.0
+/	
+
+-- Gas saturation function
+-- gas saturation, gas rel. permeability, oil-gas capillary pressure
+SGFN
+	0	0	0
+        0.4	0     	0.0
+        0.7	1.0     30
+/
+
+--water saturation function
+--water saturation, water relative permeability
+WSF
+	0.3	0
+	0.6	1
+	1	1
+/
+
+--gas saturation function
+--gas saturation, gas relative permeability, corresponding gas-water capillary pressure.
+GSF
+	0	0	0
+	0.4	0	0
+	0.7	1	30
+/
+
+--Specifies cell initial total composition explicitly
+--depth, mole fraction of components
+ZMFVD
+     0 0.96688372023316 0.0 0.033116279766836
+  3000 0.96688372023316 0.0 0.033116279766836 /
+
+--Liquid composition with respect to pressure tables
+--pressure, mole fraction of components
+XMFVP
+    0 0.96688372023316 0.0 0.033116279766836
+  248 0.96688372023316 0.0 0.033116279766836 /
+
+--Vapor composition with respect to pressure tables
+--pressure, mole fraction of components
+YMFVP 
+    0 0.0 0.0 0.0
+  248 0.0 0.0 0.0 /
+
+SOLUTION
+
+-- Restart option
+RESTART 
+TEMPORARYRESULTS 49 /
+
+
+SUMMARY
+
+
+
+
+
+-- Schedule Section
+
+
+
+SCHEDULE
+
+MESSAGES
+ 2* 100000000 10000000 4* 100000000 100000000 2* /
+
+TUNING
+1 1 0.000001 /
+/
+100 1* 100 1* 100 /
+/
+
+
+RPTRST
+-- 'BASIC=2' 'FLOC1' 'FLOC2' 'DENG' 'DENW' 'PGAS' 'PWAT' 'RPORV' 'PCGW' 'SGAS' 'SWAT' 'XMF' 'YMF'  /
+'BASIC=2' 'FLOWAT' 'FLOGAS' 'FLOOIL' 'PGAS' 'PWAT' 'SGAS' 'SWAT' 'RS' 'RPORV' 'DENG' 'DENW' 'MWAT' 'XMF' 'YMF' 'ZMF' 'XFW' 'YFW' /
+
+       
+TSTEP
+1*1.15741e-05 /
+
+
+
+
+END

@@ -1,0 +1,13 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT 
+ $NOD_VALUES
+  PCE-l
+  PCE-h
+ $GEO_TYPE
+  POLYLINE OUT_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  630720000
+#STOP
+

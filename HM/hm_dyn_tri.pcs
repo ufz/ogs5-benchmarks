@@ -1,0 +1,18 @@
+GeoSys-PCS: Processes ------------------------------------------------
+
+
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+  DEFORMATION_DYNAMIC
+
+  $ELEMENT_MATRIX_OUTPUT
+  0
+
+#STOP
+
+
+
+ $MEMORY_TYPE
+ 1      
+ 

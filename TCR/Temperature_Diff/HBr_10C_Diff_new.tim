@@ -1,0 +1,32 @@
+GeoSys-TIM: Timestepping ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $TIME_STEPS
+  4900 432.0 ; Anzahl der Schritte; Schrittlänge in s
+ $TIME_END
+  86400e35
+ $TIME_START
+  0.0
+  
+#TIME_STEPPING
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $TIME_STEPS
+  4900 432
+ $TIME_END
+  86400e35
+ $TIME_START
+  0.0
+  
+#TIME_STEPPING
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $TIME_STEPS
+  4900 432
+ $TIME_END
+  86400e35
+ $TIME_START
+  0.0
+
+#STOP

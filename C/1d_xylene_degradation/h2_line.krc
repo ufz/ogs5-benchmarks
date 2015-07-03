@@ -1,0 +1,166 @@
+GeoSys Kinetic Reactions
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-6		; min Timestep
+ $INITIAL_TIMESTEP	
+	1.e-4       ; init Timestep
+ $BACTERIACAPACITY
+  100.0
+; $NO_REACTIONS
+;   POINT POINT0
+
+#REACTION ; 
+ $NAME
+   DoubleMonod ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Biomass_Aerobic
+ $EQUATION
+  1 Xylene + 10.5 O2 = 8 CO2 + 5 H2O; 
+ $RATECONSTANT
+  1.15740e-7  1.0   ; Monod growth rate , exponent; 1.0 1.0
+ $GROWTH
+    1
+ $MONODTERMS
+  ;2   ; Number of monod terms in kinetic equation
+  Xylene  1.5e-05 1.0 ; for each monod term: species concentration order
+  Oxygen  2.0e-06 1.0 ;
+ $INHIBITIONTERMS
+  ;0
+ $PRODUCTIONSTOCH
+  Xylene  -6.27  
+  Oxygen  -65.83
+  Metab_O +50.16
+  CO2 +50.16
+    
+#REACTION ; 
+ $NAME
+  DoubleMonodDecay ;
+ $TYPE
+  monod;
+ $BACTERIANAME
+  Biomass_Aerobic
+ $EQUATION
+  Biomass_Aerobic =  Biomass_Aerobic ; 
+ $RATECONSTANT
+  -1.15740e-8 1.0;        first- order rate , exponent
+ $GROWTH
+    1
+ $MONODTERMS
+  ;0   ; Number of monod terms in kinetic equation
+ $INHIBITIONTERMS
+  ;0
+ $PRODUCTIONTERMS
+  ;0 
+  
+  
+#REACTION ;
+ $NAME
+   Fe-bio-dissolution ;
+ $TYPE
+   exchange ;
+ $SORPTION_TYPE
+   linear ;
+ $EQUATION
+   Goethite = - bioFe3 ;
+ $EXCHANGE_PARAMETERS
+    1.15741E-10   0.0
+       
+#REACTION ; 
+ $NAME
+   DoubleMonod ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Biomass_Ironreducer
+ $EQUATION
+  1 C8H10 + 42 FeOOH + 84 H = 8 CO2 + 42 Fe + 68 H2O; 
+ $RATECONSTANT
+  1.15740e-7  1.0   ; Monod growth rate , exponent; 1.0 1.0
+ $GROWTH
+    1
+ $MONODTERMS
+  ;2   ; Number of monod terms in kinetic equation
+  Xylene  1.00e-06 1.0 ; for each monod term: species concentration order
+  bioFe3 1e-06 1.0 ;
+ $INHIBITIONTERMS
+  Oxygen 5.00e-08 1.0
+  Sulfate 5.00e-07 1.0
+ $PRODUCTIONSTOCH
+  Xylene  -20.8 
+  bioFe3  -873.6
+  Metab_Fe3 +166.40
+  Fe2 +166.40
+    
+#REACTION ; 
+ $NAME
+  DoubleMonodDecay ;
+ $TYPE
+  monod;
+ $BACTERIANAME
+  Biomass_Ironreducer
+ $EQUATION
+  Biomass_Ironreducer =  Biomass_Ironreducer ; 
+ $RATECONSTANT
+  -1.15740e-8  1.0  ; first- order rate , exponent
+ $GROWTH
+    1
+ $MONODTERMS
+  ;0   ; Number of monod terms in kinetic equation
+ $INHIBITIONTERMS
+  ;0
+ $PRODUCTIONTERMS
+  ;0  
+
+  
+  
+#REACTION ; 
+ $NAME
+   DoubleMonod ;
+ $TYPE
+   monod;
+ $BACTERIANAME
+   Biomass_Sulfatereducer
+ $EQUATION
+  1 C8H10 + 5.25 SO4 + 5.25 H = 8 CO2 + 5.25 HS + 5 H2O; 
+ $RATECONSTANT
+  1.15740e-7  1.0   ; Monod growth rate , exponent; 1.0 1.0
+ $GROWTH
+    1
+ $MONODTERMS
+  ;2   ; Number of monod terms in kinetic equation
+  Xylene  5.00e-06 1.0 ; for each monod term: species concentration order
+  Sulfate 2e-08 1.0 ;
+ $INHIBITIONTERMS
+  Oxygen 1.00e-07 1.0
+ $PRODUCTIONSTOCH
+  Xylene  -31.20 
+  Sulfate  -165.45
+  S +249.60
+  Meta_ProductS +249.60
+    
+#REACTION ; 
+ $NAME
+  DoubleMonodDecay ;
+ $TYPE
+  monod;
+ $BACTERIANAME
+  Biomass_Sulfatereducer
+ $EQUATION
+  Biomass_Sulfatereducer =  Biomass_Sulfatereducer ; 
+ $RATECONSTANT
+  -1.15740e-8  1.0 ; first- order rate , exponent
+ $GROWTH
+    1
+ $MONODTERMS
+  ;0   ; Number of monod terms in kinetic equation
+ $INHIBITIONTERMS
+  ;0
+ $PRODUCTIONTERMS
+  ;0  
+#STOP

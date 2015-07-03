@@ -1,0 +1,31 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $NAME
+  RESERVOIR
+ $GEOMETRY_DIMENSION
+  3
+ $POROSITY
+  1   0.206 
+ $PERMEABILITY_TENSOR
+   ORTHOTROPIC 1.e-13 1.e-13 1.e-13
+ $PERMEABILITY_SATURATION
+ 0 1
+ 0 2
+  $CAPILLARY_PRESSURE
+0 3 
+#STOP
+
+
+
+
+
+
+
+0 2 
+
+ ; Brooks-Corey
+; model -- residual sat -- maximum sat -- exponent -- minimum krel_nw
+ 6        0.2            1.0            0.4 
+  66       0.05            1.0            0.4         1.e-7
+
+6 1.e4

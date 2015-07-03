@@ -1,0 +1,26 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  3
+ $GEOMETRY_AREA
+  1.000000e+000
+ $POROSITY
+  1  0.50
+ $TORTUOSITY
+  1   1.000000e+000
+ $STORAGE
+  1  0.0  
+ $PERMEABILITY_TENSOR
+  ISOTROPIC  5.787037e-04
+ $MASS_DISPERSION
+  1  0.2500  0.2500
+ $DENSITY
+  1  2000.0
+#STOP
+
+
+
+$MASS_DISPERSION
+  1  0.25  0.0
+
+  5.787037e-03 ; 1m/day

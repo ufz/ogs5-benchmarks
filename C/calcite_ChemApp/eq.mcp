@@ -1,0 +1,76 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  pH ;   C(4) ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME
+  O ;  Ca ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp3
+  $NAME
+  Mg ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp4
+ $NAME  ; 
+  Ca ; Cl ; 
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp5  
+  $NAME
+   Cl ; pH ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9            	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp6  O
+ $NAME
+  C   ; pe
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0e-9            	; diffusion model type, diffusion constant
+#COMPONENT_PROPERTIES  ; comp7
+ $NAME
+  Calcite ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+#COMPONENT_PROPERTIES  ; comp8
+ $NAME
+  Dolomite(dis)   ;Dolomite ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+#COMPONENT_PROPERTIES  ; comp9
+ $NAME
+  Magnesite   ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+#COMPONENT_PROPERTIES  ; comp9
+ $NAME
+  Eh ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+#STOP
