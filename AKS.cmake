@@ -1,23 +1,20 @@
-# Temporally deactivated until new results are confirmed
-#ADD_BENCHMARK ("AKS" H_us/Wet/h_us_line_Warrick "OGS_FEM" 1
-#	H_us/Wet/h_us_line_Warrick_domain_RICHARDS_FLOW_line.tec
-#	H_us/Wet/h_us_line_Warrick_ply_OUT_t1_RICHARDS_FLOW.tec)
+ADD_BENCHMARK ("AKS" H_us/Wet/h_us_line_Warrick "OGS_FEM" 1
+	H_us/Wet/h_us_line_Warrick_domain_RICHARDS_FLOW_line.tec
+	H_us/Wet/h_us_line_Warrick_ply_OUT_t1_RICHARDS_FLOW.tec)
 
 ADD_BENCHMARK ("AKS" H_us/Wet/h_us_quad "OGS_FEM" 1
 	H_us/Wet/h_us_quad_domain_RICHARDS_FLOW_quad.tec
 	H_us/Wet/h_us_quad_ply_OUT_t1_RICHARDS_FLOW.tec)
 
-# Temporally deactivated until new results are confirmed
-#ADD_BENCHMARK ("AKS" H_us/Wet/h_us_tri_freebc "OGS_FEM" 1
-#	H_us/Wet/h_us_tri_freebc_domain_RICHARDS_FLOW_tri.tec
-#	H_us/Wet/h_us_tri_freebc_ply_OUT_t1_RICHARDS_FLOW.tec)
+ADD_BENCHMARK ("AKS" H_us/Wet/h_us_tri_freebc "OGS_FEM" 1
+	H_us/Wet/h_us_tri_freebc_domain_RICHARDS_FLOW_tri.tec
+	H_us/Wet/h_us_tri_freebc_ply_OUT_t1_RICHARDS_FLOW.tec)
 
 ADD_BENCHMARK ("AKS" H_us/Dual/dual_vl "OGS_FEM" 1
 	H_us/Dual/dual_vl_domain_RICHARDS_FLOW_line.tec)
 
-# Temporally deactivated until new results are confirmed
-#ADD_BENCHMARK ("AKS" H_us/Wet/h_us_line_Forsyth "OGS_FEM" 1
-#	H_us/Wet//h_us_line_Forsyth_domain_line.tec)
+ADD_BENCHMARK ("AKS" H_us/Wet/h_us_line_Forsyth "OGS_FEM" 1
+	H_us/Wet//h_us_line_Forsyth_domain_line.tec)
 
 # Temporally deactivated until new results are confirmed
 #ADD_BENCHMARK ("AKS" H_us/RSM/AT_5 "OGS_FEM" 1
