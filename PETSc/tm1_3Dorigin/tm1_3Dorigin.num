@@ -1,0 +1,13 @@
+#NUMERICS
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $LINEAR_SOLVER
+;       solver  preconditioner  error_tolerance  max_iterations
+  petsc  bcgs      bjacobi            1.e-10         10000
+#NUMERICS
+ $PCS_TYPE
+  DEFORMATION
+ $LINEAR_SOLVER
+;       solver  preconditioner  error_tolerance  max_iterations
+  petsc  bcgs      bjacobi            1.e-10         10000
+#STOP
