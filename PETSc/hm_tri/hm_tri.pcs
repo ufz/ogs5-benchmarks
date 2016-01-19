@@ -8,5 +8,3 @@ GeoSys-PCS: Processes ------------------------------------------------
 #STOP
 
 
- $PCS_TYPE
-  DEFORMATION_SINGLEFLOW_MONO

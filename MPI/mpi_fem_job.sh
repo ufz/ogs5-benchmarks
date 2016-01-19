@@ -22,7 +22,7 @@ cd ..
 
 
 cd  McWhorter
-echo "Running parallel benchmark:  McWhorter"
+echo "Running parallel benchmark: McWhorter"
 mpirun -np 4 $1 mcwt &> log.txt 
 cd ..
 
