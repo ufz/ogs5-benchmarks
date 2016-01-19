@@ -4,11 +4,12 @@ ADD_BENCHMARK ("HS" C/1d_analyt/1d_1 "OGS_FEM" 1
 ADD_BENCHMARK ("HS_LONG" C/2d_analyt/2d_1 "OGS_FEM" 1
 	C/2d_analyt/2d_1_domain_tri.tec)
 
-ADD_BENCHMARK ("HS" C/1d_xylene_degradation/h2_line "OGS_FEM" 1
-	C/1d_xylene_degradation/h2_line_domain_NO_PCS_line.tec)
+##Deactived for v5.7
+#ADD_BENCHMARK ("HS" C/1d_xylene_degradation/h2_line "OGS_FEM" 1
+#	C/1d_xylene_degradation/h2_line_domain_NO_PCS_line.tec)
 
-ADD_BENCHMARK ("HS_LONG" C/1d_TCEaufEisen/1d_TCE_Ion "OGS_FEM" 1
-	C/1d_TCEaufEisen/1d_TCE_Ion_domain_line.tec)
+#ADD_BENCHMARK ("HS_LONG" C/1d_TCEaufEisen/1d_TCE_Ion "OGS_FEM" 1
+#	C/1d_TCEaufEisen/1d_TCE_Ion_domain_line.tec)
 
 ADD_BENCHMARK ("HS" C/decay/HC_decay_1Du "OGS_FEM" 1
 	C/decay/HC_decay_1Du_domain_line.tec)
