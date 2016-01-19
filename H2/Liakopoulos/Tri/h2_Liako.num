@@ -10,7 +10,7 @@ GeoSys-NUM: Numerical Parameter ----------------------------------------
   2      6 1.e-12      2000            1.0   100     4
  $NON_LINEAR_SOLVER 
 ; method error_tolerance max_iterations relaxation
-  PICARD 1e-5            25           1.0
+  PICARD 1e-4            25           1.0
 $ELE_GAUSS_POINTS
   2  
 

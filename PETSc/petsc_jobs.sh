@@ -39,3 +39,19 @@ cd m_tri
 echo "Running PETSc benchmark: m_tri"
 mpirun -np 2 $1 m_tri &> log.txt 
 cd ..
+
+cd hm1_1Dbeam
+echo "Running PETSc benchmark: hm1_1Dbeam"
+mpirun -np 2 $1 hm1_1Dbeam &> log.txt 
+cd ..
+
+cd tm1_3Dorigin
+echo "Running PETSc benchmark: tm1_3Dorigin"
+mpirun -np 2 $1 tm1_3Dorigin &> log.txt 
+cd ..
+
+cd m1_3Dload
+echo "Running PETSc benchmark: m1_3Dload"
+mpirun -np 4 $1 m1_3Dload &> log.txt 
+cd ..
+
