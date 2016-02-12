@@ -1,5 +1,7 @@
 GeoSys-OUT: Output ------------------------------------------------
 #OUTPUT // domain
+$PCS_TYPE
+ DEFORMATION_FLOW
  $NOD_VALUES
   PRESSURE1
   DISPLACEMENT_X1
@@ -24,6 +26,8 @@ GeoSys-OUT: Output ------------------------------------------------
  $TIM_TYPE:
   STEPS 1
 #OUTPUT // profile
+$PCS_TYPE
+ DEFORMATION_FLOW
  $NOD_VALUES
   PRESSURE1
   DISPLACEMENT_X1
