@@ -1,3 +1,6 @@
 *.DATA
 *.asc
 *_echo
+*.particles.vtk
+phinp.dat
+*_element_matrix.txt

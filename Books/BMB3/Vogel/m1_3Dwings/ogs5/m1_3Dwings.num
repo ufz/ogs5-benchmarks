@@ -1,0 +1,7 @@
+#NUMERICS
+ $PCS_TYPE
+  DEFORMATION
+ $LINEAR_SOLVER
+; method error_tolerance max_iterations theta precond storage
+    2      1    1.0e-10      20000       1.0    101      4
+#STOP
