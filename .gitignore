@@ -4,3 +4,10 @@
 *.particles.vtk
 phinp.dat
 *_element_matrix.txt
+*.pvd
+*.vtk
+*.vtu
+*.log
+*.error
+*.numdiff
+*.csv
