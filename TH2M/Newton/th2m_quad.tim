@@ -3,11 +3,12 @@ GeoSys-OUT: Output ------------------------------------------------
  $PCS_TYPE
   DEFORMATION_H2
  $TIME_STEPS
- 30 1.
+10 5.0
  $TIME_END
- 30.0
+100.0
  $TIME_START
   0.0
 #STOP
+ 
 
  

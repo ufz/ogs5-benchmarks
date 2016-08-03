@@ -5,7 +5,7 @@ GeoSys-MAT-FP: Fluid Properties ------------------------------------
  $PCS_TYPE
   PRESSURE1
  $DENSITY
-  1 0.0 //1.0
+  1 1.0e0 //1.0
  $VISCOSITY
   1 1.000000e-003
 #STOP
