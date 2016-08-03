@@ -5,7 +5,7 @@ GeoSys-MMP  Material Medium Properties ------------------------------------
  $GEOMETRY_AREA
   1.000000e+000
  $POROSITY
-  1  0.000000e-001
+  1  0.0
  $TORTUOSITY
   1  1.000000e+000
  $PERMEABILITY_TENSOR
