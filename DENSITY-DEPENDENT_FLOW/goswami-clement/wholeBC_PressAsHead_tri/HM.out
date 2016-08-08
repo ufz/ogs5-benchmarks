@@ -13,7 +13,7 @@
  $GEO_TYPE
    DOMAIN 
  $DAT_TYPE
-   PVD
+   VTK
  $TIM_TYPE
   9000
   19000
