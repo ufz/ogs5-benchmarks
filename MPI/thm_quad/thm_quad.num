@@ -23,12 +23,16 @@ $COUPLING_CONTROL
 #NUMERICS
  $PCS_TYPE
   DEFORMATION
- $NON_LINEAR_SOLVER 
-; method error_tolerance max_iterations relaxation
-  NEWTON 1e-2 1e-10      100            0.0
  $LINEAR_SOLVER 
 ; method error_tolerance max_iterations theta precond storage
-  2      0 1.e-10       5000          1.0   1     4
+  2      5 1.e-12       5000          1.0   1     4
+ $NON_LINEAR_ITERATIONS
+; method error_type max_iterations relaxation convergence_control
+  NEWTON ENORM 20 0.0 1.0e-1
+$PLASTICITY_TOLERANCE
+  1.e-12
+$AUTOMATIC_NEWTON_DAMPING
+  1.e-1 0.5
 $COUPLING_CONTROL
 ;error_method -- tolerances
  LMAX            1.e-3
