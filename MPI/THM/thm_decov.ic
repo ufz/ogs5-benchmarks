@@ -1,0 +1,26 @@
+GeoSys-IC: Initial Conditions ------------------------------------------------
+
+#INITIAL_CONDITION
+ $PCS_TYPE
+  RICHARDS_FLOW
+ $PRIMARY_VARIABLE
+  PRESSURE1
+ $GEO_TYPE
+  SUB_DOMAIN 
+   3
+   2   -70e6
+   0  -70e6
+   1  1.0e5
+   
+#INITIAL_CONDITION
+ $PCS_TYPE
+  HEAT_TRANSPORT   
+ $PRIMARY_VARIABLE
+  TEMPERATURE1
+ $GEO_TYPE
+  SUB_DOMAIN 
+   3
+   0  25.0
+   1  25.0
+   2  25.0
+#STOP
