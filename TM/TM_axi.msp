@@ -1,13 +1,11 @@
 GeoSys-MAT-SP: Solid Properties ------------------------------------
-
-
 #SOLID_PROPERTIES
   $DENSITY
    1 -2000.0   
    $THERMAL
    EXPANSION 4.2e-5
    CAPACITY 
-      1  900
+      1  0.
    CONDUCTIVITY
       1  5.5
 $ELASTICITY
