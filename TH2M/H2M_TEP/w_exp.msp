@@ -20,7 +20,7 @@ GeoSys-MAT-SP: Solid Properties ------------------------------------
     $SWELLING_PRESSURE_TYPE   
       3  0.01 -0.003e-6 0.25 -0.1609 -0.03e-6  0.1e6  
  $BIOT_CONSTANT
-  -1.0    
+  1.0
 $STRESS_INTEGRATION_TOLERANCE
 1.e-9 1.e-8  // f_tol, s_tol
 #STOP
@@ -30,4 +30,4 @@ $STRESS_INTEGRATION_TOLERANCE
         //! 2: \f$ \kappa_{s0}  \f$  
         //! 3: \f$ \alpha_{sp}  \f$  
         //! 4: \f$ \alpha_{ss}  \f$  
-        //! 5: \f$ p_ref        \f$  
+        //! 5: \f$ p_ref        \f$
