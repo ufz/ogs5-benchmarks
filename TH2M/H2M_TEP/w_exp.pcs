@@ -2,12 +2,13 @@ GeoSys-PCS: Processes ------------------------------------------------
 #PROCESS
  $PCS_TYPE
     MULTI_PHASE_FLOW
-
+ $NEGLECT_H_INI_EFFECT
+ 2
  #PROCESS
  $PCS_TYPE
   DEFORMATION
-  
-
+ $NEGLECT_H_INI_EFFECT
+ 2
 #STOP
 
 GeoSys-PCS: Processes ------------------------------------------------

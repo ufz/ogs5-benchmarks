@@ -3,8 +3,8 @@ GeoSys-PCS: Processes ------------------------------------------------
 #PROCESS
  $PCS_TYPE
   RICHARDS_FLOW
- $NUM_TYPE
-   NEW 
+ $NEGLECT_H_INI_EFFECT
+ 2
  $DEACTIVATED_SUBDOMAIN
   1
   2      
@@ -15,8 +15,8 @@ $ELEMENT_MATRIX_OUTPUT
  #PROCESS
  $PCS_TYPE
   HEAT_TRANSPORT   
- $NUM_TYPE
-   NEW   
+ $NEGLECT_H_INI_EFFECT
+ 2
  $DEACTIVATED_SUBDOMAIN
   1
   2 
@@ -26,5 +26,7 @@ $ELEMENT_MATRIX_OUTPUT
    DEFORMATION    
   $RELOAD          
    2 
+ $NEGLECT_H_INI_EFFECT
+ 2
 #STOP
 
