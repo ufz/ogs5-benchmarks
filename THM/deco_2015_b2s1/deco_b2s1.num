@@ -44,7 +44,7 @@ $LINEAR_SOLVER
   2 
  $COUPLING_CONTROL
 ;error_method    tolerances
- LMAX            1e-6 
+ LMAX            380
  
 #NUMERICS
  $PCS_TYPE
