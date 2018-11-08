@@ -1,5 +1,5 @@
-#!MC 1300
-# Created by Tecplot 360 build 13.1.0.15185
+#!MC 1400
+# Created by Tecplot 360 build 14.0.2.35002
 $!VarSet |LFDSFN1| = '"deco_b2s1_ply_unten_t0.tec"'
 $!VarSet |LFDSVL1| = '"DIST" "PRESSURE1" "TEMPERATURE1" "DISPLACEMENT_X1" "DISPLACEMENT_Y1" "STRESS_XX" "STRESS_XY" "STRESS_YY" "STRESS_ZZ" "STRAIN_XX" "STRAIN_XY" "STRAIN_YY" "STRAIN_ZZ" "SATURATION1" "VELOCITY_X1" "VELOCITY_Y1" "p_(1st_Invariant)" "q_(2nd_Invariant)" "Effective_Strain"'
 $!SETSTYLEBASE FACTORY
@@ -929,7 +929,7 @@ $!FRAMENAME  = 'Frame 001'
 $!GLOBALTIME 
   SOLUTIONTIME = 0
 $!DELETELINEMAPS 
-$!ACTIVELINEMAPS  =  [1-12]
+$!ACTIVELINEMAPS  =  [1-8]
 $!GLOBALLINEPLOT 
   DATALABELS
     {
@@ -1177,118 +1177,6 @@ $!LINEMAP  [8]
     {
     COLOR = RED
     }
-$!LINEMAP  [9]
-  NAME = '365 days'
-  ASSIGN
-    {
-    ZONE = 10
-    XAXISVAR = 29
-    YAXISVAR = 27
-    }
-  LINES
-    {
-    COLOR = BLACK
-    LINETHICKNESS = 0.8
-    }
-  SYMBOLS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    }
-  ERRORBARS
-    {
-    COLOR = RED
-    }
-$!LINEMAP  [10]
-  NAME = '500 days'
-  ASSIGN
-    {
-    ZONE = 11
-    XAXISVAR = 29
-    YAXISVAR = 27
-    }
-  LINES
-    {
-    COLOR = PURPLE
-    LINETHICKNESS = 0.5
-    }
-  SYMBOLS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    }
-  ERRORBARS
-    {
-    COLOR = RED
-    }
-$!LINEMAP  [11]
-  NAME = '730 days'
-  ASSIGN
-    {
-    ZONE = 12
-    XAXISVAR = 29
-    YAXISVAR = 27
-    }
-  LINES
-    {
-    COLOR = CUSTOM15
-    LINETHICKNESS = 0.5
-    }
-  SYMBOLS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    }
-  ERRORBARS
-    {
-    COLOR = RED
-    }
-$!LINEMAP  [12]
-  NAME = '840 days'
-  ASSIGN
-    {
-    ZONE = 13
-    XAXISVAR = 29
-    YAXISVAR = 27
-    }
-  LINES
-    {
-    COLOR = CUSTOM1
-    LINETHICKNESS = 0.5
-    }
-  SYMBOLS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    }
-  ERRORBARS
-    {
-    COLOR = RED
-    }
 $!XYLINEAXIS 
   DEPXTOYRATIO = 1
   VIEWPORTPOSITION
@@ -1360,8 +1248,8 @@ $!XYLINEAXIS
 $!XYLINEAXIS 
   YDETAIL 1
     {
-    RANGEMIN = 10
-    RANGEMAX = 100
+    RANGEMIN = 288.14999389648438
+    RANGEMAX = 380
     AUTOGRID = NO
     GRSPACING = 20
     TICKLABEL
@@ -1381,7 +1269,8 @@ $!XYLINEAXIS
       }
     TITLE
       {
-      TEXT = 'pressure, p (MPa)'
+      TITLEMODE = USETEXT
+      TEXT = 'Temperature, T (K)'
       TEXTSHAPE
         {
         HEIGHT = 5.6
@@ -1457,7 +1346,7 @@ $!FRAMENAME  = 'Frame 001'
 $!GLOBALTIME 
   SOLUTIONTIME = 0
 $!DELETELINEMAPS 
-$!ACTIVELINEMAPS  =  [1-12]
+$!ACTIVELINEMAPS  =  [1-8]
 $!GLOBALLINEPLOT 
   DATALABELS
     {
@@ -1704,118 +1593,6 @@ $!LINEMAP  [8]
     {
     COLOR = RED
     }
-$!LINEMAP  [9]
-  NAME = 'p_w (MPa), 365 days'
-  ASSIGN
-    {
-    ZONE = 10
-    XAXISVAR = 29
-    YAXISVAR = 27
-    }
-  LINES
-    {
-    COLOR = BLACK
-    LINETHICKNESS = 0.8
-    }
-  SYMBOLS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    }
-  ERRORBARS
-    {
-    COLOR = RED
-    }
-$!LINEMAP  [10]
-  NAME = 'p_w (MPa), 500 days'
-  ASSIGN
-    {
-    ZONE = 11
-    XAXISVAR = 29
-    YAXISVAR = 27
-    }
-  LINES
-    {
-    COLOR = PURPLE
-    LINETHICKNESS = 0.5
-    }
-  SYMBOLS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    }
-  ERRORBARS
-    {
-    COLOR = RED
-    }
-$!LINEMAP  [11]
-  NAME = 'p_w (MPa), 730 days'
-  ASSIGN
-    {
-    ZONE = 12
-    XAXISVAR = 29
-    YAXISVAR = 27
-    }
-  LINES
-    {
-    COLOR = CUSTOM15
-    LINETHICKNESS = 0.5
-    }
-  SYMBOLS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    }
-  ERRORBARS
-    {
-    COLOR = RED
-    }
-$!LINEMAP  [12]
-  NAME = 'p_w (MPa), 840 days'
-  ASSIGN
-    {
-    ZONE = 13
-    XAXISVAR = 29
-    YAXISVAR = 27
-    }
-  LINES
-    {
-    COLOR = CUSTOM1
-    LINETHICKNESS = 0.5
-    }
-  SYMBOLS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = RED
-    FILLCOLOR = RED
-    }
-  ERRORBARS
-    {
-    COLOR = RED
-    }
 $!XYLINEAXIS 
   DEPXTOYRATIO = 1
   VIEWPORTPOSITION
@@ -1888,8 +1665,8 @@ $!XYLINEAXIS
 $!XYLINEAXIS 
   YDETAIL 1
     {
-    RANGEMIN = 10
-    RANGEMAX = 100
+    RANGEMIN = 288.14999389648438
+    RANGEMAX = 380
     AUTOGRID = NO
     GRSPACING = 20
     TICKLABEL
@@ -1971,5 +1748,5 @@ $!ATTACHGEOM
   RAWDATA
 0.72000002861 1000000 
 $!FRAMECONTROL ACTIVATEBYNUMBER
-  FRAME = 2
+  FRAME = 1
 $!SETSTYLEBASE CONFIG

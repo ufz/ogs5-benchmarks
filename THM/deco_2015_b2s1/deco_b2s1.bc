@@ -54,7 +54,7 @@ Boundary Conditions
  $GEO_TYPE
   POLYLINE rechts
  $DIS_TYPE
-  CONSTANT   15.0
+  CONSTANT   288.15
 
 #BOUNDARY_CONDITION
  $PCS_TYPE

@@ -4,9 +4,9 @@ GINA - RFD-Datei
 
 ; crv001 temperature time, polyline b1 (surface overpack)
 #CURVES
-0.0      15.0
-864000  100.0
-1E99    100.0
+0.0      288.15
+864000  373.15
+1E99    373.15
 
 ; crv002 k_rel Buffer S-k_rel k_rel=S^1.3
 #CURVES
