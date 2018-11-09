@@ -2,13 +2,9 @@ GeoSys-PCS: Processes ------------------------------------------------
 #PROCESS
  $PCS_TYPE
   LIQUID_FLOW
- $NUM_TYPE
-  NEW
-  1
 #PROCESS
  $PCS_TYPE
   HEAT_TRANSPORT
- $NUM_TYPE
-  NEW
-  1
+ $TEMPERATURE_UNIT
+  KELVIN
 #STOP

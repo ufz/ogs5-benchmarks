@@ -2,6 +2,8 @@ GeoSys-PCS: Processes ------------------------------------------------
 #PROCESS
 $PCS_TYPE
 TES
+$TEMPERATURE_UNIT
+KELVIN
 $ELEMENT_MATRIX_OUTPUT
 0
 #STOP
