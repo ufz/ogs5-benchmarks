@@ -1,0 +1,157 @@
+#POINTS
+0 -.5 0 -0.5 $NAME POINT0
+1 .5 0 -.50 $NAME POINT1
+2 .5 0 .5 $NAME POINT2
+3 -.5 0 .5 $NAME POINT3
+4 -0.5 1.5 -.50 $NAME POINT4
+5 .5 1.5 -.50 $NAME POINT5
+6 .5 1.5 .5 $NAME POINT6
+7 -.5 1.5 .5 $NAME POINT7
+8 0 0 .0429 $NAME POINT8
+9 0 10 .0429 $NAME POINT9
+10 0 0.5 0 $NAME POINT10
+11 0.5 0.5 0 $NAME POINT11
+12 0 0.5 0.5 $NAME POINT12
+#POLYLINE
+ $NAME
+  front
+ $POINTS
+  0
+  1
+  2
+  3
+  0
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  left
+ $POINTS
+  0
+  3
+  7
+  4
+  0
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  upper
+ $POINTS
+  3
+  2
+  6
+  7
+  3
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  bottom
+ $POINTS
+  0
+  1
+  5
+  4
+  0
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  back
+ $POINTS
+  4
+  5
+  6
+  7
+  4
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  right
+ $POINTS
+  2
+  1
+  5
+  6
+  2
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  horizon
+ $POINTS
+  10
+  11
+#POLYLINE
+ $NAME
+  vertikal
+ $POINTS
+  10
+  12
+#SURFACE
+ $NAME
+  left
+ $EPSILON
+  0.001
+ $POLYLINES
+  left
+ $MAT_GROUP
+  0
+ $TYPE
+  0
+#SURFACE
+ $NAME
+  upper
+ $EPSILON
+  0.001
+ $POLYLINES
+  upper
+ $MAT_GROUP
+  0
+ $TYPE
+  0
+#SURFACE
+ $NAME
+  bottom
+ $EPSILON
+  0.001
+ $POLYLINES
+  bottom
+ $MAT_GROUP
+  0
+ $TYPE
+  0
+#SURFACE
+ $NAME
+  back
+ $EPSILON
+  0.001
+ $POLYLINES
+  back
+ $MAT_GROUP
+  0
+ $TYPE
+  0
+#SURFACE
+ $NAME
+  right
+ $EPSILON
+  0.001
+ $POLYLINES
+  right
+ $MAT_GROUP
+  0
+ $TYPE
+  0
+#SURFACE
+ $NAME
+  front
+ $EPSILON
+  0.001
+ $POLYLINES
+  front
+ $TYPE
+  0
+#STOP

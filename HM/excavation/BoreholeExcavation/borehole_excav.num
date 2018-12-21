@@ -1,0 +1,30 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+$OVERALL_COUPLING
+;min_iter -- max_iter
+ 1           1
+#NUMERICS 
+ $PCS_TYPE
+  RICHARDS_FLOW 
+  $ELE_MASS_LUMPING
+  1 
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  PICARD   1.0e-5            100             1 
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+   2     2     1e-12    20000    1    100    4
+ $COUPLING_CONTROL
+;error_method -- tolerances
+ LMAX            1.e+8
+#NUMERICS
+ $PCS_TYPE
+  DEFORMATION
+ $ELE_GAUSS_POINTS
+  3
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  2      5  1.e-010      10000         1.0   100     4
+   $COUPLING_CONTROL
+;error_method -- tolerances
+ LMAX            1.0
+#STOP
