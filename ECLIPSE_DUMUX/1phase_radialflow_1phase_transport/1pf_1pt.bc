@@ -6,7 +6,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   PRESSURE1
  $GEO_TYPE
   POLYLINE    PLY_LEFT_HIGH
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 480690
@@ -17,7 +17,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   PRESSURE1
  $GEO_TYPE
   POLYLINE    PLY_LEFT_LOW
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 490500
@@ -28,7 +28,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   PRESSURE1
  $GEO_TYPE
   POLYLINE    PLY_RIGHT_HIGH
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 480690 
@@ -39,7 +39,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   PRESSURE1
  $GEO_TYPE
   POLYLINE    PLY_RIGHT_LOW
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT  490500 
@@ -50,7 +50,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   PRESSURE1
  $GEO_TYPE
   POLYLINE  PLY_UP_HIGH
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 480690
@@ -61,7 +61,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   PRESSURE1
  $GEO_TYPE
   POLYLINE  PLY_UP_LOW
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT  490500
@@ -72,7 +72,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   PRESSURE1
  $GEO_TYPE
   POLYLINE  PLY_LOW_HIGH
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 480690
@@ -83,7 +83,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   PRESSURE1
  $GEO_TYPE
   POLYLINE  PLY_LOW_LOW
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT  490500
@@ -94,7 +94,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   ConsTracer
  $GEO_TYPE
   POINT POINT4
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 1.00
@@ -105,7 +105,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   ConsTracer
  $GEO_TYPE
   POINT POINT10
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 1.00
@@ -116,7 +116,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   ConsTracer
  $GEO_TYPE
   POINT POINT12
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 1.00 
@@ -127,7 +127,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   ConsTracer
  $GEO_TYPE
   POINT POINT13
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 1.00 
@@ -138,7 +138,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   ConsTracer
  $GEO_TYPE
   POINT POINT14
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 1.00 
@@ -149,7 +149,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   ConsTracer
  $GEO_TYPE
   POINT POINT15
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 1.00
@@ -160,7 +160,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   ConsTracer
  $GEO_TYPE
   POINT POINT16
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 1.00 
@@ -171,7 +171,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   ConsTracer
  $GEO_TYPE
   POINT POINT17
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 1.00  
