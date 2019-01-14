@@ -17,7 +17,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Tracer
  $GEO_TYPE
   POLYLINE  PLY_S2
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.0087
@@ -28,7 +28,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Tracer
  $GEO_TYPE
   POLYLINE  PLY_S1
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.00
@@ -39,7 +39,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Tracer
  $GEO_TYPE
   POLYLINE  PLY_S3
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.00
@@ -51,7 +51,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Tracer
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_1
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -62,7 +62,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Tracer
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_2
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -73,7 +73,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Tracer
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_3
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -84,7 +84,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Tracer
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_4
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00    
@@ -98,7 +98,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Toluene
  $GEO_TYPE
   POLYLINE  PLY_S2
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.0087
@@ -109,7 +109,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Toluene
  $GEO_TYPE
   POLYLINE  PLY_S1
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.00
@@ -120,7 +120,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Toluene
  $GEO_TYPE
   POLYLINE  PLY_S3
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.00
@@ -132,7 +132,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Toluene
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_1
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -143,7 +143,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Toluene
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_2
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -154,7 +154,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Toluene
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_3
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -165,7 +165,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Toluene
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_4
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -182,7 +182,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Nitrate
  $GEO_TYPE
   POLYLINE  PLY_S2
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.0
@@ -193,7 +193,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Nitrate
  $GEO_TYPE
   POLYLINE  PLY_S1
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.62
@@ -204,7 +204,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Nitrate
  $GEO_TYPE
   POLYLINE  PLY_S3
- $EPLSILON
+ $EPSILON
    0.0002  
  $DIS_TYPE
   CONSTANT 0.62
@@ -216,7 +216,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Nitrate
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_1
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -227,7 +227,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Nitrate
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_2
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -238,7 +238,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Nitrate
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_3
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
@@ -249,7 +249,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Nitrate
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT_4
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00    
@@ -263,7 +263,7 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   Comp_C
  $GEO_TYPE
   POLYLINE  PLY_BC_LEFT
- $EPLSILON
+ $EPSILON
    0.00001  
  $DIS_TYPE
   CONSTANT 0.00  
