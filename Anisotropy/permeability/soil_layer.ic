@@ -8,7 +8,7 @@ GeoSys-IC: Initial Conditions ------------------------------------------------
   DOMAIN
  $DIS_TYPE
   CONSTANT 0.000000000000e+000
-#BOUNDARY_CONDITION
+#INITIAL_CONDITION
  $PCS_TYPE
   MASS_TRANSPORT
  $PRIMARY_VARIABLE 
@@ -17,7 +17,7 @@ GeoSys-IC: Initial Conditions ------------------------------------------------
   DOMAIN
  $DIS_TYPE
   CONSTANT 0.0
-#BOUNDARY_CONDITION
+#INITIAL_CONDITION
  $PCS_TYPE
   MASS_TRANSPORT
  $PRIMARY_VARIABLE 
