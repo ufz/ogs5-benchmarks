@@ -3,7 +3,7 @@ GeoSys-MMP: Material Medium Properties ------------------------------------
 #MEDIUM_PROPERTIES
  $GEOMETRY_DIMENSION
   1
- $AREA
+ $GEOMETRY_AREA
   1.0
  $POROSITY
   1 0.01
