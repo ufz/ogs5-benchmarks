@@ -1,0 +1,38 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+#SOLID_PROPERTIES
+  $DENSITY
+   1    2.0e3 
+  $THERMAL
+   EXPANSION 4.0e-5
+   CAPACITY: 
+      1  0.0
+   CONDUCTIVITY: 
+      1  5
+  $ELASTICITY
+   POISSION  0.3     
+    YOUNGS_MODULUS
+      1 7e9
+#SOLID_PROPERTIES
+  $DENSITY
+   1    2.17e3 
+  $THERMAL
+   EXPANSION 4.0e-5
+   CAPACITY: 
+      1  0.0
+   CONDUCTIVITY: 
+      1  5
+  $ELASTICITY
+   POISSION  0.27     
+    YOUNGS_MODULUS
+      1 7.65e9
+  $CREEP_BGRA_IMPLICIT
+     0.18 4.9  1.0e+6 54000.0 293.0 1.0e-8 400  
+#STOP
+
+BGRa: A = 0.18 (1/d)
+      n = 4.9
+	  sigma_f = 1.0e+6 Pa
+      Q = 54.0 kJ/mol
+	  reference temperature = 300 K, only used if there is no heat conduction is solved.
+	  tolerance 1.e-10
+	  max iterations 300
