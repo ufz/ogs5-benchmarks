@@ -18,7 +18,7 @@ GeoSys-OUT: Output ------------------------------------------------
  $DAT_TYPE
   TECPLOT
  $TIM_TYPE
-   STEPS 1
+   STEPS 100
 #OUTPUT // time curve
  $NOD_VALUES
   DISPLACEMENT_X1

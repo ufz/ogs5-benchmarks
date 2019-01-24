@@ -1,6 +1,4 @@
 GeoSys-MAT-SP: Solid Properties ------------------------------------
-
-
 #SOLID_PROPERTIES
   $DENSITY
    1    0.0 
@@ -14,8 +12,6 @@ GeoSys-MAT-SP: Solid Properties ------------------------------------
    POISSION  0.27     
     YOUNGS_MODULUS
       1 25000.0
-  $STRESS_UNIT
-    MegaPascal            
   $CREEP_BGRA
      0.18 5.0  54000.0    
 #STOP

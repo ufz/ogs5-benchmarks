@@ -16,7 +16,7 @@ Gina4 - Out-Datei
  $DAT_TYPE
    TECPLOT
  $TIM_TYPE
-   STEPS 1
+   STEPS 100
    
 #OUTPUT 
  $NOD_VALUES
