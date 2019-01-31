@@ -1,0 +1,14 @@
+; 1 Simulation Control -------------------------------------------------
+#PROJECT
+ BGR-BENCHMARK:CREEP DEFORMATION BGRa
+#CURVES
+;   Belastungsentwicklung
+0     5
+1.    5.0
+2.    5.0
+3     5.0
+100   5.0
+
+#REFERENCE_CONDITIONS
+9.81 0.0 101325
+#STOP
