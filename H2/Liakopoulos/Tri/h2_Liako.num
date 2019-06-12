@@ -7,7 +7,7 @@ GeoSys-NUM: Numerical Parameter ----------------------------------------
   1
  $LINEAR_SOLVER 
 ; method error_tolerance max_iterations theta precond storage
-  2      6 1.e-12      2000            1.0   100     4
+  2      0 1.e-12      2000            1.0   100     4
  $NON_LINEAR_SOLVER 
 ; method error_tolerance max_iterations relaxation
   PICARD 1e-4            25           1.0

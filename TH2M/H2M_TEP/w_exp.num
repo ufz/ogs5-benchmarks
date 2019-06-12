@@ -4,7 +4,7 @@ GeoSys-NUM: Numerical Parameter ----------------------------------------
   MULTI_PHASE_FLOW
  $LINEAR_SOLVER 
 ; method error_tolerance max_iterations theta precond storage
-  2      2 1.e-16       1000           1.0   100       4
+  2      2 1.e-18       1000           1.0   100       4
 $ELE_MASS_LUMPING
   0
 $ELE_GAUSS_POINTS
@@ -22,7 +22,7 @@ $ELE_GAUSS_POINTS
 
  $LINEAR_SOLVER 
 ; method error_tolerance max_iterations theta precond storage
-  2      0 1.e-011       5000          1.0   100     4
+  2      0 1.e-12       5000          1.0   100     4
   
 
 #STOP

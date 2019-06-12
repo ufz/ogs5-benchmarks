@@ -8,7 +8,7 @@ $OVERALL_COUPLING
   3
  $LINEAR_SOLVER 
 ; method error_tolerance max_iterations theta precond storage
-  2      6 1.e-014       1000           1.0   1       2
+  2      0 1.e-12       1000           1.0   100       4
  $COUPLING_CONTROL
   LMAX 1e-3
  $LOCAL_PICARD1
