@@ -8,6 +8,10 @@ GeoSys-BC: Boundary Conditions ------------------------------------------------
   POLYLINE TOP
  $DIS_TYPE
   CONSTANT 1e5
+ $TIME_INTERVAL
+  0.0 100.0
+ $TIME_INTERVAL
+  100.0 4.320000e+003
 #BOUNDARY_CONDITION
  $PCS_TYPE
   LIQUID_FLOW
