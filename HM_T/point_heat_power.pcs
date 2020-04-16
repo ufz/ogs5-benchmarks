@@ -1,0 +1,11 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  HEAT_TRANSPORT
+#PROCESS
+ $PCS_TYPE
+  LIQUID_FLOW
+  DEFORMATION
+#STOP
+$BOUNDARY_CONDITION_OUTPUT  
+
