@@ -1,0 +1,50 @@
+#POINTS
+0 0 0 0 $NAME p_power
+1 0 10 0 
+2 10 10 0 
+3 10 0 0 
+4 0.35 0 0 $NAME p0_35
+5 0.5 0 0 $NAME p0_5
+6 1.5 0 0 $NAME p1_5
+#POLYLINE
+ $NAME
+ top
+ $TYPE
+  2
+ $EPSILON
+  1.0e-4
+ $POINTS
+ 1
+ 2
+#POLYLINE
+ $NAME
+ left
+ $TYPE
+  2
+ $EPSILON
+  1.0e-4
+ $POINTS
+ 0
+ 1
+#POLYLINE
+ $NAME
+ right
+ $TYPE
+  2
+ $EPSILON
+  1.0e-4
+ $POINTS
+ 2
+ 3
+#POLYLINE
+ $NAME
+  bottom
+ $TYPE
+  2
+ $EPSILON
+  1.0e-4
+ $POINTS
+ 0
+ 3
+#STOP
+
