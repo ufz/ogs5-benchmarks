@@ -1,0 +1,23 @@
+GINA Fluid Properties
+#FLUID_PROPERTIES
+  $FLUID_TYPE
+   LIQUID
+  $FLUID_NAME
+   WATER
+  $PCS_TYPE
+   PRESSURE1
+   TEMPERATURE1
+  $DENSITY
+   1e3
+$VISCOSITY
+  10 150. 273.15  ;type C_0 viscosity_T_shift
+             ;type 10: (Chierrici, AnSichT 2014, siehe Endlagerstandortmodell NORD, Teil III, S. 26) 
+             ;C_0 : Salt concentration [kg/m^3]
+             ;mu = (1+2.765e-3*C_0)*exp(11.897-5.943e-2*T'+6.422e-5*T'^2)*1e-3;
+             ; T' = T + viscosity_T_shift
+             
+ $SPECIFIC_HEAT_CAPACITY
+ 1 4200.
+  $HEAT_CONDUCTIVITY
+  1 0.6
+  #STOP
