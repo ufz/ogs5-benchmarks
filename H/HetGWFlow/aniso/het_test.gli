@@ -1,0 +1,46 @@
+#POINTS
+0 0 .218 0 
+1 0 .04 0 
+2 .237 .04 0 
+3 .237 .218 0 
+#POLYLINE
+ $NAME
+  Top
+ $EPSILON
+  1e-4
+ $POINTS
+  0
+  3
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  Right
+$EPSILON
+  1e-4
+ $POINTS
+  3
+  2
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  Bottom
+ $EPSILON
+  1e-4
+ $POINTS
+  2
+  1
+ $MAT_GROUP
+  0
+#POLYLINE
+ $NAME
+  Left
+ $EPSILON
+  1e-4
+ $POINTS
+  1
+  0
+ $MAT_GROUP
+  0
+#STOP

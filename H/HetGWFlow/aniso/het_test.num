@@ -1,0 +1,28 @@
+#NUMERICS
+ $PCS_TYPE
+  LIQUID_FLOW
+; $ELE_UPWINDING
+;  0.5
+; $ELE_MASS_LUMPING
+;  1
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+   2      1 1.e-12         500000           1.0   1     4
+
+ $NON_LINEAR_ITERATIONS
+; method error_type max_iterations relaxation rel_residual_tol
+    NEWTON BNORM 20 0.0 1.0e-6
+; $ADDITIONAL_NEWTON_TOLERANCES
+;;  abs_residual abs_increment rel_increment
+;    1.e+10 1.0e-3 1.0e+10
+#STOP
+  
+; $NON_LINEAR_SOLVER 
+;; method error_tolerance max_iterations relaxation
+;  PICARD 1e-6            50             0.0
+;$COUPLING_CONTROL
+;;error method -- tolerances
+; LMAX            1.e4
+;$COUPLED_PROCESS
+;;;process or variable -- min_iter -- max_iter
+; HEAT_TRANSPORT         2           30
